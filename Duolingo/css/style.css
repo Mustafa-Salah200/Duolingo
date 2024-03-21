@@ -1,0 +1,87 @@
+* {
+    font-family: monospace;
+}
+body {
+    background-color: #131f24;
+}
+.content {
+    padding: 0 10px;
+    text-align: center;
+}
+.content h1 {
+    color: #fff;
+}
+.score {
+    color: #03ff18;
+}
+.score span {
+    color: #03ff18;
+}
+#start {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+#start:hover {
+    border: 2px solid #131f2441;
+    outline: 2px solid #4caf4f60;
+}
+.boxs {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    margin-top: 100px;
+}
+.e_word , .a_word {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    padding: 5px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    margin: 5px 15px;
+    width: 250px;
+    height: 70px;
+    border: 2px solid #37464f;
+    text-align: center;
+    background-color: #131f24;
+    border-radius: 10px;
+}
+.avli {
+    cursor: pointer;
+}
+button:hover {
+    background-color: #202f36;
+}
+.active {
+    border: 2px solid #3f85a7;
+    color: #3f85a7;
+}
+.wrong {
+    border: 2px solid #e90505b7;
+    background-color: #e9050556;
+    color: #f51505;
+}
+.wrong:hover {
+    background-color: #e9050556;
+}
+.right {
+    border: 2px solid #03ff18;
+    background-color: #03ff181e;
+    color: #03ff18;
+}
+.right:hover {
+    background-color: #03ff181e;
+}
+@media (max-width:768px){
+    button {
+        font-size: 15px;
+        width: 150px;
+        padding: 10px 25px;
+        height: 70px;
+    }
+}
